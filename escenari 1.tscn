@@ -1,0 +1,52 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Jugador.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Mossy 1.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 791.829, 183.778 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Jugador" parent="." instance=ExtResource( 1 )]
+position = Vector2( 164.084, 33.6592 )
+
+[node name="Camera2D" type="Camera2D" parent="Jugador"]
+position = Vector2( 971.955, -143.584 )
+current = true
+zoom = Vector2( 3, 3 )
+
+[node name="Escenari" type="KinematicBody2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="Escenari"]
+position = Vector2( 645.551, 600.058 )
+scale = Vector2( 0.878769, 0.870459 )
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Escenari"]
+position = Vector2( 650.132, 646.063 )
+shape = SubResource( 1 )
+
+[node name="Escenari2" type="KinematicBody2D" parent="."]
+position = Vector2( 2215.83, 5.33939 )
+
+[node name="Sprite" type="Sprite" parent="Escenari2"]
+position = Vector2( 645.551, 600.058 )
+scale = Vector2( 0.878769, 0.870459 )
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Escenari2"]
+position = Vector2( 650.132, 646.063 )
+shape = SubResource( 1 )
+
+[node name="Escenari3" type="KinematicBody2D" parent="."]
+position = Vector2( 4508.04, 5.33939 )
+
+[node name="Sprite" type="Sprite" parent="Escenari3"]
+position = Vector2( 645.551, 600.058 )
+scale = Vector2( 0.878769, 0.870459 )
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Escenari3"]
+position = Vector2( 638.818, 651.72 )
+shape = SubResource( 1 )

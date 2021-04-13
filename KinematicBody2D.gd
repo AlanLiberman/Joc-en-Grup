@@ -1,16 +1,38 @@
 extends KinematicBody2D
 
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+export var gravity = 3000.0
+export var speed = Vector2(300,1000)
+var velocitat = Vector2.ZERO
+var moviment = Vector2(0,0)
+var Monedes = 0
+func _physics_process(delta):
+	velocitat.x = 0
+	if Input.is_action_just_pressed("ui_up"):
+		if is_on_floor():
+			velocitat.y += -1500
+	if Input.is_action_pressed("ui_left"):
+		velocitat.x = -2000
+	if Input.is_action_pressed("ui_right"):
+		velocitat.x = 2000
+	velocitat.y += gravity * delta
+	velocitat = move_and_slide(velocitat,Vector2.UP)
+	
+	if velocitat.x > 0:
+		$AnimatedSprite.flip_h = false
+	elif velocitat.x < 0:
+		$AnimatedSprite.flip_h = true
+	if velocitat.y < 0:
+		$AnimatedSprite.play("Saltar")
+	else:
+		if velocitat.x > 0:
+			$AnimatedSprite.play("Correr")
+		elif velocitat.x < 0:
+			$AnimatedSprite.play("Correr")
+		if velocitat.x == 0:
+			$AnimatedSprite.play("Quiet")
+	if Input.is_action_just_pressed("Atacar"):
+		$AnimatedSprite.play("Atacar")			
+func _on_AnimatedSprite_animation_finished():
+	if $AnimatedSprite.animation == "Saltar":
+		$AnimatedSprite.animation = "Correr"
