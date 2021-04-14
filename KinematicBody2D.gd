@@ -12,18 +12,19 @@ func _physics_process(delta):
 		if is_on_floor():
 			velocitat.y += -1500
 	if Input.is_action_pressed("ui_left"):
-		velocitat.x = -2000
+		velocitat.x = -1200
 	if Input.is_action_pressed("ui_right"):
-		velocitat.x = 2000
+		velocitat.x = 1200
 	velocitat.y += gravity * delta
 	velocitat = move_and_slide(velocitat,Vector2.UP)
-	
 	if velocitat.x > 0:
 		$AnimatedSprite.flip_h = false
 	elif velocitat.x < 0:
 		$AnimatedSprite.flip_h = true
 	if velocitat.y < 0:
 		$AnimatedSprite.play("Saltar")
+	if velocitat.y > 0:
+		$AnimatedSprite.play("Caure")
 	else:
 		if velocitat.x > 0:
 			$AnimatedSprite.play("Correr")
