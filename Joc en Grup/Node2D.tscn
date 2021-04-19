@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Menu.tscn" type="PackedScene" id=1]
+[ext_resource path="res://KinematicBody2D.gd" type="Script" id=2]
+[ext_resource path="res://PNG/game_background_1/layers/rocks_2.png" type="Texture" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Menu" parent="." instance=ExtResource( 1 )]
+scale = Vector2( 10, 10 )
+region_rect = Rect2( -20.551, -3.2749, 4721.81, 1098.49 )
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+position = Vector2( -313.596, -1653.51 )
+scale = Vector2( 100, 100 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="KinematicBody2D"]
+scale = Vector2( 0.01, 0.01 )
+texture = ExtResource( 3 )
+
+[node name="Camera2D" type="Camera2D" parent="KinematicBody2D"]
+current = true
+zoom = Vector2( 10, 10 )
