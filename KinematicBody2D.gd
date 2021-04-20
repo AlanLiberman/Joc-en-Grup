@@ -11,7 +11,7 @@ func _physics_process(delta):
 	velocitat.x = 0
 	if Input.is_action_pressed("ui_up"):
 		if is_on_floor():
-			velocitat.y += -1500
+			velocitat.y += -1500	
 	if Input.is_action_pressed("ui_left"):
 		velocitat.x = -1200
 	if Input.is_action_pressed("ui_right"):
