@@ -16,7 +16,6 @@ _global_script_class_icons={
 [application]
 
 config/name="Joc en Grup"
-<<<<<<< Updated upstream
 run/main_scene="res://Node2D.tscn"
 config/icon="res://icon.png"
 
@@ -43,10 +42,6 @@ up={
  ]
 }
 
-=======
-config/icon="res://icon.png"
-
->>>>>>> Stashed changes
 [rendering]
 
 quality/driver/driver_name="GLES2"
