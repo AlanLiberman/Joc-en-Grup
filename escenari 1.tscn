@@ -131,44 +131,45 @@ scale = Vector2( 1, 1.34292 )
 texture = ExtResource( 9 )
 flip_v = true
 
-[node name="mossy rock 1" type="Sprite" parent="."]
-position = Vector2( 505.532, 115.305 )
+[node name="mossy rock 1" type="Sprite" parent="background 3"]
+position = Vector2( -140.6, 28.9756 )
+scale = Vector2( 0.0672979, 0.0823689 )
 texture = ExtResource( 2 )
 
-[node name="mossy plant 3" type="Sprite" parent="mossy rock 1"]
+[node name="mossy plant 3" type="Sprite" parent="background 3/mossy rock 1"]
 position = Vector2( 4889.4, -484.242 )
 scale = Vector2( 0.703992, 1.01293 )
 texture = ExtResource( 8 )
 flip_h = true
 
-[node name="mossy lights 1" type="Sprite" parent="mossy rock 1"]
+[node name="mossy lights 1" type="Sprite" parent="background 3/mossy rock 1"]
 position = Vector2( 2209.12, 110.67 )
 texture = ExtResource( 6 )
 
-[node name="mossy plant 2" type="Sprite" parent="mossy rock 1"]
+[node name="mossy plant 2" type="Sprite" parent="background 3/mossy rock 1"]
 position = Vector2( 4838.37, -31.9844 )
 texture = ExtResource( 8 )
 flip_h = true
 
-[node name="mossy liana 1" type="Sprite" parent="mossy rock 1"]
+[node name="mossy liana 1" type="Sprite" parent="background 3/mossy rock 1"]
 position = Vector2( 4546.89, -302.069 )
 texture = ExtResource( 7 )
 
-[node name="mossy liana 1" type="Sprite" parent="mossy rock 1/mossy liana 1"]
+[node name="mossy liana 1" type="Sprite" parent="background 3/mossy rock 1/mossy liana 1"]
 position = Vector2( 130.55, -1328.24 )
 texture = ExtResource( 7 )
 flip_h = true
 flip_v = true
 
-[node name="mossy plant 2" type="Sprite" parent="mossy rock 1/mossy liana 1/mossy liana 1"]
+[node name="mossy plant 2" type="Sprite" parent="background 3/mossy rock 1/mossy liana 1/mossy liana 1"]
 position = Vector2( 1188.17, 1357.98 )
 texture = ExtResource( 8 )
 
-[node name="mossy liana 1" type="Sprite" parent="mossy rock 1/mossy liana 1/mossy liana 1"]
+[node name="mossy liana 1" type="Sprite" parent="background 3/mossy rock 1/mossy liana 1/mossy liana 1"]
 position = Vector2( 241.159, -1309.46 )
 texture = ExtResource( 7 )
 
-[node name="mossy plant 4" type="Sprite" parent="mossy rock 1"]
+[node name="mossy plant 4" type="Sprite" parent="background 3/mossy rock 1"]
 position = Vector2( 5934.22, -700.685 )
 texture = ExtResource( 8 )
 
