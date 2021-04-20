@@ -1,8 +1,15 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Menu.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Jugador.tscn" type="PackedScene" id=2]
+[ext_resource path="res://escenari 1.tscn" type="PackedScene" id=3]
 
 [node name="Node2D" type="Node2D"]
+
+[node name="Jugador" parent="." instance=ExtResource( 2 )]
+
+[node name="Escenari" parent="." instance=ExtResource( 3 )]
+position = Vector2( -1034.04, -1508.68 )
 
 [node name="Menu" parent="." instance=ExtResource( 1 )]
 position = Vector2( -89963.3, -49346.9 )

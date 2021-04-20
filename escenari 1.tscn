@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=2]
+[gd_scene load_steps=42 format=2]
 
 [ext_resource path="res://Jugador.tscn" type="PackedScene" id=1]
 [ext_resource path="res://mossy rock 1.png" type="Texture" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://mossy liana 1.png" type="Texture" id=7]
 [ext_resource path="res://mossy plant 2.png" type="Texture" id=8]
 [ext_resource path="res://background 3.PNG" type="Texture" id=9]
+[ext_resource path="res://Menu.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Chara_BlueWalk00013.png" type="Texture" id=14]
 [ext_resource path="res://Enemic 1.gd" type="Script" id=15]
 [ext_resource path="res://Chara_BlueWalk00000.png" type="Texture" id=16]
@@ -67,6 +68,9 @@ extents = Vector2( 193.376, 9.7973 )
 extents = Vector2( 33.5015, 676.292 )
 
 [node name="Node2D" type="Node2D"]
+
+[node name="Menu" parent="." instance=ExtResource( 10 )]
+position = Vector2( 1000, 1000 )
 
 [node name="background 3" type="Sprite" parent="."]
 position = Vector2( 2594.75, -236.473 )
