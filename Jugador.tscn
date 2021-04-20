@@ -3,7 +3,7 @@
 [ext_resource path="res://KinematicBody2D.gd" type="Script" id=1]
 [ext_resource path="res://Jugador.tres" type="SpriteFrames" id=2]
 
-[sub_resource type="RectangleShape2D" id=2]
+[sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 65, 130 )
 
 [node name="Jugador" type="KinematicBody2D"]
@@ -14,6 +14,9 @@ frames = ExtResource( 2 )
 animation = "Caure"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 28, 26 )
-shape = SubResource( 2 )
+position = Vector2( 18.4863, 14.1079 )
+shape = SubResource( 1 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 4.385
 [connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]

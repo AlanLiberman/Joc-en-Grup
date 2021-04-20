@@ -30,18 +30,18 @@ animations = [ {
 "name": "Atacar",
 "speed": 9.0
 }, {
-"frames": [ ExtResource( 5 ), ExtResource( 9 ), ExtResource( 16 ), ExtResource( 13 ), ExtResource( 15 ), ExtResource( 12 ) ],
+"frames": [ ExtResource( 6 ) ],
 "loop": true,
-"name": "Correr",
-"speed": 8.0
+"name": "Quiet",
+"speed": 5.0
 }, {
 "frames": [ ExtResource( 6 ), ExtResource( 3 ), ExtResource( 10 ), ExtResource( 1 ), ExtResource( 14 ) ],
 "loop": true,
 "name": "Saltar",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 6 ) ],
+"frames": [ ExtResource( 5 ), ExtResource( 9 ), ExtResource( 16 ), ExtResource( 13 ), ExtResource( 15 ), ExtResource( 12 ) ],
 "loop": true,
-"name": "Quiet",
-"speed": 5.0
+"name": "Correr",
+"speed": 8.0
 } ]

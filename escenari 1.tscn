@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=2]
+[gd_scene load_steps=41 format=2]
 
 [ext_resource path="res://Jugador.tscn" type="PackedScene" id=1]
 [ext_resource path="res://mossy rock 1.png" type="Texture" id=2]
@@ -9,12 +9,8 @@
 [ext_resource path="res://mossy liana 1.png" type="Texture" id=7]
 [ext_resource path="res://mossy plant 2.png" type="Texture" id=8]
 [ext_resource path="res://background 3.PNG" type="Texture" id=9]
-[ext_resource path="res://moneda 1.png" type="Texture" id=10]
-[ext_resource path="res://kisspng-8-bit-color-pixelation-pixel-art-5af9c8f8e55c13.3903496215263193529395.png" type="Texture" id=11]
-[ext_resource path="res://x.png" type="Texture" id=12]
-[ext_resource path="res://0.png" type="Texture" id=13]
 [ext_resource path="res://Chara_BlueWalk00013.png" type="Texture" id=14]
-[ext_resource path="res://KinematicBody2D.gd" type="Script" id=15]
+[ext_resource path="res://Enemic 1.gd" type="Script" id=15]
 [ext_resource path="res://Chara_BlueWalk00000.png" type="Texture" id=16]
 [ext_resource path="res://Chara_BlueWalk00001.png" type="Texture" id=17]
 [ext_resource path="res://Chara_BlueWalk00005.png" type="Texture" id=18]
@@ -35,40 +31,40 @@
 [ext_resource path="res://Chara_BlueWalk00019.png" type="Texture" id=33]
 [ext_resource path="res://Chara_BlueWalk00014.png" type="Texture" id=34]
 
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 791.829, 183.778 )
-
-[sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 209.66, 70.6903 )
-
-[sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 645.87, 833.017 )
-
-[sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 187.237, 16.8875 )
-
-[sub_resource type="RectangleShape2D" id=5]
-extents = Vector2( 187.474, 19.7865 )
-
-[sub_resource type="RectangleShape2D" id=6]
-extents = Vector2( 135.247, 22.7284 )
-
-[sub_resource type="RectangleShape2D" id=7]
-extents = Vector2( 193.376, 9.7973 )
-
-[sub_resource type="RectangleShape2D" id=8]
-extents = Vector2( 33.5015, 676.292 )
-
-[sub_resource type="SpriteFrames" id=9]
+[sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 16 ), ExtResource( 17 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 18 ), ExtResource( 22 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 23 ), ExtResource( 28 ), ExtResource( 14 ), ExtResource( 34 ), ExtResource( 32 ), ExtResource( 29 ), ExtResource( 31 ), ExtResource( 30 ), ExtResource( 33 ) ],
 "loop": true,
 "name": "Caminar",
-"speed": 5.0
+"speed": 10.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=10]
+[sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 80, 128 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 791.829, 183.778 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 209.66, 70.6903 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 645.87, 833.017 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 187.237, 16.8875 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 187.474, 19.7865 )
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 135.247, 22.7284 )
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 193.376, 9.7973 )
+
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 33.5015, 676.292 )
 
 [node name="Node2D" type="Node2D"]
 
@@ -78,7 +74,7 @@ scale = Vector2( 14.8593, 12.1405 )
 texture = ExtResource( 9 )
 
 [node name="background 4" type="Sprite" parent="background 3"]
-position = Vector2( 396.604, 0.368427 )
+position = Vector2( 396.603, 0.368437 )
 texture = ExtResource( 9 )
 
 [node name="background 8" type="Sprite" parent="background 3"]
@@ -129,6 +125,12 @@ scale = Vector2( 1, 1.34292 )
 texture = ExtResource( 9 )
 flip_v = true
 
+[node name="background 9" type="Sprite" parent="background 3"]
+position = Vector2( 795.546, -228.947 )
+scale = Vector2( 1, 1.34292 )
+texture = ExtResource( 9 )
+flip_v = true
+
 [node name="mossy rock 1" type="Sprite" parent="."]
 position = Vector2( 505.532, 115.305 )
 texture = ExtResource( 2 )
@@ -170,45 +172,26 @@ texture = ExtResource( 7 )
 position = Vector2( 5934.22, -700.685 )
 texture = ExtResource( 8 )
 
+[node name="Enemic 1" type="KinematicBody2D" parent="."]
+position = Vector2( 8936.37, -1357.9 )
+script = ExtResource( 15 )
+
+[node name="Enemic" type="AnimatedSprite" parent="Enemic 1"]
+position = Vector2( 254.737, 115.447 )
+frames = SubResource( 1 )
+animation = "Caminar"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemic 1"]
+position = Vector2( 252.609, 130.526 )
+shape = SubResource( 2 )
+
 [node name="Jugador" parent="." instance=ExtResource( 1 )]
-position = Vector2( 9048, -1800 )
+position = Vector2( 8675.02, -1270.53 )
 
 [node name="Camera2D" type="Camera2D" parent="Jugador"]
 position = Vector2( 1235.54, -414.178 )
 current = true
 zoom = Vector2( 3, 3 )
-
-[node name="kisspng-8-bit-color-pixelation-pixel-art-5af9c8f8e55c133903496215263193529395" type="Sprite" parent="Jugador/Camera2D"]
-position = Vector2( -1781.23, -830.162 )
-scale = Vector2( 0.3, 0.3 )
-texture = ExtResource( 11 )
-
-[node name="kisspng-8-bit-color-pixelation-pixel-art-5af9c8f8e55c133903496215263193529398" type="Sprite" parent="Jugador/Camera2D/kisspng-8-bit-color-pixelation-pixel-art-5af9c8f8e55c133903496215263193529395"]
-position = Vector2( 2143.33, -20 )
-texture = ExtResource( 11 )
-
-[node name="kisspng-8-bit-color-pixelation-pixel-art-5af9c8f8e55c133903496215263193529397" type="Sprite" parent="Jugador/Camera2D/kisspng-8-bit-color-pixelation-pixel-art-5af9c8f8e55c133903496215263193529395"]
-position = Vector2( 1436.67, -26.6667 )
-texture = ExtResource( 11 )
-
-[node name="kisspng-8-bit-color-pixelation-pixel-art-5af9c8f8e55c133903496215263193529396" type="Sprite" parent="Jugador/Camera2D/kisspng-8-bit-color-pixelation-pixel-art-5af9c8f8e55c133903496215263193529395"]
-position = Vector2( 720, -16.6667 )
-texture = ExtResource( 11 )
-
-[node name="x" type="Sprite" parent="Jugador/Camera2D"]
-position = Vector2( -1530.17, -611.683 )
-scale = Vector2( 0.490203, 0.478377 )
-texture = ExtResource( 12 )
-
-[node name="0" type="Sprite" parent="Jugador/Camera2D/x"]
-position = Vector2( 521.597, 33.5227 )
-scale = Vector2( 0.408736, 0.416468 )
-texture = ExtResource( 13 )
-
-[node name="moneda 1" type="Sprite" parent="Jugador/Camera2D"]
-position = Vector2( -1758.98, -616.844 )
-scale = Vector2( 2, 2 )
-texture = ExtResource( 10 )
 
 [node name="Escenari" type="KinematicBody2D" parent="."]
 
@@ -219,7 +202,7 @@ texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Escenari"]
 position = Vector2( 650.132, 646.063 )
-shape = SubResource( 1 )
+shape = SubResource( 3 )
 
 [node name="Escenari2" type="KinematicBody2D" parent="."]
 position = Vector2( 2215.83, 5.33939 )
@@ -231,7 +214,7 @@ texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Escenari2"]
 position = Vector2( 650.132, 646.063 )
-shape = SubResource( 1 )
+shape = SubResource( 3 )
 
 [node name="Escenari3" type="KinematicBody2D" parent="."]
 position = Vector2( 4508.04, 5.33939 )
@@ -243,7 +226,7 @@ texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Escenari3"]
 position = Vector2( 638.818, 651.72 )
-shape = SubResource( 1 )
+shape = SubResource( 3 )
 
 [node name="Escenari4" type="KinematicBody2D" parent="."]
 position = Vector2( 8597.49, -1525.17 )
@@ -254,8 +237,8 @@ scale = Vector2( 0.878769, 0.870459 )
 texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Escenari4"]
-position = Vector2( 638.818, 651.72 )
-shape = SubResource( 1 )
+position = Vector2( 634.509, 653.17 )
+shape = SubResource( 3 )
 
 [node name="Escenari5" type="KinematicBody2D" parent="."]
 position = Vector2( 10168, -1525 )
@@ -266,14 +249,15 @@ scale = Vector2( 0.878769, 0.870459 )
 texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Escenari5"]
-position = Vector2( 638.818, 651.72 )
-shape = SubResource( 1 )
+position = Vector2( 648, 653 )
+shape = SubResource( 3 )
 
 [node name="Pared 1" type="KinematicBody2D" parent="."]
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Pared 1"]
 position = Vector2( 6132.11, 222.662 )
-shape = SubResource( 2 )
+shape = SubResource( 4 )
+one_way_collision = true
 
 [node name="mossy plant 1" type="Sprite" parent="Pared 1"]
 position = Vector2( 6329.7, 357.913 )
@@ -286,37 +270,28 @@ texture = ExtResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Pared 1"]
 position = Vector2( 7157.24, -218.443 )
-shape = SubResource( 3 )
+shape = SubResource( 5 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Pared 1"]
 position = Vector2( 5506.55, -122.113 )
-shape = SubResource( 4 )
+shape = SubResource( 6 )
+one_way_collision = true
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="Pared 1"]
 position = Vector2( 6208.98, -357.176 )
-shape = SubResource( 5 )
+shape = SubResource( 7 )
+one_way_collision = true
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="Pared 1"]
-position = Vector2( 5517.01, -570.869 )
-shape = SubResource( 6 )
+position = Vector2( 5512.25, -570.869 )
+shape = SubResource( 8 )
+one_way_collision = true
 
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="Pared 1"]
 position = Vector2( 6311.95, -815.027 )
-shape = SubResource( 7 )
+shape = SubResource( 9 )
+one_way_collision = true
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="Pared 1"]
 position = Vector2( -90.6602, -190.555 )
-shape = SubResource( 8 )
-
-[node name="Enemic 1" type="KinematicBody2D" parent="."]
-position = Vector2( 9072, -1448 )
-script = ExtResource( 15 )
-
-[node name="Enemic" type="AnimatedSprite" parent="Enemic 1"]
-position = Vector2( 56, 48 )
-frames = SubResource( 9 )
-animation = "Caminar"
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemic 1"]
-position = Vector2( 56, 56 )
 shape = SubResource( 10 )
