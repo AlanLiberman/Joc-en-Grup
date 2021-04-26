@@ -6,11 +6,11 @@
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Escenari" parent="." instance=ExtResource( 3 )]
+[node name="Nivell 1" parent="." instance=ExtResource( 3 )]
 position = Vector2( 606.794, -4026.91 )
 
 [node name="Menu" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1551.89, 2290.63 )
+position = Vector2( 1701.39, 2034.34 )
 scale = Vector2( 3, 3 )
 
 [node name="Jugador" parent="." instance=ExtResource( 2 )]
