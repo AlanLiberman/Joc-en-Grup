@@ -38,7 +38,7 @@ position = Vector2( 0, 437.958 )
 shape = SubResource( 1 )
 
 [node name="Level 1" type="Area2D" parent="."]
-position = Vector2( -2862.75, -93.754 )
+position = Vector2( -2844.93, 30.9719 )
 scale = Vector2( 10, 10 )
 script = ExtResource( 3 )
 __meta__ = {
@@ -54,7 +54,7 @@ scale = Vector2( 0.05, 0.05 )
 texture = ExtResource( 7 )
 
 [node name="Level 2" type="Area2D" parent="."]
-position = Vector2( -1846.97, -96.534 )
+position = Vector2( -1886.17, -28.8257 )
 scale = Vector2( 10, 10 )
 script = ExtResource( 4 )
 __meta__ = {
@@ -70,7 +70,7 @@ scale = Vector2( 0.05, 0.05 )
 texture = ExtResource( 10 )
 
 [node name="Level 3" type="Area2D" parent="."]
-position = Vector2( -754.621, -85.6709 )
+position = Vector2( -758.185, 17.6733 )
 scale = Vector2( 10, 10 )
 script = ExtResource( 2 )
 __meta__ = {
@@ -86,7 +86,7 @@ scale = Vector2( 0.05, 0.05 )
 texture = ExtResource( 8 )
 
 [node name="Level 4" type="Area2D" parent="."]
-position = Vector2( 193.11, -104.289 )
+position = Vector2( 232.309, -11.6356 )
 scale = Vector2( 10, 10 )
 script = ExtResource( 5 )
 __meta__ = {
@@ -102,7 +102,7 @@ scale = Vector2( 0.05, 0.05 )
 texture = ExtResource( 9 )
 
 [node name="Level 5" type="Area2D" parent="."]
-position = Vector2( 1433.15, -106.035 )
+position = Vector2( 1458.1, 15.1272 )
 scale = Vector2( 10, 10 )
 script = ExtResource( 6 )
 __meta__ = {

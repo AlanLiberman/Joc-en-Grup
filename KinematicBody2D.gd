@@ -21,19 +21,16 @@ func _physics_process(delta):
 	if not atacant:
 		if velocitat.x > 0:
 			$AnimatedSprite.flip_h = false
+			$AnimatedSprite.play("Correr")
 		elif velocitat.x < 0:
 			$AnimatedSprite.flip_h = true
+			$AnimatedSprite.play("Correr")
 		if velocitat.y < 0:
 			$AnimatedSprite.play("Saltar")
 		if velocitat.y > 0:
 			$AnimatedSprite.play("Caure")
-		else:
-			if velocitat.x > 0:
-				$AnimatedSprite.play("Correr")
-			elif velocitat.x < 0:
-				$AnimatedSprite.play("Correr")
-			if velocitat.x == 0:
-				$AnimatedSprite.play("Quiet")
+		if velocitat.x == 0:
+			$AnimatedSprite.play("Quiet")
 
 		if Input.is_action_just_pressed("Atacar"):
 			$AnimatedSprite.play("Atacar")		
