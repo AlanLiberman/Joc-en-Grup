@@ -1,6 +1,6 @@
-[gd_scene load_steps=41 format=2]
+[gd_scene load_steps=44 format=2]
 
-[ext_resource path="res://Jugador.tscn" type="PackedScene" id=1]
+[ext_resource path="res://mossy 2.png" type="Texture" id=1]
 [ext_resource path="res://mossy rock 1.png" type="Texture" id=2]
 [ext_resource path="res://Mossy 1.png" type="Texture" id=3]
 [ext_resource path="res://mossy tileset 1.png" type="Texture" id=4]
@@ -9,6 +9,7 @@
 [ext_resource path="res://mossy liana 1.png" type="Texture" id=7]
 [ext_resource path="res://mossy plant 2.png" type="Texture" id=8]
 [ext_resource path="res://background 3.PNG" type="Texture" id=9]
+[ext_resource path="res://Area2D.gd" type="Script" id=10]
 [ext_resource path="res://Chara_BlueWalk00013.png" type="Texture" id=14]
 [ext_resource path="res://Enemic 1.gd" type="Script" id=15]
 [ext_resource path="res://Chara_BlueWalk00000.png" type="Texture" id=16]
@@ -43,28 +44,34 @@ animations = [ {
 extents = Vector2( 80, 128 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 791.829, 183.778 )
+extents = Vector2( 832.63, 183.778 )
 
 [sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 209.66, 70.6903 )
+extents = Vector2( 276.43, 1912.85 )
 
 [sub_resource type="RectangleShape2D" id=5]
-extents = Vector2( 645.87, 833.017 )
+extents = Vector2( 209.66, 70.6903 )
 
 [sub_resource type="RectangleShape2D" id=6]
-extents = Vector2( 187.237, 16.8875 )
+extents = Vector2( 645.87, 833.017 )
 
 [sub_resource type="RectangleShape2D" id=7]
-extents = Vector2( 187.474, 19.7865 )
+extents = Vector2( 187.237, 16.8875 )
 
 [sub_resource type="RectangleShape2D" id=8]
-extents = Vector2( 135.247, 22.7284 )
+extents = Vector2( 187.474, 19.7865 )
 
 [sub_resource type="RectangleShape2D" id=9]
-extents = Vector2( 193.376, 9.7973 )
+extents = Vector2( 135.247, 22.7284 )
 
 [sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 193.376, 9.7973 )
+
+[sub_resource type="RectangleShape2D" id=11]
 extents = Vector2( 33.5015, 676.292 )
+
+[sub_resource type="RectangleShape2D" id=12]
+extents = Vector2( 12541.4, 220.292 )
 
 [node name="Node2D" type="Node2D"]
 
@@ -74,6 +81,10 @@ scale = Vector2( 14.8593, 12.1405 )
 texture = ExtResource( 9 )
 
 [node name="background 4" type="Sprite" parent="background 3"]
+position = Vector2( 396.603, 0.368437 )
+texture = ExtResource( 9 )
+
+[node name="background 10" type="Sprite" parent="background 3"]
 position = Vector2( 396.603, 0.368437 )
 texture = ExtResource( 9 )
 
@@ -113,8 +124,46 @@ flip_v = true
 position = Vector2( 792.854, 0.368427 )
 texture = ExtResource( 9 )
 
+[node name="background 14" type="Sprite" parent="background 3"]
+position = Vector2( 1188.81, 0.967392 )
+texture = ExtResource( 9 )
+
+[node name="background 15" type="Sprite" parent="background 3"]
+position = Vector2( 1581.83, -0.35051 )
+texture = ExtResource( 9 )
+
+[node name="background 13" type="Sprite" parent="background 3"]
+position = Vector2( -415.109, 223.878 )
+scale = Vector2( 1, 1.3362 )
+texture = ExtResource( 9 )
+flip_v = true
+
 [node name="background 6" type="Sprite" parent="background 3"]
-position = Vector2( -0.185165, -228.946 )
+position = Vector2( -30.8239, 227.586 )
+scale = Vector2( 1, 1.3362 )
+texture = ExtResource( 9 )
+flip_v = true
+
+[node name="background 11" type="Sprite" parent="background 3"]
+position = Vector2( 363.952, 222.044 )
+scale = Vector2( 1, 1.3362 )
+texture = ExtResource( 9 )
+flip_v = true
+
+[node name="background 12" type="Sprite" parent="background 3"]
+position = Vector2( 754.674, 224.139 )
+scale = Vector2( 1, 1.3362 )
+texture = ExtResource( 9 )
+flip_v = true
+
+[node name="background 16" type="Sprite" parent="background 3"]
+position = Vector2( 1148.66, 226.231 )
+scale = Vector2( 1, 1.3362 )
+texture = ExtResource( 9 )
+flip_v = true
+
+[node name="background 17" type="Sprite" parent="background 3"]
+position = Vector2( 1539.65, 225.491 )
 scale = Vector2( 1, 1.3362 )
 texture = ExtResource( 9 )
 flip_v = true
@@ -127,6 +176,12 @@ flip_v = true
 
 [node name="background 9" type="Sprite" parent="background 3"]
 position = Vector2( 795.546, -228.947 )
+scale = Vector2( 1, 1.34292 )
+texture = ExtResource( 9 )
+flip_v = true
+
+[node name="background 18" type="Sprite" parent="background 3"]
+position = Vector2( 1186.41, -228.947 )
 scale = Vector2( 1, 1.34292 )
 texture = ExtResource( 9 )
 flip_v = true
@@ -144,6 +199,10 @@ flip_h = true
 
 [node name="mossy lights 1" type="Sprite" parent="background 3/mossy rock 1"]
 position = Vector2( 2209.12, 110.67 )
+texture = ExtResource( 6 )
+
+[node name="mossy lights 2" type="Sprite" parent="background 3/mossy rock 1"]
+position = Vector2( 10334.1, -1350.4 )
 texture = ExtResource( 6 )
 
 [node name="mossy plant 2" type="Sprite" parent="background 3/mossy rock 1"]
@@ -186,13 +245,18 @@ animation = "Caminar"
 position = Vector2( 252.609, 130.526 )
 shape = SubResource( 2 )
 
-[node name="Jugador" parent="." instance=ExtResource( 1 )]
-position = Vector2( 8675.02, -1270.53 )
+[node name="Enemic 2" type="KinematicBody2D" parent="."]
+position = Vector2( 15933.9, 273.898 )
+script = ExtResource( 15 )
 
-[node name="Camera2D" type="Camera2D" parent="Jugador"]
-position = Vector2( 1235.54, -414.178 )
-current = true
-zoom = Vector2( 3, 3 )
+[node name="Enemic" type="AnimatedSprite" parent="Enemic 2"]
+position = Vector2( 254.737, 115.447 )
+frames = SubResource( 1 )
+animation = "Caminar"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemic 2"]
+position = Vector2( 252.609, 130.526 )
+shape = SubResource( 2 )
 
 [node name="Escenari" type="KinematicBody2D" parent="."]
 
@@ -253,11 +317,54 @@ texture = ExtResource( 3 )
 position = Vector2( 648, 653 )
 shape = SubResource( 3 )
 
+[node name="Escenari6" type="KinematicBody2D" parent="."]
+position = Vector2( 11728, -1525 )
+
+[node name="Sprite" type="Sprite" parent="Escenari6"]
+position = Vector2( 645.551, 600.058 )
+scale = Vector2( 0.878769, 0.870459 )
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Escenari6"]
+position = Vector2( 648, 653 )
+shape = SubResource( 3 )
+
+[node name="mossy liana 1" type="Sprite" parent="Escenari6"]
+position = Vector2( 2128, 829 )
+rotation = 2.16246
+texture = ExtResource( 7 )
+flip_h = true
+
+[node name="mossy liana 2" type="Sprite" parent="Escenari6/mossy liana 1"]
+position = Vector2( 50.6494, -1315.94 )
+texture = ExtResource( 7 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Escenari6/mossy liana 1"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Escenari6/mossy liana 1/StaticBody2D"]
+polygon = PoolVector2Array( 590.969, -283.216, 683.146, 121.492, 62.6553, 738.013, 25.8613, 397.072, -5.37207, 350.592, -52.0635, 324.137, -121.065, 264.482, -172.325, 202.544, -196.919, 151.601, -214.979, 67.3516, -213.012, -1.43848, -210.939, -41.3848, -186.662, -76.9746, -162.386, -112.564, -124.829, -157.079, -118.189, -161.541, -124.935, -185.923, -122.757, -197.025, -133.859, -199.203, -124.935, -185.923, -133.859, -199.203, -136.143, -216.945, -140.604, -223.586, -145.066, -230.226, -133.369, -235.199, -125.596, -234.482, -111.079, -223.445, -97.2676, -203.144, -90.0938, -188.694, -83.7344, -194.827, -82.2021, -201.218, -79.6348, -208.371, -71.6934, -221.867, -73.7324, -242.128, -69.1953, -255.423, -61.8096, -266.457, -52.2412, -276.773, -39.3145, -285.459, -27.5449, -288.251, -18.9707, -305.954, -11.9404, -318.642, 4.56836, -355.229, 7.56738, -377.803, -3.35547, -413.41, -21.71, -460.506, -50.5518, -521.928, -94.501, -590.889, -121.097, -609.833, -141.811, -645.639, -137.963, -676.911, -128.872, -763.346, -130.836, -796.153, -106.366, -936.908, -92.9434, -976.051, -62.8584, -1025.91, -37.207, -1054.62, -10.2285, -1081.36, 1.90723, -1117.72, 6.2793, -1156.04, 10.54, -1164.64, 15.5957, -1167.08, 27.4023, -1158.76, 34.296, -1139.96, 35.584, -1118.84, 55.1357, -1129.58, 69.1816, -1141.41, 78.0703, -1148.82, 75.7988, -1167.85, 76.0654, -1185.25, 81.293, -1200.23, 92.0244, -1215.57, 107.284, -1226.3, 118.391, -1228.99, 124.684, -1253.77, 126.007, -1283.27, 116.205, -1314.93, 97.0762, -1338.42, 89.4492, -1347.64, 23.1045, -1430.71, -22.3262, -1483.38, -69.8643, -1566.72, -73.4326, -1579.14, -87.252, -1655.92, -82.1865, -1715.26, -65.9824, -1768.71, -25.7773, -1882.74, 7.68945, -1941.09, 34.5947, -1987.86, 63.7363, -2034.72, 515.469, -894.096 )
+one_way_collision_margin = 128.0
+
+[node name="Escenari 7" type="KinematicBody2D" parent="."]
+position = Vector2( 15984.6, 1142.85 )
+rotation = 2.16246
+
+[node name="mossy 2" type="Sprite" parent="Escenari 7"]
+position = Vector2( -993.228, -842.439 )
+rotation = -2.16246
+scale = Vector2( 2.02148, 1.40506 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Escenari 7"]
+position = Vector2( -942.912, -854.579 )
+rotation = 5.70723
+shape = SubResource( 4 )
+
 [node name="Pared 1" type="KinematicBody2D" parent="."]
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Pared 1"]
 position = Vector2( 6132.11, 222.662 )
-shape = SubResource( 4 )
+shape = SubResource( 5 )
 one_way_collision = true
 
 [node name="mossy plant 1" type="Sprite" parent="Pared 1"]
@@ -271,28 +378,37 @@ texture = ExtResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Pared 1"]
 position = Vector2( 7157.24, -218.443 )
-shape = SubResource( 5 )
+shape = SubResource( 6 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Pared 1"]
 position = Vector2( 5506.55, -122.113 )
-shape = SubResource( 6 )
+shape = SubResource( 7 )
 one_way_collision = true
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="Pared 1"]
 position = Vector2( 6208.98, -357.176 )
-shape = SubResource( 7 )
+shape = SubResource( 8 )
 one_way_collision = true
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="Pared 1"]
 position = Vector2( 5512.25, -570.869 )
-shape = SubResource( 8 )
+shape = SubResource( 9 )
 one_way_collision = true
 
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="Pared 1"]
 position = Vector2( 6311.95, -815.027 )
-shape = SubResource( 9 )
+shape = SubResource( 10 )
 one_way_collision = true
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="Pared 1"]
 position = Vector2( -90.6602, -190.555 )
-shape = SubResource( 10 )
+shape = SubResource( 11 )
+
+[node name="Level 1" type="Area2D" parent="."]
+position = Vector2( 2153.67, 1521.57 )
+script = ExtResource( 10 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level 1"]
+position = Vector2( 8915.04, 100.511 )
+shape = SubResource( 12 )
+[connection signal="body_shape_entered" from="Level 1" to="Level 1" method="_on_Level_1_body_shape_entered"]

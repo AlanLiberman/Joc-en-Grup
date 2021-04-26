@@ -16,7 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Joc-en- Grup"
-run/main_scene="res://escenari 1.tscn"
+run/main_scene="res://Menu.tscn"
 
 [input]
 
