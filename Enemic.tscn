@@ -1,0 +1,79 @@
+[gd_scene load_steps=16 format=2]
+
+[ext_resource path="res://Mag.gd" type="Script" id=1]
+[ext_resource path="res://Chara_BlueWalk00002.png" type="Texture" id=2]
+[ext_resource path="res://Chara_BlueWalk00003.png" type="Texture" id=3]
+[ext_resource path="res://Chara_BlueWalk00004.png" type="Texture" id=4]
+[ext_resource path="res://Chara_BlueWalk00001.png" type="Texture" id=5]
+[ext_resource path="res://Chara_BlueWalk00000.png" type="Texture" id=6]
+[ext_resource path="res://Chara_BlueWalk00007.png" type="Texture" id=7]
+[ext_resource path="res://Chara_BlueWalk00005.png" type="Texture" id=8]
+[ext_resource path="res://Balas.gd" type="Script" id=9]
+[ext_resource path="res://portal2.png" type="Texture" id=10]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 6 ), ExtResource( 5 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 8 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "Caminar",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 6 ) ],
+"loop": true,
+"name": "Quiet",
+"speed": 5.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 61.7169
+height = 119.872
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 639.083, 52.9217 )
+
+[sub_resource type="CircleShape2D" id=4]
+radius = 67.9816
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 1245, 523.575 )
+
+[node name="Enemic" type="Node2D"]
+
+[node name="Mag" type="KinematicBody2D" parent="."]
+script = ExtResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Mag"]
+frames = SubResource( 1 )
+animation = "Quiet"
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mag"]
+visible = false
+position = Vector2( -4.75677, 19.0273 )
+shape = SubResource( 2 )
+
+[node name="Rang" type="Area2D" parent="Mag"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mag/Rang"]
+position = Vector2( 647.98, 9.85612 )
+shape = SubResource( 3 )
+
+[node name="Balas" type="Area2D" parent="."]
+script = ExtResource( 9 )
+
+[node name="Sprite" type="Sprite" parent="Balas"]
+position = Vector2( 104.879, 36.1557 )
+rotation = 6.28319
+scale = Vector2( 0.415314, 0.412029 )
+texture = ExtResource( 10 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Balas"]
+visible = false
+position = Vector2( 107.48, 32.5269 )
+shape = SubResource( 4 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 64.1836, 7.55096 )
+shape = SubResource( 5 )
