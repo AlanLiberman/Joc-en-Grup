@@ -417,4 +417,4 @@ script = ExtResource( 10 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Level 1"]
 position = Vector2( 8915.04, 112.497 )
 shape = SubResource( 12 )
-[connection signal="body_shape_entered" from="Level 1" to="Level 1" method="_on_Level_1_body_shape_entered"]
+[connection signal="body_entered" from="Level 1" to="Level 1" method="_on_Level_1_body_entered"]
