@@ -74,6 +74,7 @@ extents = Vector2( 33.5015, 676.292 )
 extents = Vector2( 12541.4, 220.292 )
 
 [node name="Node2D" type="Node2D"]
+z_index = -100
 
 [node name="background 3" type="Sprite" parent="."]
 position = Vector2( 2594.75, -236.473 )

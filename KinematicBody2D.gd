@@ -39,7 +39,18 @@ func _physics_process(delta):
 			$AnimatedSprite.play("Atacar")		
 			atacant = true
 			$Area2D/CollisionShape2D.set_deferred('disabled',false)
-			
+		
+		
+	animate(velocitat)
+func animate(velocitat:Vector2):
+	if velocitat.x > 0:
+		$AnimatedSprite.play("Correr")
+	if velocitat.x < 0:
+		$AnimatedSprite.play("Correr")
+	if velocitat == Vector2.ZERO:
+		$AnimatedSprite.play("Quiet")
+		
+		
 func _on_AnimatedSprite_animation_finished():
 	if $AnimatedSprite.animation == "Saltar":
 		$AnimatedSprite.animation = "Correr"

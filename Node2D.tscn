@@ -14,3 +14,4 @@ position = Vector2( 1701.39, 2034.34 )
 scale = Vector2( 3, 3 )
 
 [node name="Jugador" parent="." instance=ExtResource( 2 )]
+position = Vector2( -11794, 1792.27 )
