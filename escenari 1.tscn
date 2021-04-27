@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=2]
+[gd_scene load_steps=45 format=2]
 
 [ext_resource path="res://mossy 2.png" type="Texture" id=1]
 [ext_resource path="res://mossy rock 1.png" type="Texture" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://mossy plant 2.png" type="Texture" id=8]
 [ext_resource path="res://background 3.PNG" type="Texture" id=9]
 [ext_resource path="res://Area2D.gd" type="Script" id=10]
+[ext_resource path="res://Jugador.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Chara_BlueWalk00013.png" type="Texture" id=14]
 [ext_resource path="res://Enemic 1.gd" type="Script" id=15]
 [ext_resource path="res://Chara_BlueWalk00000.png" type="Texture" id=16]
@@ -169,9 +170,9 @@ scale = Vector2( 1, 1.3362 )
 texture = ExtResource( 9 )
 flip_v = true
 
-[node name="background 7" type="Sprite" parent="background 3"]
-position = Vector2( 397.142, -228.946 )
-scale = Vector2( 1, 1.34292 )
+[node name="background 7" type="Sprite" parent="background 3/background 17"]
+position = Vector2( -1142.51, -340.097 )
+scale = Vector2( 1, 1.00503 )
 texture = ExtResource( 9 )
 flip_v = true
 
@@ -232,6 +233,10 @@ texture = ExtResource( 7 )
 [node name="mossy plant 4" type="Sprite" parent="background 3/mossy rock 1"]
 position = Vector2( 5934.22, -700.685 )
 texture = ExtResource( 8 )
+
+[node name="Jugador" parent="background 3" instance=ExtResource( 11 )]
+position = Vector2( -159.056, 40.3424 )
+scale = Vector2( 0.06, 0.075 )
 
 [node name="Enemic 1" type="KinematicBody2D" parent="."]
 position = Vector2( 8936.37, -1357.9 )
@@ -410,6 +415,6 @@ position = Vector2( 2153.67, 1521.57 )
 script = ExtResource( 10 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Level 1"]
-position = Vector2( 8915.04, 100.511 )
+position = Vector2( 8915.04, 112.497 )
 shape = SubResource( 12 )
 [connection signal="body_shape_entered" from="Level 1" to="Level 1" method="_on_Level_1_body_shape_entered"]
