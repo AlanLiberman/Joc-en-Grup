@@ -1,6 +1,8 @@
-[gd_scene load_steps=19 format=2]
 
-[ext_resource path="res://PNG/game_background_3/game_background_3. 2.png" type="Texture" id=1]
+[gd_scene load_steps=30 format=2]
+
+
+[ext_resource path="res://NightForest/NightForest/Image.png" type="Texture" id=1]
 [ext_resource path="res://Level 3.gd" type="Script" id=2]
 [ext_resource path="res://Level 1.gd" type="Script" id=3]
 [ext_resource path="res://Level 2.gd" type="Script" id=4]
@@ -11,32 +13,100 @@
 [ext_resource path="res://PNG/Level-4.png" type="Texture" id=9]
 [ext_resource path="res://PNG/Level-2 .png" type="Texture" id=10]
 [ext_resource path="res://PNG/Level-5.png" type="Texture" id=11]
-[ext_resource path="res://Jugador.tscn" type="PackedScene" id=12]
-[ext_resource path="res://escenari 1.tscn" type="PackedScene" id=13]
+
+[ext_resource path="res://PNG/Purple Portal Sprite Sheet.png" type="Texture" id=12]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 20.3964, 10 )
+extents = Vector2( 8659.13, 126.133 )
+
 
 [sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 3.79199, 16.6553 )
 
-[sub_resource type="RectangleShape2D" id=3]
+[sub_resource type="AtlasTexture" id=3]
+flags = 4
+atlas = ExtResource( 12 )
+region = Rect2( 0, 0, 64, 64 )
 
-[sub_resource type="RectangleShape2D" id=4]
+[sub_resource type="AtlasTexture" id=4]
+flags = 4
+atlas = ExtResource( 12 )
+region = Rect2( 64, 0, 64, 64 )
 
-[sub_resource type="RectangleShape2D" id=5]
+[sub_resource type="AtlasTexture" id=5]
+flags = 4
+atlas = ExtResource( 12 )
+region = Rect2( 128, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=6]
+flags = 4
+atlas = ExtResource( 12 )
+region = Rect2( 192, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=7]
+flags = 4
+atlas = ExtResource( 12 )
+region = Rect2( 256, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=8]
+flags = 4
+atlas = ExtResource( 12 )
+region = Rect2( 320, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=9]
+flags = 4
+atlas = ExtResource( 12 )
+region = Rect2( 384, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=10]
+flags = 4
+atlas = ExtResource( 12 )
+region = Rect2( 448, 0, 64, 64 )
+
+[sub_resource type="SpriteFrames" id=11]
+animations = [ {
+"frames": [ SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ) ],
+"loop": true,
+"name": "portal",
+"speed": 8.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=12]
+extents = Vector2( 4.05383, 16.1386 )
+
+[sub_resource type="RectangleShape2D" id=13]
+extents = Vector2( 4.36725, 16.3574 )
+
+[sub_resource type="RectangleShape2D" id=14]
+extents = Vector2( 3.75343, 16.8139 )
+
+[sub_resource type="RectangleShape2D" id=15]
+extents = Vector2( 4.385, 16.3237 )
+
+[sub_resource type="RectangleShape2D" id=16]
+extents = Vector2( 305.161, 426.323 )
+
+[sub_resource type="RectangleShape2D" id=17]
+extents = Vector2( 161.587, 433.829 )
 
 [node name="Menu" type="StaticBody2D"]
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-polygon = PoolVector2Array( -2031.17, 318.066, -2031.39, 537.984, 2031.25, 538.381, 2031.45, 375.298, 1948.71, 355.456, 1852.87, 328.669, 1807.12, 317.76, 1784.1, 308.633, 1729.33, 296.925, 1679.13, 289.385, 1583.54, 282.242, 1520.44, 279.266, 1392.55, 280.059, 1311.2, 287.004, 1270.32, 294.544, 1178.82, 313.99, 1091.11, 335.222, 1047.86, 346.73, 955.004, 373.975, 880.197, 394.809, 831.583, 405.326, 781.339, 410.286, 725.979, 411.08, 671.213, 408.104, 567.019, 403.738, 504.515, 401.556, 402.137, 400.762, 313.64, 398.778, 259.866, 396.198, 201.31, 393.023, 128.091, 380.919, 58.2452, 364.847, -24.8434, 340.728, -65.1237, 329.616, -108.38, 318.504, -137.747, 308.781, -182.696, 298.463, -219.008, 292.113, -271.988, 285.962, -335.285, 281.398, -488.992, 279.017, -550.504, 281.2, -638.595, 292.709, -693.757, 302.828, -850.378, 340.728, -956.734, 370.888, -1073.69, 401.644, -1090.16, 404.819, -1109.61, 407.795, -1130.84, 410.375, -1149.49, 411.168, -1171.32, 411.565, -1239.77, 408.192, -1279.46, 405.811, -1410.67, 402.239, -1477.54, 401.247, -1565.12, 401.247, -1603.02, 399.263, -1659.57, 400.652, -1710.25, 394.104, -1760.65, 387.159, -1848.87, 368.516, -1945.13, 343.794 )
+z_index = -100
+z_as_relative = false
 
 [node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 3, 3 )
 texture = ExtResource( 1 )
 region_enabled = true
-region_rect = Rect2( 2.68579, 4.97252, 4062.41, 1076.12 )
+region_rect = Rect2( -2.04016, -5.43518, 5773.91, 369.977 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 437.958 )
+shape = SubResource( 1 )
 
 [node name="Level 1" type="Area2D" parent="."]
-position = Vector2( -377.82, 153.966 )
+
+position = Vector2( -3902.12, 149.207 )
+
 scale = Vector2( 10, 10 )
 script = ExtResource( 3 )
 __meta__ = {
@@ -44,15 +114,24 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Level 1"]
-shape = SubResource( 1 )
+shape = SubResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="Level 1"]
-position = Vector2( -3.80969, -6.98456 )
+position = Vector2( -3.2207, -14.3004 )
 scale = Vector2( 0.05, 0.05 )
 texture = ExtResource( 7 )
 
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Level 1"]
+position = Vector2( -0.672729, 3.02723 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 11 )
+animation = "portal"
+frame = 2
+playing = true
+flip_h = true
+
 [node name="Level 2" type="Area2D" parent="."]
-position = Vector2( -518.968, -148.534 )
+position = Vector2( -2292.74, 132.517 )
 scale = Vector2( 10, 10 )
 script = ExtResource( 4 )
 __meta__ = {
@@ -60,15 +139,25 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Level 2"]
-shape = SubResource( 2 )
+position = Vector2( -0.237839, 2.37842 )
+shape = SubResource( 12 )
 
 [node name="Sprite" type="Sprite" parent="Level 2"]
-position = Vector2( -3.65106, -6.98456 )
+position = Vector2( -4.12646, -10.79 )
 scale = Vector2( 0.05, 0.05 )
 texture = ExtResource( 10 )
 
+[node name="AnimatedSprite2" type="AnimatedSprite" parent="Level 2"]
+position = Vector2( -0.0783691, 2.82478 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 11 )
+animation = "portal"
+frame = 2
+playing = true
+flip_h = true
+
 [node name="Level 3" type="Area2D" parent="."]
-position = Vector2( 217.379, -49.6709 )
+position = Vector2( -1266.44, 82.2781 )
 scale = Vector2( 10, 10 )
 script = ExtResource( 2 )
 __meta__ = {
@@ -76,15 +165,25 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Level 3"]
-shape = SubResource( 3 )
+position = Vector2( -0.317482, 6.98457 )
+shape = SubResource( 13 )
 
 [node name="Sprite" type="Sprite" parent="Level 3"]
 position = Vector2( -3.65102, -7.61953 )
 scale = Vector2( 0.05, 0.05 )
 texture = ExtResource( 8 )
 
+[node name="AnimatedSprite3" type="AnimatedSprite" parent="Level 3"]
+position = Vector2( -1.39603, 8.24359 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 11 )
+animation = "portal"
+frame = 1
+playing = true
+flip_h = true
+
 [node name="Level 4" type="Area2D" parent="."]
-position = Vector2( 1025.11, -128.289 )
+position = Vector2( -406.764, 97.3084 )
 scale = Vector2( 10, 10 )
 script = ExtResource( 5 )
 __meta__ = {
@@ -92,15 +191,25 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Level 4"]
-shape = SubResource( 4 )
+position = Vector2( -0.377563, 5.28571 )
+shape = SubResource( 14 )
 
 [node name="Sprite" type="Sprite" parent="Level 4"]
 position = Vector2( -3.65106, -8.09575 )
 scale = Vector2( 0.05, 0.05 )
 texture = ExtResource( 9 )
 
+[node name="AnimatedSprite4" type="AnimatedSprite" parent="Level 4"]
+position = Vector2( -0.766529, 6.80818 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 11 )
+animation = "portal"
+frame = 1
+playing = true
+flip_h = true
+
 [node name="Level 5" type="Area2D" parent="."]
-position = Vector2( 1745.15, -114.035 )
+position = Vector2( 354.313, 91.5914 )
 scale = Vector2( 10, 10 )
 script = ExtResource( 6 )
 __meta__ = {
@@ -108,23 +217,30 @@ __meta__ = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Level 5"]
-shape = SubResource( 5 )
+position = Vector2( 0.423779, 5.50922 )
+shape = SubResource( 15 )
 
 [node name="Sprite" type="Sprite" parent="Level 5"]
 position = Vector2( -3.80981, -7.77827 )
 scale = Vector2( 0.05, 0.05 )
 texture = ExtResource( 11 )
 
-[node name="Nivell 1" parent="." instance=ExtResource( 13 )]
-position = Vector2( 64967.2, -18303.4 )
-scale = Vector2( 0.25, 0.25 )
+[node name="AnimatedSprite5" type="AnimatedSprite" parent="Level 5"]
+position = Vector2( -0.106995, 6.21104 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 11 )
+animation = "portal"
+playing = true
+flip_h = true
 
-[node name="Jugador" parent="." instance=ExtResource( 12 )]
-scale = Vector2( 0.25, 0.25 )
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2( -5398.96, -128.367 )
+shape = SubResource( 16 )
 
-[node name="Camera2D" type="Camera2D" parent="Jugador"]
-position = Vector2( 453.997, -133.342 )
-current = true
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
+position = Vector2( 1285.55, -121.287 )
+shape = SubResource( 17 )
+
 [connection signal="body_entered" from="Level 1" to="Level 1" method="_on_Level_1_body_entered"]
 [connection signal="body_entered" from="Level 2" to="Level 2" method="_on_Level_2_body_entered"]
 [connection signal="body_entered" from="Level 3" to="Level 3" method="_on_Level_3_body_entered"]

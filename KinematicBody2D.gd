@@ -32,13 +32,8 @@ func _physics_process(delta):
 			$AnimatedSprite.play("Saltar")
 		if velocitat.y > 0==false && is_on_floor()==false:
 			$AnimatedSprite.play("Caure")
-		else:
-			if velocitat.x > 0:
-				$AnimatedSprite.play("Correr")
-			elif velocitat.x < 0:
-				$AnimatedSprite.play("Correr")
-			if velocitat.x == 0:
-				$AnimatedSprite.play("Quiet")
+		if velocitat.x == 0:
+			$AnimatedSprite.play("Quiet")
 
 		if Input.is_action_just_pressed("Atacar"):
 			$AnimatedSprite.play("Atacar")		
