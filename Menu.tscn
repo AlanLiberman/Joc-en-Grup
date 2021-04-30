@@ -68,16 +68,16 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=12]
-extents = Vector2( 4.05383, 12.8345 )
+extents = Vector2( 4.05383, 16.1386 )
 
 [sub_resource type="RectangleShape2D" id=13]
-extents = Vector2( 4.36725, 13.2775 )
+extents = Vector2( 4.36725, 16.3574 )
 
 [sub_resource type="RectangleShape2D" id=14]
-extents = Vector2( 3.75343, 14.4213 )
+extents = Vector2( 3.75343, 16.8139 )
 
 [sub_resource type="RectangleShape2D" id=15]
-extents = Vector2( 4.385, 13.1784 )
+extents = Vector2( 4.385, 16.3237 )
 
 [sub_resource type="RectangleShape2D" id=16]
 extents = Vector2( 305.161, 426.323 )
@@ -119,7 +119,6 @@ position = Vector2( -0.672729, 3.02723 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 11 )
 animation = "portal"
-frame = 6
 playing = true
 flip_h = true
 
@@ -145,7 +144,6 @@ position = Vector2( -0.0783691, 2.82478 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 11 )
 animation = "portal"
-frame = 6
 playing = true
 flip_h = true
 
@@ -171,7 +169,7 @@ position = Vector2( -1.39603, 8.24359 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 11 )
 animation = "portal"
-frame = 5
+frame = 7
 playing = true
 flip_h = true
 
@@ -197,7 +195,7 @@ position = Vector2( -0.766529, 6.80818 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 11 )
 animation = "portal"
-frame = 5
+frame = 7
 playing = true
 flip_h = true
 
@@ -223,7 +221,7 @@ position = Vector2( -0.106995, 6.21104 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 11 )
 animation = "portal"
-frame = 4
+frame = 6
 playing = true
 flip_h = true
 
