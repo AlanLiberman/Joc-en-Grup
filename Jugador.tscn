@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://KinematicBody2D.gd" type="Script" id=1]
 [ext_resource path="res://Jugador.tres" type="SpriteFrames" id=2]
+[ext_resource path="res://kisspng-8-bit-color-pixelation-pixel-art-5af9c8f8e55c13.3903496215263193529395.png" type="Texture" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 65, 130 )
@@ -25,9 +26,6 @@ position = Vector2( 450.356, -432.254 )
 current = true
 zoom = Vector2( 3, 3 )
 
-[node name="Timer" type="Timer" parent="."]
-wait_time = 4.385
-
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2( -2, 2 )
 
@@ -35,4 +33,15 @@ position = Vector2( -2, 2 )
 position = Vector2( 136.373, 10.3945 )
 shape = SubResource( 2 )
 disabled = true
+
+[node name="TextureProgress" type="TextureProgress" parent="."]
+margin_left = -580.241
+margin_top = -664.108
+margin_right = 30.7594
+margin_bottom = -149.108
+value = 100.0
+texture_progress = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
