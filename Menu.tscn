@@ -68,16 +68,16 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=12]
-extents = Vector2( 4.05383, 16.1386 )
+extents = Vector2( 4.05383, 12.8345 )
 
 [sub_resource type="RectangleShape2D" id=13]
-extents = Vector2( 4.36725, 16.3574 )
+extents = Vector2( 4.36725, 13.2775 )
 
 [sub_resource type="RectangleShape2D" id=14]
-extents = Vector2( 3.75343, 16.8139 )
+extents = Vector2( 3.75343, 14.4213 )
 
 [sub_resource type="RectangleShape2D" id=15]
-extents = Vector2( 4.385, 16.3237 )
+extents = Vector2( 4.385, 13.1784 )
 
 [sub_resource type="RectangleShape2D" id=16]
 extents = Vector2( 305.161, 426.323 )
@@ -99,7 +99,7 @@ position = Vector2( 0, 437.958 )
 shape = SubResource( 1 )
 
 [node name="Level 1" type="Area2D" parent="."]
-position = Vector2( -3922.28, 134.088 )
+position = Vector2( -3910.99, -8.54031 )
 scale = Vector2( 10, 10 )
 script = ExtResource( 3 )
 __meta__ = {
@@ -119,12 +119,12 @@ position = Vector2( -0.672729, 3.02723 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 11 )
 animation = "portal"
-frame = 1
+frame = 6
 playing = true
 flip_h = true
 
 [node name="Level 2" type="Area2D" parent="."]
-position = Vector2( -2287.7, 117.398 )
+position = Vector2( -2295.43, -14.6442 )
 scale = Vector2( 10, 10 )
 script = ExtResource( 4 )
 __meta__ = {
@@ -145,12 +145,12 @@ position = Vector2( -0.0783691, 2.82478 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 11 )
 animation = "portal"
-frame = 1
+frame = 6
 playing = true
 flip_h = true
 
 [node name="Level 3" type="Area2D" parent="."]
-position = Vector2( -1266.44, 72.1987 )
+position = Vector2( -1271.8, -52.6157 )
 scale = Vector2( 10, 10 )
 script = ExtResource( 2 )
 __meta__ = {
@@ -171,11 +171,12 @@ position = Vector2( -1.39603, 8.24359 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 11 )
 animation = "portal"
+frame = 5
 playing = true
 flip_h = true
 
 [node name="Level 4" type="Area2D" parent="."]
-position = Vector2( -406.764, 79.2199 )
+position = Vector2( -417.459, -49.7426 )
 scale = Vector2( 10, 10 )
 script = ExtResource( 5 )
 __meta__ = {
@@ -196,11 +197,12 @@ position = Vector2( -0.766529, 6.80818 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 11 )
 animation = "portal"
+frame = 5
 playing = true
 flip_h = true
 
 [node name="Level 5" type="Area2D" parent="."]
-position = Vector2( 359.652, 83.5824 )
+position = Vector2( 373.318, -26.9615 )
 scale = Vector2( 10, 10 )
 script = ExtResource( 6 )
 __meta__ = {
@@ -221,7 +223,7 @@ position = Vector2( -0.106995, 6.21104 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 11 )
 animation = "portal"
-frame = 7
+frame = 4
 playing = true
 flip_h = true
 

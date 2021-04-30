@@ -1,6 +1,6 @@
-[gd_scene load_steps=44 format=2]
+[gd_scene load_steps=57 format=2]
 
-[ext_resource path="res://mossy 2.png" type="Texture" id=1]
+[ext_resource path="res://PNG/Green Portal Sprite Sheet.png" type="Texture" id=1]
 [ext_resource path="res://mossy rock 1.png" type="Texture" id=2]
 [ext_resource path="res://Mossy 1.png" type="Texture" id=3]
 [ext_resource path="res://mossy tileset 1.png" type="Texture" id=4]
@@ -8,8 +8,11 @@
 [ext_resource path="res://mossy lights 1.png" type="Texture" id=6]
 [ext_resource path="res://mossy liana 1.png" type="Texture" id=7]
 [ext_resource path="res://mossy plant 2.png" type="Texture" id=8]
-[ext_resource path="res://background 3.PNG" type="Texture" id=9]
+[ext_resource path="res://background 3 (2).PNG" type="Texture" id=9]
 [ext_resource path="res://Area2D.gd" type="Script" id=10]
+[ext_resource path="res://Jugador.tscn" type="PackedScene" id=11]
+[ext_resource path="res://cave 2.PNG" type="Texture" id=12]
+[ext_resource path="res://Area2D2.gd" type="Script" id=13]
 [ext_resource path="res://Chara_BlueWalk00013.png" type="Texture" id=14]
 [ext_resource path="res://Enemic 1.gd" type="Script" id=15]
 [ext_resource path="res://Chara_BlueWalk00000.png" type="Texture" id=16]
@@ -32,7 +35,10 @@
 [ext_resource path="res://Chara_BlueWalk00019.png" type="Texture" id=33]
 [ext_resource path="res://Chara_BlueWalk00014.png" type="Texture" id=34]
 
-[sub_resource type="SpriteFrames" id=1]
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 336.908, 10 )
+
+[sub_resource type="SpriteFrames" id=2]
 animations = [ {
 "frames": [ ExtResource( 16 ), ExtResource( 17 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 18 ), ExtResource( 22 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 23 ), ExtResource( 28 ), ExtResource( 14 ), ExtResource( 34 ), ExtResource( 32 ), ExtResource( 29 ), ExtResource( 31 ), ExtResource( 30 ), ExtResource( 33 ) ],
 "loop": true,
@@ -40,14 +46,11 @@ animations = [ {
 "speed": 10.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=2]
+[sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 80, 128 )
 
-[sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 832.63, 183.778 )
-
 [sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 276.43, 1912.85 )
+extents = Vector2( 832.63, 183.778 )
 
 [sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 209.66, 70.6903 )
@@ -73,165 +76,163 @@ extents = Vector2( 33.5015, 676.292 )
 [sub_resource type="RectangleShape2D" id=12]
 extents = Vector2( 12541.4, 220.292 )
 
+[sub_resource type="RectangleShape2D" id=13]
+extents = Vector2( 89.1992, 210.628 )
+
+[sub_resource type="AtlasTexture" id=14]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=15]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 64, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=16]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 128, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=17]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 192, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=18]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 256, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=19]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 320, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=20]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 384, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=21]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 448, 0, 64, 64 )
+
+[sub_resource type="SpriteFrames" id=22]
+animations = [ {
+"frames": [ SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ) ],
+"loop": true,
+"name": "default",
+"speed": 8.0
+} ]
+
 [node name="Node2D" type="Node2D"]
 z_index = -100
 
-[node name="background 3" type="Sprite" parent="."]
-position = Vector2( 2594.75, -236.473 )
-scale = Vector2( 14.8593, 12.1405 )
-texture = ExtResource( 9 )
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
 
-[node name="background 4" type="Sprite" parent="background 3"]
-position = Vector2( 396.603, 0.368437 )
-texture = ExtResource( 9 )
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="KinematicBody2D"]
+position = Vector2( 32320, 888 )
+scale = Vector2( 6, 6 )
+shape = SubResource( 1 )
 
-[node name="background 10" type="Sprite" parent="background 3"]
-position = Vector2( 396.603, 0.368437 )
-texture = ExtResource( 9 )
-
-[node name="background 8" type="Sprite" parent="background 3"]
-texture = ExtResource( 9 )
+[node name="Sprite5" type="Sprite" parent="KinematicBody2D"]
+position = Vector2( 35464, -528 )
+scale = Vector2( 6, 6 )
+texture = ExtResource( 12 )
 flip_h = true
+region_rect = Rect2( -0.224243, 0.29725, 3248.91, 524.872 )
 
-[node name="background 4" type="Sprite" parent="background 3/background 8"]
-position = Vector2( -397.092, 1.56528 )
+[node name="Sprite4" type="Sprite" parent="KinematicBody2D"]
+position = Vector2( 31968, -528 )
+scale = Vector2( 6, 6 )
+texture = ExtResource( 12 )
+region_rect = Rect2( -0.224243, 0.29725, 3248.91, 524.872 )
+
+[node name="Sprite6" type="Sprite" parent="KinematicBody2D"]
+position = Vector2( 26920, -2096 )
+scale = Vector2( 6, 6 )
+texture = ExtResource( 12 )
+centered = false
+region_rect = Rect2( -0.224243, 0.29725, 3248.91, 524.872 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
+position = Vector2( 35808, 888 )
+scale = Vector2( 6, 6 )
+shape = SubResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 10016, -184.749 )
+scale = Vector2( 16.4872, 10.2442 )
 texture = ExtResource( 9 )
-flip_h = true
+region_enabled = true
+region_rect = Rect2( 0, -66.9825, 1387, 253.901 )
 
-[node name="background 8" type="Sprite" parent="background 3/background 8"]
-position = Vector2( -400.083, -228.375 )
-scale = Vector2( 1, 1.3557 )
-texture = ExtResource( 9 )
-flip_h = true
-flip_v = true
-
-[node name="background 5" type="Sprite" parent="background 3/background 8"]
-position = Vector2( 792.854, 0.368427 )
-texture = ExtResource( 9 )
-
-[node name="background 6" type="Sprite" parent="background 3/background 8"]
-position = Vector2( -0.185165, -228.946 )
-scale = Vector2( 1, 1.3362 )
-texture = ExtResource( 9 )
-flip_v = true
-
-[node name="background 7" type="Sprite" parent="background 3/background 8"]
-position = Vector2( 397.142, -228.946 )
-scale = Vector2( 1, 1.34292 )
-texture = ExtResource( 9 )
-flip_v = true
-
-[node name="background 5" type="Sprite" parent="background 3"]
-position = Vector2( 792.854, 0.368427 )
-texture = ExtResource( 9 )
-
-[node name="background 14" type="Sprite" parent="background 3"]
-position = Vector2( 1188.81, 0.967392 )
-texture = ExtResource( 9 )
-
-[node name="background 15" type="Sprite" parent="background 3"]
-position = Vector2( 1581.83, -0.35051 )
-texture = ExtResource( 9 )
-
-[node name="background 13" type="Sprite" parent="background 3"]
-position = Vector2( -415.109, 223.878 )
-scale = Vector2( 1, 1.3362 )
+[node name="Sprite3" type="Sprite" parent="."]
+position = Vector2( 10016.6, 2379.22 )
+scale = Vector2( 16.475, 10.2442 )
 texture = ExtResource( 9 )
 flip_v = true
+region_enabled = true
+region_rect = Rect2( 0, -66.9825, 1387, 253.901 )
 
-[node name="background 6" type="Sprite" parent="background 3"]
-position = Vector2( -30.8239, 227.586 )
-scale = Vector2( 1, 1.3362 )
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 9989.43, -2764.39 )
+scale = Vector2( 16.4505, 10.2442 )
 texture = ExtResource( 9 )
 flip_v = true
+region_enabled = true
+region_rect = Rect2( 0, -66.9825, 1387, 253.901 )
 
-[node name="background 11" type="Sprite" parent="background 3"]
-position = Vector2( 363.952, 222.044 )
-scale = Vector2( 1, 1.3362 )
-texture = ExtResource( 9 )
-flip_v = true
-
-[node name="background 12" type="Sprite" parent="background 3"]
-position = Vector2( 754.674, 224.139 )
-scale = Vector2( 1, 1.3362 )
-texture = ExtResource( 9 )
-flip_v = true
-
-[node name="background 16" type="Sprite" parent="background 3"]
-position = Vector2( 1148.66, 226.231 )
-scale = Vector2( 1, 1.3362 )
-texture = ExtResource( 9 )
-flip_v = true
-
-[node name="background 17" type="Sprite" parent="background 3"]
-position = Vector2( 1539.65, 225.491 )
-scale = Vector2( 1, 1.3362 )
-texture = ExtResource( 9 )
-flip_v = true
-
-[node name="background 7" type="Sprite" parent="background 3"]
-position = Vector2( 397.142, -228.946 )
-scale = Vector2( 1, 1.34292 )
-texture = ExtResource( 9 )
-flip_v = true
-
-[node name="background 9" type="Sprite" parent="background 3"]
-position = Vector2( 795.546, -228.947 )
-scale = Vector2( 1, 1.34292 )
-texture = ExtResource( 9 )
-flip_v = true
-
-[node name="background 18" type="Sprite" parent="background 3"]
-position = Vector2( 1186.41, -228.947 )
-scale = Vector2( 1, 1.34292 )
-texture = ExtResource( 9 )
-flip_v = true
-
-[node name="mossy rock 1" type="Sprite" parent="background 3"]
-position = Vector2( -140.6, 28.9756 )
-scale = Vector2( 0.0672979, 0.0823689 )
+[node name="mossy rock 1" type="Sprite" parent="."]
+position = Vector2( 505.532, 115.305 )
 texture = ExtResource( 2 )
 
-[node name="mossy plant 3" type="Sprite" parent="background 3/mossy rock 1"]
+[node name="mossy plant 3" type="Sprite" parent="mossy rock 1"]
 position = Vector2( 4889.4, -484.242 )
 scale = Vector2( 0.703992, 1.01293 )
 texture = ExtResource( 8 )
 flip_h = true
 
-[node name="mossy lights 1" type="Sprite" parent="background 3/mossy rock 1"]
+[node name="mossy lights 1" type="Sprite" parent="mossy rock 1"]
 position = Vector2( 2209.12, 110.67 )
 texture = ExtResource( 6 )
 
-[node name="mossy lights 2" type="Sprite" parent="background 3/mossy rock 1"]
+[node name="mossy lights 2" type="Sprite" parent="mossy rock 1"]
 position = Vector2( 10334.1, -1350.4 )
 texture = ExtResource( 6 )
 
-[node name="mossy plant 2" type="Sprite" parent="background 3/mossy rock 1"]
+[node name="mossy plant 2" type="Sprite" parent="mossy rock 1"]
 position = Vector2( 4838.37, -31.9844 )
 texture = ExtResource( 8 )
 flip_h = true
 
-[node name="mossy liana 1" type="Sprite" parent="background 3/mossy rock 1"]
+[node name="mossy liana 1" type="Sprite" parent="mossy rock 1"]
 position = Vector2( 4546.89, -302.069 )
 texture = ExtResource( 7 )
 
-[node name="mossy liana 1" type="Sprite" parent="background 3/mossy rock 1/mossy liana 1"]
+[node name="mossy liana 1" type="Sprite" parent="mossy rock 1/mossy liana 1"]
 position = Vector2( 130.55, -1328.24 )
 texture = ExtResource( 7 )
 flip_h = true
 flip_v = true
 
-[node name="mossy plant 2" type="Sprite" parent="background 3/mossy rock 1/mossy liana 1/mossy liana 1"]
+[node name="mossy plant 2" type="Sprite" parent="mossy rock 1/mossy liana 1/mossy liana 1"]
 position = Vector2( 1188.17, 1357.98 )
 texture = ExtResource( 8 )
 
-[node name="mossy liana 1" type="Sprite" parent="background 3/mossy rock 1/mossy liana 1/mossy liana 1"]
+[node name="mossy liana 1" type="Sprite" parent="mossy rock 1/mossy liana 1/mossy liana 1"]
 position = Vector2( 241.159, -1309.46 )
 texture = ExtResource( 7 )
 
-[node name="mossy plant 4" type="Sprite" parent="background 3/mossy rock 1"]
+[node name="mossy plant 4" type="Sprite" parent="mossy rock 1"]
 position = Vector2( 5934.22, -700.685 )
 texture = ExtResource( 8 )
+
+[node name="Jugador" parent="." instance=ExtResource( 11 )]
+position = Vector2( 214.078, 99.7427 )
+scale = Vector2( 0.891558, 0.910538 )
 
 [node name="Enemic 1" type="KinematicBody2D" parent="."]
 position = Vector2( 8936.37, -1357.9 )
@@ -239,12 +240,12 @@ script = ExtResource( 15 )
 
 [node name="Enemic" type="AnimatedSprite" parent="Enemic 1"]
 position = Vector2( 254.737, 115.447 )
-frames = SubResource( 1 )
+frames = SubResource( 2 )
 animation = "Caminar"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Enemic 1"]
 position = Vector2( 252.609, 130.526 )
-shape = SubResource( 2 )
+shape = SubResource( 3 )
 
 [node name="Enemic 2" type="KinematicBody2D" parent="."]
 position = Vector2( 15933.9, 273.898 )
@@ -252,12 +253,12 @@ script = ExtResource( 15 )
 
 [node name="Enemic" type="AnimatedSprite" parent="Enemic 2"]
 position = Vector2( 254.737, 115.447 )
-frames = SubResource( 1 )
+frames = SubResource( 2 )
 animation = "Caminar"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Enemic 2"]
 position = Vector2( 252.609, 130.526 )
-shape = SubResource( 2 )
+shape = SubResource( 3 )
 
 [node name="Escenari" type="KinematicBody2D" parent="."]
 
@@ -268,7 +269,7 @@ texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Escenari"]
 position = Vector2( 650.132, 646.063 )
-shape = SubResource( 3 )
+shape = SubResource( 4 )
 
 [node name="Escenari2" type="KinematicBody2D" parent="."]
 position = Vector2( 2215.83, 5.33939 )
@@ -280,7 +281,7 @@ texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Escenari2"]
 position = Vector2( 650.132, 646.063 )
-shape = SubResource( 3 )
+shape = SubResource( 4 )
 
 [node name="Escenari3" type="KinematicBody2D" parent="."]
 position = Vector2( 4508.04, 5.33939 )
@@ -292,7 +293,7 @@ texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Escenari3"]
 position = Vector2( 638.818, 651.72 )
-shape = SubResource( 3 )
+shape = SubResource( 4 )
 
 [node name="Escenari4" type="KinematicBody2D" parent="."]
 position = Vector2( 8597.49, -1525.17 )
@@ -304,7 +305,7 @@ texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Escenari4"]
 position = Vector2( 634.509, 653.17 )
-shape = SubResource( 3 )
+shape = SubResource( 4 )
 
 [node name="Escenari5" type="KinematicBody2D" parent="."]
 position = Vector2( 10168, -1525 )
@@ -316,7 +317,7 @@ texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Escenari5"]
 position = Vector2( 648, 653 )
-shape = SubResource( 3 )
+shape = SubResource( 4 )
 
 [node name="Escenari6" type="KinematicBody2D" parent="."]
 position = Vector2( 11728, -1525 )
@@ -328,7 +329,7 @@ texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Escenari6"]
 position = Vector2( 648, 653 )
-shape = SubResource( 3 )
+shape = SubResource( 4 )
 
 [node name="mossy liana 1" type="Sprite" parent="Escenari6"]
 position = Vector2( 2128, 829 )
@@ -346,19 +347,40 @@ texture = ExtResource( 7 )
 polygon = PoolVector2Array( 590.969, -283.216, 683.146, 121.492, 62.6553, 738.013, 25.8613, 397.072, -5.37207, 350.592, -52.0635, 324.137, -121.065, 264.482, -172.325, 202.544, -196.919, 151.601, -214.979, 67.3516, -213.012, -1.43848, -210.939, -41.3848, -186.662, -76.9746, -162.386, -112.564, -124.829, -157.079, -118.189, -161.541, -124.935, -185.923, -122.757, -197.025, -133.859, -199.203, -124.935, -185.923, -133.859, -199.203, -136.143, -216.945, -140.604, -223.586, -145.066, -230.226, -133.369, -235.199, -125.596, -234.482, -111.079, -223.445, -97.2676, -203.144, -90.0938, -188.694, -83.7344, -194.827, -82.2021, -201.218, -79.6348, -208.371, -71.6934, -221.867, -73.7324, -242.128, -69.1953, -255.423, -61.8096, -266.457, -52.2412, -276.773, -39.3145, -285.459, -27.5449, -288.251, -18.9707, -305.954, -11.9404, -318.642, 4.56836, -355.229, 7.56738, -377.803, -3.35547, -413.41, -21.71, -460.506, -50.5518, -521.928, -94.501, -590.889, -121.097, -609.833, -141.811, -645.639, -137.963, -676.911, -128.872, -763.346, -130.836, -796.153, -106.366, -936.908, -92.9434, -976.051, -62.8584, -1025.91, -37.207, -1054.62, -10.2285, -1081.36, 1.90723, -1117.72, 6.2793, -1156.04, 10.54, -1164.64, 15.5957, -1167.08, 27.4023, -1158.76, 34.296, -1139.96, 35.584, -1118.84, 55.1357, -1129.58, 69.1816, -1141.41, 78.0703, -1148.82, 75.7988, -1167.85, 76.0654, -1185.25, 81.293, -1200.23, 92.0244, -1215.57, 107.284, -1226.3, 118.391, -1228.99, 124.684, -1253.77, 126.007, -1283.27, 116.205, -1314.93, 97.0762, -1338.42, 89.4492, -1347.64, 23.1045, -1430.71, -22.3262, -1483.38, -69.8643, -1566.72, -73.4326, -1579.14, -87.252, -1655.92, -82.1865, -1715.26, -65.9824, -1768.71, -25.7773, -1882.74, 7.68945, -1941.09, 34.5947, -1987.86, 63.7363, -2034.72, 515.469, -894.096 )
 one_way_collision_margin = 128.0
 
-[node name="Escenari 7" type="KinematicBody2D" parent="."]
-position = Vector2( 15984.6, 1142.85 )
-rotation = 2.16246
+[node name="Escenari7" type="KinematicBody2D" parent="."]
+position = Vector2( 15568, 56 )
 
-[node name="mossy 2" type="Sprite" parent="Escenari 7"]
-position = Vector2( -993.228, -842.439 )
-rotation = -2.16246
-scale = Vector2( 2.02148, 1.40506 )
-texture = ExtResource( 1 )
+[node name="Sprite" type="Sprite" parent="Escenari7"]
+position = Vector2( 645.551, 600.058 )
+scale = Vector2( 0.878769, 0.870459 )
+texture = ExtResource( 3 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Escenari 7"]
-position = Vector2( -942.912, -854.579 )
-rotation = 5.70723
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Escenari7"]
+position = Vector2( 648, 653 )
+shape = SubResource( 4 )
+
+[node name="Escenari8" type="KinematicBody2D" parent="."]
+position = Vector2( 17216, 56 )
+
+[node name="Sprite" type="Sprite" parent="Escenari8"]
+position = Vector2( 645.551, 600.058 )
+scale = Vector2( 0.878769, 0.870459 )
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Escenari8"]
+position = Vector2( 648, 653 )
+shape = SubResource( 4 )
+
+[node name="Escenari9" type="KinematicBody2D" parent="."]
+position = Vector2( 18856, 56 )
+
+[node name="Sprite" type="Sprite" parent="Escenari9"]
+position = Vector2( 645.551, 600.058 )
+scale = Vector2( 0.878769, 0.870459 )
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Escenari9"]
+position = Vector2( 648, 653 )
 shape = SubResource( 4 )
 
 [node name="Pared 1" type="KinematicBody2D" parent="."]
@@ -402,7 +424,7 @@ shape = SubResource( 10 )
 one_way_collision = true
 
 [node name="CollisionShape2D7" type="CollisionShape2D" parent="Pared 1"]
-position = Vector2( -90.6602, -190.555 )
+position = Vector2( -281.148, -184.205 )
 shape = SubResource( 11 )
 
 [node name="Level 1" type="Area2D" parent="."]
@@ -410,6 +432,22 @@ position = Vector2( 2153.67, 1521.57 )
 script = ExtResource( 10 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Level 1"]
-position = Vector2( 8915.04, 100.511 )
+position = Vector2( 8915.04, 112.497 )
 shape = SubResource( 12 )
-[connection signal="body_shape_entered" from="Level 1" to="Level 1" method="_on_Level_1_body_shape_entered"]
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( 17976, -56 )
+script = ExtResource( 13 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 2203.2, 297.372 )
+shape = SubResource( 13 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Area2D"]
+position = Vector2( 2203.2, 265.372 )
+scale = Vector2( 8, 8 )
+frames = SubResource( 22 )
+playing = true
+flip_h = true
+[connection signal="body_entered" from="Level 1" to="Level 1" method="_on_Level_1_body_entered"]
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]
