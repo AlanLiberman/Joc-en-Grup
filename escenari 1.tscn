@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=2]
+[gd_scene load_steps=45 format=2]
 
 [ext_resource path="res://mossy 2.png" type="Texture" id=1]
 [ext_resource path="res://mossy rock 1.png" type="Texture" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://mossy plant 2.png" type="Texture" id=8]
 [ext_resource path="res://background 3.PNG" type="Texture" id=9]
 [ext_resource path="res://Area2D.gd" type="Script" id=10]
+[ext_resource path="res://Jugador.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Chara_BlueWalk00013.png" type="Texture" id=14]
 [ext_resource path="res://Enemic 1.gd" type="Script" id=15]
 [ext_resource path="res://Chara_BlueWalk00000.png" type="Texture" id=16]
@@ -232,6 +233,8 @@ texture = ExtResource( 7 )
 [node name="mossy plant 4" type="Sprite" parent="background 3/mossy rock 1"]
 position = Vector2( 5934.22, -700.685 )
 texture = ExtResource( 8 )
+
+[node name="Jugador" parent="." instance=ExtResource( 11 )]
 
 [node name="Enemic 1" type="KinematicBody2D" parent="."]
 position = Vector2( 8936.37, -1357.9 )
