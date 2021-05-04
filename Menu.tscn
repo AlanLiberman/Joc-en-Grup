@@ -1,11 +1,7 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://NightForest/NightForest/Image.png" type="Texture" id=1]
-[ext_resource path="res://Level 3.gd" type="Script" id=2]
-[ext_resource path="res://Level 1.gd" type="Script" id=3]
-[ext_resource path="res://Level 2.gd" type="Script" id=4]
-[ext_resource path="res://Level 4.gd" type="Script" id=5]
-[ext_resource path="res://Level 5.gd" type="Script" id=6]
+[ext_resource path="res://Menu.gd" type="Script" id=2]
 [ext_resource path="res://PNG/Level-1.png" type="Texture" id=7]
 [ext_resource path="res://PNG/Level-3.png" type="Texture" id=8]
 [ext_resource path="res://PNG/Level-4.png" type="Texture" id=9]
@@ -87,6 +83,7 @@ extents = Vector2( 161.587, 433.829 )
 
 [node name="Menu" type="StaticBody2D"]
 z_index = -100
+script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="."]
 scale = Vector2( 3, 3 )
@@ -101,7 +98,6 @@ shape = SubResource( 1 )
 [node name="Level 1" type="Area2D" parent="."]
 position = Vector2( -3910.99, -8.54031 )
 scale = Vector2( 10, 10 )
-script = ExtResource( 3 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -119,14 +115,13 @@ position = Vector2( -0.672729, 3.02723 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 11 )
 animation = "portal"
-frame = 1
+frame = 5
 playing = true
 flip_h = true
 
 [node name="Level 2" type="Area2D" parent="."]
 position = Vector2( -2295.43, -14.6442 )
 scale = Vector2( 10, 10 )
-script = ExtResource( 4 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -145,14 +140,13 @@ position = Vector2( -0.0783691, 2.82478 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 11 )
 animation = "portal"
-frame = 1
+frame = 5
 playing = true
 flip_h = true
 
 [node name="Level 3" type="Area2D" parent="."]
 position = Vector2( -1271.8, -52.6157 )
 scale = Vector2( 10, 10 )
-script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -171,13 +165,13 @@ position = Vector2( -1.39603, 8.24359 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 11 )
 animation = "portal"
+frame = 4
 playing = true
 flip_h = true
 
 [node name="Level 4" type="Area2D" parent="."]
 position = Vector2( -417.459, -49.7426 )
 scale = Vector2( 10, 10 )
-script = ExtResource( 5 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -196,13 +190,13 @@ position = Vector2( -0.766529, 6.80818 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 11 )
 animation = "portal"
+frame = 4
 playing = true
 flip_h = true
 
 [node name="Level 5" type="Area2D" parent="."]
 position = Vector2( 373.318, -26.9615 )
 scale = Vector2( 10, 10 )
-script = ExtResource( 6 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -221,7 +215,7 @@ position = Vector2( -0.106995, 6.21104 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 11 )
 animation = "portal"
-frame = 7
+frame = 3
 playing = true
 flip_h = true
 
@@ -232,8 +226,13 @@ shape = SubResource( 16 )
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="."]
 position = Vector2( 1285.55, -121.287 )
 shape = SubResource( 17 )
+[connection signal="body_entered" from="Level 1" to="." method="_on_Level_1_body_entered"]
 [connection signal="body_entered" from="Level 1" to="Level 1" method="_on_Level_1_body_entered"]
+[connection signal="body_entered" from="Level 2" to="." method="_on_Level_2_body_entered"]
 [connection signal="body_entered" from="Level 2" to="Level 2" method="_on_Level_2_body_entered"]
+[connection signal="body_entered" from="Level 3" to="." method="_on_Level_3_body_entered"]
 [connection signal="body_entered" from="Level 3" to="Level 3" method="_on_Level_3_body_entered"]
+[connection signal="body_entered" from="Level 4" to="." method="_on_Level_4_body_entered"]
 [connection signal="body_entered" from="Level 4" to="Level 4" method="_on_Level_4_body_entered"]
+[connection signal="body_entered" from="Level 5" to="." method="_on_Level_5_body_entered"]
 [connection signal="body_entered" from="Level 5" to="Level 5" method="_on_Level_5_body_entered"]

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/14.png-3258cf56ec3dce8aa3a2273a1445c036.stex"
+path="res://.import/14.png-de73d81e4b0d933d94611f211d7f4c25.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://eps/png/Tile/14.png"
-dest_files=[ "res://.import/14.png-3258cf56ec3dce8aa3a2273a1445c036.stex" ]
+source_file="res://Desert/Tile/14.png"
+dest_files=[ "res://.import/14.png-de73d81e4b0d933d94611f211d7f4c25.stex" ]
 
 [params]
 

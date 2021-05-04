@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/StoneBlock.png-c5ac3a9b63d5aa89ca33e7fac50381b0.stex"
+path="res://.import/StoneBlock.png-ef3c8e45b5a31fbc01dde0aa4af9a46c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://PNG/Objects/StoneBlock.png"
-dest_files=[ "res://.import/StoneBlock.png-c5ac3a9b63d5aa89ca33e7fac50381b0.stex" ]
+source_file="res://Desert/Objects/StoneBlock.png"
+dest_files=[ "res://.import/StoneBlock.png-ef3c8e45b5a31fbc01dde0aa4af9a46c.stex" ]
 
 [params]
 
