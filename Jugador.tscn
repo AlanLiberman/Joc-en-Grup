@@ -22,7 +22,7 @@ position = Vector2( 18.4863, 14.1079 )
 shape = SubResource( 1 )
 
 [node name="Camera2D" type="Camera2D" parent="CollisionShape2D"]
-position = Vector2( 450.356, -432.254 )
+position = Vector2( 483.992, -243.893 )
 current = true
 zoom = Vector2( 3, 3 )
 
@@ -35,6 +35,7 @@ shape = SubResource( 2 )
 disabled = true
 
 [node name="TextureProgress" type="TextureProgress" parent="."]
+visible = false
 margin_left = -580.241
 margin_top = -664.108
 margin_right = 30.7594
