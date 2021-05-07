@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/portal 2.png-eb6a0b1491fe2a8ad73525782ad4fb2a.stex"
+path="res://.import/background desert tilemap.png-882f3e10d10d57a2b0baafe2f1a7ea6b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://portal 2.png"
-dest_files=[ "res://.import/portal 2.png-eb6a0b1491fe2a8ad73525782ad4fb2a.stex" ]
+source_file="res://Desert/background desert tilemap.png"
+dest_files=[ "res://.import/background desert tilemap.png-882f3e10d10d57a2b0baafe2f1a7ea6b.stex" ]
 
 [params]
 

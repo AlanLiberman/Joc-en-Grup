@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Green Portal Sprite Sheet.png-a5f4b03ceaed2737965380ac56cecdce.stex"
+path="res://.import/moneda 1.png-c43259f43fd5addbecf3502497b1dce0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Green Portal Sprite Sheet.png"
-dest_files=[ "res://.import/Green Portal Sprite Sheet.png-a5f4b03ceaed2737965380ac56cecdce.stex" ]
+source_file="res://PNG/moneda 1.png"
+dest_files=[ "res://.import/moneda 1.png-c43259f43fd5addbecf3502497b1dce0.stex" ]
 
 [params]
 
