@@ -10,7 +10,8 @@
 position = Vector2( 606.794, -4026.91 )
 
 [node name="Menu" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1701.39, 2034.34 )
+position = Vector2( 1701.39, 2025.86 )
 scale = Vector2( 3, 3 )
 
 [node name="Jugador" parent="." instance=ExtResource( 2 )]
+position = Vector2( -10867.5, 2779.3 )
