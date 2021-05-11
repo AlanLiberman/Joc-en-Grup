@@ -1,16 +1,22 @@
 extends KinematicBody2D
 
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+export var gravity = 2500.0
+export var speed = Vector2(300,1000)
+var velocitat = Vector2.ZERO
+var moviment = Vector2(0,0)
+var Monedes = 0
+var atacant = false
 
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _physics_process(delta):
+	velocitat.x = 0
+	if Input.is_action_pressed("ui_up"):
+		if is_on_floor():
+			velocitat.y += -750*1.75 
+	if Input.is_action_pressed("ui_left"):
+		velocitat.x = -750 *2
+	if Input.is_action_pressed("ui_right"):
+		velocitat.x = 750 *2
+	velocitat.y += gravity * delta
+	velocitat = move_and_slide(velocitat,Vector2.UP)
+	

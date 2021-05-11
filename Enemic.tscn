@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Mag.gd" type="Script" id=1]
 [ext_resource path="res://Chara_BlueWalk00002.png" type="Texture" id=2]
@@ -24,18 +24,14 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="CapsuleShape2D" id=2]
-radius = 61.7169
-height = 119.872
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 58.7568, 114.027 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 639.083, 52.9217 )
+extents = Vector2( 639.083, 80.4178 )
 
 [sub_resource type="CircleShape2D" id=4]
 radius = 67.9816
-
-[sub_resource type="RectangleShape2D" id=5]
-extents = Vector2( 1245, 523.575 )
 
 [node name="Enemic" type="Node2D"]
 
@@ -48,32 +44,34 @@ animation = "Quiet"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Mag"]
-visible = false
-position = Vector2( -4.75677, 19.0273 )
+position = Vector2( -1.75677, 25.0273 )
 shape = SubResource( 2 )
 
 [node name="Rang" type="Area2D" parent="Mag"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Mag/Rang"]
-position = Vector2( 647.98, 9.85612 )
+position = Vector2( 702.915, 23.7719 )
 shape = SubResource( 3 )
 
-[node name="Balas" type="Area2D" parent="."]
+[node name="SortidaBala" type="Position2D" parent="Mag"]
+position = Vector2( 149.343, 18.9316 )
+
+[node name="Balas" type="KinematicBody2D" parent="."]
 script = ExtResource( 9 )
 
 [node name="Sprite" type="Sprite" parent="Balas"]
-position = Vector2( 104.879, 36.1557 )
-rotation = 6.28319
+position = Vector2( 149.34, 18.9261 )
+rotation = 4.46638e-06
 scale = Vector2( 0.415314, 0.412029 )
 texture = ExtResource( 10 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Balas"]
-visible = false
-position = Vector2( 107.48, 32.5269 )
+[node name="ColizioBala" type="CollisionShape2D" parent="Balas"]
+position = Vector2( 149.344, 18.9331 )
 shape = SubResource( 4 )
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Area2D" type="Area2D" parent="Balas"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 64.1836, 7.55096 )
-shape = SubResource( 5 )
+[node name="ColizioBala2" type="CollisionShape2D" parent="Balas/Area2D"]
+position = Vector2( 149.344, 18.9331 )
+shape = SubResource( 4 )
+[connection signal="body_entered" from="Mag/Rang" to="Balas" method="_on_Rang_body_entered"]

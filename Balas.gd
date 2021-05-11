@@ -1,9 +1,13 @@
-extends Area2D
+extends KinematicBody2D
 
+var velocity = Vector2(0,0)
 
 func _ready():
-	pass # Replace with function body.
+	self.visible = false
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _on_Rang_body_entered(body):
+	self.visible = true
+	velocity.x += 700
+
+func _on_Balas_area_exited(area):
+	global_position = $"../Mag/SortidaBala".global_position

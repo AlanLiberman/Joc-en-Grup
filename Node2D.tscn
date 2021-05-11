@@ -1,0 +1,87 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://Menu.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Jugador.tscn" type="PackedScene" id=2]
+[ext_resource path="res://escenari 1.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Mag.gd" type="Script" id=4]
+[ext_resource path="res://Balas.gd" type="Script" id=5]
+[ext_resource path="res://Chara_BlueWalk00000.png" type="Texture" id=6]
+[ext_resource path="res://Chara_BlueWalk00005.png" type="Texture" id=7]
+[ext_resource path="res://Chara_BlueWalk00003.png" type="Texture" id=8]
+[ext_resource path="res://Chara_BlueWalk00004.png" type="Texture" id=9]
+[ext_resource path="res://Chara_BlueWalk00007.png" type="Texture" id=10]
+[ext_resource path="res://portal2.png" type="Texture" id=11]
+[ext_resource path="res://Chara_BlueWalk00002.png" type="Texture" id=12]
+[ext_resource path="res://Chara_BlueWalk00001.png" type="Texture" id=13]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 6 ), ExtResource( 13 ), ExtResource( 12 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 7 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "Caminar",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 6 ) ],
+"loop": true,
+"name": "Quiet",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 58.7568, 114.027 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 639.083, 80.4178 )
+
+[sub_resource type="CircleShape2D" id=4]
+radius = 67.9816
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Nivell 1" parent="." instance=ExtResource( 3 )]
+position = Vector2( 606.794, -4026.91 )
+
+[node name="Menu" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1701.39, 2034.34 )
+scale = Vector2( 3, 3 )
+
+[node name="Jugador" parent="." instance=ExtResource( 2 )]
+position = Vector2( -10867.5, 2533.5 )
+
+[node name="Enemic" type="Node2D" parent="."]
+position = Vector2( 2824.07, -3745.29 )
+
+[node name="Mag" type="KinematicBody2D" parent="Enemic"]
+script = ExtResource( 4 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Enemic/Mag"]
+frames = SubResource( 1 )
+animation = "Quiet"
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemic/Mag"]
+position = Vector2( -1.75677, 25.0273 )
+shape = SubResource( 2 )
+
+[node name="Rang" type="Area2D" parent="Enemic/Mag"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemic/Mag/Rang"]
+position = Vector2( 702.915, 23.7719 )
+shape = SubResource( 3 )
+
+[node name="SortidaBala" type="Position2D" parent="Enemic/Mag"]
+position = Vector2( 149.343, 18.9316 )
+
+[node name="Balas" type="KinematicBody2D" parent="Enemic"]
+script = ExtResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="Enemic/Balas"]
+position = Vector2( 149.34, 18.9261 )
+rotation = 4.46638e-06
+scale = Vector2( 0.415314, 0.412029 )
+texture = ExtResource( 11 )
+
+[node name="ColizioBala" type="CollisionShape2D" parent="Enemic/Balas"]
+position = Vector2( 149.344, 18.9331 )
+shape = SubResource( 4 )
+[connection signal="body_entered" from="Enemic/Mag/Rang" to="Enemic/Balas" method="_on_Rang_body_entered"]
