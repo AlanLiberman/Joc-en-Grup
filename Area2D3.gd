@@ -1,4 +1,4 @@
-extends Area2D
+extends Node2D
 
 
 func _on_V_body_entered(body):

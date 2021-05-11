@@ -1,4 +1,4 @@
-[gd_scene load_steps=58 format=2]
+[gd_scene load_steps=61 format=2]
 
 [ext_resource path="res://Desert/Objects/StoneBlock.png" type="Texture" id=1]
 [ext_resource path="res://Desert/BG.png" type="Texture" id=2]
@@ -17,7 +17,9 @@
 [ext_resource path="res://Desert/Objects/Tree.png" type="Texture" id=15]
 [ext_resource path="res://Desert/Objects/Bush (2).png" type="Texture" id=16]
 [ext_resource path="res://Area2D3.gd" type="Script" id=17]
-[ext_resource path="res://Desert/Objects/Crate.png" type="Texture" id=18]
+[ext_resource path="res://Portal.gd" type="Script" id=19]
+[ext_resource path="res://Desert/Objects/Crate.png" type="Texture" id=20]
+[ext_resource path="res://Nivell 2.gd" type="Script" id=22]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
@@ -459,10 +461,6 @@ points = PoolVector2Array( 254.909, 0, 381.909, 1, 382.909, 95, 348.909, 93, 313
 [sub_resource type="RectangleShape2D" id=19]
 extents = Vector2( 60.0327, 46.1603 )
 
-[sub_resource type="CapsuleShape2D" id=20]
-radius = 66.521
-height = 282.657
-
 [sub_resource type="AtlasTexture" id=21]
 flags = 4
 atlas = ExtResource( 11 )
@@ -510,6 +508,14 @@ animations = [ {
 "name": "default",
 "speed": 10.0
 } ]
+
+[sub_resource type="CapsuleShape2D" id=40]
+radius = 52.6074
+height = 323.567
+
+[sub_resource type="CapsuleShape2D" id=20]
+radius = 66.521
+height = 282.657
 
 [sub_resource type="AtlasTexture" id=30]
 flags = 4
@@ -560,6 +566,7 @@ height = 280.318
 extents = Vector2( 273.969, 25.944 )
 
 [node name="Nivell 2" type="Node2D"]
+script = ExtResource( 22 )
 
 [node name="Fons" type="Node2D" parent="."]
 
@@ -755,7 +762,29 @@ texture = ExtResource( 10 )
 position = Vector2( 1586.33, -172.727 )
 shape = SubResource( 19 )
 
-[node name="Portal" type="Node2D" parent="TileMap"]
+[node name="Portal" type="Area2D" parent="TileMap"]
+script = ExtResource( 19 )
+
+[node name="AnimatedSprite5" type="AnimatedSprite" parent="TileMap/Portal"]
+position = Vector2( 21705.2, -511.729 )
+scale = Vector2( 10, 10 )
+frames = SubResource( 29 )
+frame = 3
+playing = true
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/Portal"]
+position = Vector2( 21708.5, -462.556 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 40 )
+
+[node name="AnimatedSprite6" type="AnimatedSprite" parent="TileMap/Portal"]
+position = Vector2( 2842.93, -654.4 )
+scale = Vector2( 10, 10 )
+frames = SubResource( 29 )
+frame = 3
+playing = true
+flip_h = true
 
 [node name="Area2D" type="Area2D" parent="TileMap/Portal"]
 script = ExtResource( 12 )
@@ -765,17 +794,17 @@ position = Vector2( 2841.8, -605.532 )
 shape = SubResource( 20 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="TileMap/Portal/Area2D"]
-position = Vector2( 2834.89, -653.984 )
+position = Vector2( -5068.24, -24.383 )
 scale = Vector2( 10, 10 )
 frames = SubResource( 29 )
+frame = 3
 playing = true
-flip_h = true
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="TileMap/Portal/Area2D"]
 position = Vector2( 8695.31, -410.545 )
 scale = Vector2( 15, 5 )
 frames = SubResource( 36 )
-frame = 5
+frame = 2
 playing = true
 flip_v = true
 
@@ -791,7 +820,7 @@ shape = SubResource( 37 )
 position = Vector2( 4579.68, -1201.43 )
 scale = Vector2( 15, 5 )
 frames = SubResource( 36 )
-frame = 5
+frame = 2
 playing = true
 flip_v = true
 
@@ -799,10 +828,10 @@ flip_v = true
 position = Vector2( 11101.6, -155.52 )
 scale = Vector2( 15, 5 )
 frames = SubResource( 36 )
-frame = 5
+frame = 2
 playing = true
 
-[node name="Area2D3" type="Area2D" parent="TileMap/Portal"]
+[node name="Area2D3" type="Node2D" parent="TileMap/Portal"]
 position = Vector2( 18000, -100 )
 script = ExtResource( 17 )
 
@@ -812,21 +841,23 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/Portal/Area2D3/V"]
-position = Vector2( -227.588, -119.979 )
-shape = SubResource( 38 )
-
 [node name="AnimatedSprite3" type="AnimatedSprite" parent="TileMap/Portal/Area2D3/V"]
 position = Vector2( -231.746, -173.291 )
 scale = Vector2( 10, 10 )
 frames = SubResource( 29 )
+frame = 3
 playing = true
 flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/Portal/Area2D3/V"]
+position = Vector2( -227.588, -119.979 )
+shape = SubResource( 38 )
 
 [node name="AnimatedSprite4" type="AnimatedSprite" parent="TileMap/Portal/Area2D3/V"]
 position = Vector2( -211.072, -1192.98 )
 scale = Vector2( 10, 10 )
 frames = SubResource( 29 )
+frame = 3
 playing = true
 
 [node name="H" type="Area2D" parent="TileMap/Portal/Area2D3"]
@@ -836,7 +867,7 @@ position = Vector2( 1750.02, -122.861 )
 position = Vector2( -833.832, -341.804 )
 scale = Vector2( 15, 5 )
 frames = SubResource( 36 )
-frame = 5
+frame = 2
 playing = true
 flip_h = true
 
@@ -848,12 +879,12 @@ shape = SubResource( 39 )
 position = Vector2( -560.521, 92.1532 )
 scale = Vector2( 10, 10 )
 frames = SubResource( 29 )
-frame = 7
+frame = 2
 playing = true
 flip_h = true
 
 [node name="H2" type="Area2D" parent="TileMap/Portal/Area2D3"]
-position = Vector2( 1414.78, 985.446 )
+position = Vector2( 1450.74, 1045.38 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -862,7 +893,7 @@ __meta__ = {
 position = Vector2( -833.832, -341.804 )
 scale = Vector2( 15, 5 )
 frames = SubResource( 36 )
-frame = 5
+frame = 2
 playing = true
 flip_h = true
 
@@ -874,9 +905,8 @@ shape = SubResource( 39 )
 position = Vector2( 394.193, -1353.44 )
 scale = Vector2( 10, 10 )
 frames = SubResource( 29 )
+frame = 3
 playing = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/Portal/Area2D3"]
 
 [node name="SignArrow" type="Node2D" parent="TileMap"]
 
@@ -915,19 +945,20 @@ texture = ExtResource( 15 )
 
 [node name="Crate" type="Sprite" parent="TileMap/Crate"]
 position = Vector2( 8883.94, -51.172 )
-texture = ExtResource( 18 )
+texture = ExtResource( 20 )
 
 [node name="Crate" type="Sprite" parent="TileMap/Crate/Crate"]
 position = Vector2( -100.172, 4.24567 )
-texture = ExtResource( 18 )
+texture = ExtResource( 20 )
 
 [node name="Crate2" type="Sprite" parent="TileMap/Crate/Crate"]
 position = Vector2( -39.7637, -93.9173 )
-texture = ExtResource( 18 )
+texture = ExtResource( 20 )
 [connection signal="body_entered" from="TileMap/Cactus (2)/Area2D" to="TileMap/Cactus (2)" method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="TileMap/Cactus (2)/Area2D2" to="TileMap/Cactus (2)" method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="TileMap/Cactus (2)/Area2D3" to="TileMap/Cactus (2)" method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="TileMap/Cactus (2)/Area2D4" to="TileMap/Cactus (2)" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="TileMap/Portal" to="TileMap/Portal" method="_on_Portal_body_entered"]
 [connection signal="body_entered" from="TileMap/Portal/Area2D" to="TileMap/Portal/Area2D" method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="TileMap/Portal/Area2D2" to="TileMap/Portal/Area2D2" method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="TileMap/Portal/Area2D3/V" to="TileMap/Portal/Area2D3" method="_on_V_body_entered"]
