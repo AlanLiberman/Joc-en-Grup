@@ -10,4 +10,4 @@ func _on_H_body_entered(body):
 
 
 func _on_H2_body_entered(body):
-	body.position = Vector(19750,-500)
+	body.position = Vector2(19750,-500)
