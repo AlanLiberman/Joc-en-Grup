@@ -1,6 +1,5 @@
-[gd_scene load_steps=112 format=2]
+[gd_scene load_steps=111 format=2]
 
-[ext_resource path="res://PNG/Green Portal Sprite Sheet.png" type="Texture" id=1]
 [ext_resource path="res://mossy rock 1.png" type="Texture" id=2]
 [ext_resource path="res://Mossy 1.png" type="Texture" id=3]
 [ext_resource path="res://mossy tileset 1.png" type="Texture" id=4]
@@ -157,43 +156,27 @@ extents = Vector2( 11326.4, 220.292 )
 extents = Vector2( 89.1992, 210.628 )
 
 [sub_resource type="AtlasTexture" id=22]
-flags = 4
-atlas = ExtResource( 1 )
 region = Rect2( 0, 0, 64, 64 )
 
 [sub_resource type="AtlasTexture" id=23]
-flags = 4
-atlas = ExtResource( 1 )
 region = Rect2( 64, 0, 64, 64 )
 
 [sub_resource type="AtlasTexture" id=24]
-flags = 4
-atlas = ExtResource( 1 )
 region = Rect2( 128, 0, 64, 64 )
 
 [sub_resource type="AtlasTexture" id=25]
-flags = 4
-atlas = ExtResource( 1 )
 region = Rect2( 192, 0, 64, 64 )
 
 [sub_resource type="AtlasTexture" id=26]
-flags = 4
-atlas = ExtResource( 1 )
 region = Rect2( 256, 0, 64, 64 )
 
 [sub_resource type="AtlasTexture" id=27]
-flags = 4
-atlas = ExtResource( 1 )
 region = Rect2( 320, 0, 64, 64 )
 
 [sub_resource type="AtlasTexture" id=28]
-flags = 4
-atlas = ExtResource( 1 )
 region = Rect2( 384, 0, 64, 64 )
 
 [sub_resource type="AtlasTexture" id=29]
-flags = 4
-atlas = ExtResource( 1 )
 region = Rect2( 448, 0, 64, 64 )
 
 [sub_resource type="SpriteFrames" id=30]
@@ -615,7 +598,7 @@ position = Vector2( 98.2773, -400.655 )
 rotation = 1.5708
 scale = Vector2( 10, 10 )
 frames = SubResource( 12 )
-frame = 2
+frame = 4
 playing = true
 
 [node name="Escenari12" type="KinematicBody2D" parent="."]
@@ -882,7 +865,7 @@ position = Vector2( 50671.7, -2223.24 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Mossy block14"]
 position = Vector2( 639.793, 200.622 )
 frames = SubResource( 32 )
-frame = 1
+frame = 11
 playing = true
 flip_h = true
 
@@ -903,6 +886,7 @@ position = Vector2( 1467.04, 113.765 )
 rotation = 1.5708
 scale = Vector2( 10, 10 )
 frames = SubResource( 41 )
+frame = 2
 playing = true
 flip_h = true
 
