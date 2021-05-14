@@ -7,7 +7,7 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="Nivell 1" parent="." instance=ExtResource( 3 )]
-position = Vector2( 606.794, -4026.91 )
+position = Vector2( -497.206, -4154.91 )
 
 [node name="Menu" parent="." instance=ExtResource( 1 )]
 position = Vector2( 1701.39, 2025.86 )

@@ -2,7 +2,7 @@ extends Area2D
 var velocitat = -500
 func _physics_process(delta):
 	position.x += velocitat  * delta
-	rotation_degrees += 90 * delta
+	rotation_degrees += -90 * delta
 
 
 
