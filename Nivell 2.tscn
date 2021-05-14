@@ -462,108 +462,108 @@ points = PoolVector2Array( 254.909, 0, 381.909, 1, 382.909, 95, 348.909, 93, 313
 [sub_resource type="RectangleShape2D" id=19]
 extents = Vector2( 60.0327, 46.1603 )
 
-[sub_resource type="AtlasTexture" id=21]
+[sub_resource type="AtlasTexture" id=20]
 flags = 4
 atlas = ExtResource( 11 )
 region = Rect2( 0, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=22]
+[sub_resource type="AtlasTexture" id=21]
 flags = 4
 atlas = ExtResource( 11 )
 region = Rect2( 64, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=23]
+[sub_resource type="AtlasTexture" id=22]
 flags = 4
 atlas = ExtResource( 11 )
 region = Rect2( 128, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=24]
+[sub_resource type="AtlasTexture" id=23]
 flags = 4
 atlas = ExtResource( 11 )
 region = Rect2( 192, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=25]
+[sub_resource type="AtlasTexture" id=24]
 flags = 4
 atlas = ExtResource( 11 )
 region = Rect2( 256, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=26]
+[sub_resource type="AtlasTexture" id=25]
 flags = 4
 atlas = ExtResource( 11 )
 region = Rect2( 320, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=27]
+[sub_resource type="AtlasTexture" id=26]
 flags = 4
 atlas = ExtResource( 11 )
 region = Rect2( 384, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=28]
+[sub_resource type="AtlasTexture" id=27]
 flags = 4
 atlas = ExtResource( 11 )
 region = Rect2( 448, 0, 64, 64 )
 
-[sub_resource type="SpriteFrames" id=29]
+[sub_resource type="SpriteFrames" id=28]
 animations = [ {
-"frames": [ SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ), SubResource( 28 ) ],
+"frames": [ SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ) ],
 "loop": true,
 "name": "default",
 "speed": 10.0
 } ]
 
-[sub_resource type="CapsuleShape2D" id=40]
+[sub_resource type="CapsuleShape2D" id=29]
 radius = 52.6074
 height = 323.567
 
-[sub_resource type="CapsuleShape2D" id=20]
+[sub_resource type="CapsuleShape2D" id=30]
 radius = 66.521
 height = 282.657
-
-[sub_resource type="AtlasTexture" id=30]
-flags = 4
-atlas = ExtResource( 11 )
-region = Rect2( 0, 64, 64, 64 )
 
 [sub_resource type="AtlasTexture" id=31]
 flags = 4
 atlas = ExtResource( 11 )
-region = Rect2( 64, 64, 64, 64 )
+region = Rect2( 0, 64, 64, 64 )
 
 [sub_resource type="AtlasTexture" id=32]
 flags = 4
 atlas = ExtResource( 11 )
-region = Rect2( 128, 64, 64, 64 )
+region = Rect2( 64, 64, 64, 64 )
 
 [sub_resource type="AtlasTexture" id=33]
 flags = 4
 atlas = ExtResource( 11 )
-region = Rect2( 128, 128, 64, 64 )
+region = Rect2( 128, 64, 64, 64 )
 
 [sub_resource type="AtlasTexture" id=34]
 flags = 4
 atlas = ExtResource( 11 )
-region = Rect2( 192, 128, 64, 64 )
+region = Rect2( 128, 128, 64, 64 )
 
 [sub_resource type="AtlasTexture" id=35]
 flags = 4
 atlas = ExtResource( 11 )
+region = Rect2( 192, 128, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=36]
+flags = 4
+atlas = ExtResource( 11 )
 region = Rect2( 256, 128, 64, 64 )
 
-[sub_resource type="SpriteFrames" id=36]
+[sub_resource type="SpriteFrames" id=37]
 animations = [ {
-"frames": [ SubResource( 30 ), SubResource( 31 ), SubResource( 32 ), SubResource( 33 ), SubResource( 34 ), SubResource( 35 ) ],
+"frames": [ SubResource( 31 ), SubResource( 32 ), SubResource( 33 ), SubResource( 34 ), SubResource( 35 ), SubResource( 36 ) ],
 "loop": true,
 "name": "default",
 "speed": 6.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=37]
+[sub_resource type="RectangleShape2D" id=38]
 extents = Vector2( 288.463, 24.3344 )
 
-[sub_resource type="CapsuleShape2D" id=38]
+[sub_resource type="CapsuleShape2D" id=39]
 radius = 68.373
 height = 280.318
 
-[sub_resource type="RectangleShape2D" id=39]
+[sub_resource type="RectangleShape2D" id=40]
 extents = Vector2( 273.969, 25.944 )
 
 [node name="Nivell 2" type="Node2D"]
@@ -721,6 +721,24 @@ texture = ExtResource( 1 )
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="TileMap/StoneBlock/Cluster 4"]
 polygon = PoolVector2Array( 26410.9, 11.2125, 26499.6, 12.1564, 26506.2, 32.9216, 26574.2, 32.9216, 26576, 133.916 )
 
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="TileMap/StoneBlock/Cluster 4"]
+polygon = PoolVector2Array( 24699, 23.628, 24794.9, 20.2644, 24794.9, 5.12827, 24885.7, 10.1736, 24894.1, -15.0533, 24988.3, -13.3715, 24988.3, 23.628, 24895.8, 40.4459, 24791.5, 80.8089, 24699, 119.49 )
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="TileMap/StoneBlock/Cluster 4"]
+polygon = PoolVector2Array( 24473.6, 270.852, 24473.6, 191.807, 24562.8, 190.125 )
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="TileMap/StoneBlock/Cluster 4"]
+polygon = PoolVector2Array( 24293.7, 447.44, 24382.8, 447.44, 24345.8, 538.257, 24295.4, 539.938 )
+
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="TileMap/StoneBlock/Cluster 4"]
+polygon = PoolVector2Array( 25171.6, -95.7793, 25169.9, -159.687, 25260.7, -156.324, 25264.1, -142.87 )
+
+[node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="TileMap/StoneBlock/Cluster 4"]
+polygon = PoolVector2Array( 25531.9, -197.382, 25529.8, -233.403, 25623, -229.166, 25623, -214.333, 25803.2, -218.571, 25811.6, -182.549, 25860.4, -180.43, 25862.5, -87.1975, 25712, -159.241, 25531.9, -180.43 )
+
+[node name="CollisionPolygon2D7" type="CollisionPolygon2D" parent="TileMap/StoneBlock/Cluster 4"]
+polygon = PoolVector2Array( 26069.4, -89.954, 26067.9, -130.966, 26162.7, -128.138, 26161.3, -111.167, 26247.5, -113.996, 26250.4, -54.5987, 26100.5, -85.7114 )
+
 [node name="Cactus (1)" type="Node2D" parent="TileMap"]
 position = Vector2( -4681.17, 178.866 )
 scale = Vector2( 1.5, 1.5 )
@@ -862,23 +880,22 @@ script = ExtResource( 19 )
 visible = false
 position = Vector2( 21705.2, -511.729 )
 scale = Vector2( 10, 10 )
-frames = SubResource( 29 )
-frame = 7
+frames = SubResource( 28 )
+frame = 4
 playing = true
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/Portal"]
 visible = false
 position = Vector2( 21708.5, -462.556 )
-scale = Vector2( 1, 1 )
-shape = SubResource( 40 )
+shape = SubResource( 29 )
 
 [node name="AnimatedSprite6" type="AnimatedSprite" parent="TileMap/Portal"]
 visible = false
 position = Vector2( 2842.93, -654.4 )
 scale = Vector2( 10, 10 )
-frames = SubResource( 29 )
-frame = 7
+frames = SubResource( 28 )
+frame = 4
 playing = true
 flip_h = true
 
@@ -887,20 +904,20 @@ script = ExtResource( 12 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/Portal/Part 2"]
 position = Vector2( 2841.8, -605.532 )
-shape = SubResource( 20 )
+shape = SubResource( 30 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="TileMap/Portal/Part 2"]
 position = Vector2( -5068.24, -24.383 )
 scale = Vector2( 10, 10 )
-frames = SubResource( 29 )
-frame = 7
+frames = SubResource( 28 )
+frame = 4
 playing = true
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="TileMap/Portal/Part 2"]
 position = Vector2( 8695.31, -410.545 )
 scale = Vector2( 15, 5 )
-frames = SubResource( 36 )
-frame = 3
+frames = SubResource( 37 )
+frame = 5
 playing = true
 flip_v = true
 
@@ -910,21 +927,21 @@ script = ExtResource( 12 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/Portal/Part  2"]
 position = Vector2( 4559.34, -1209.55 )
-shape = SubResource( 37 )
+shape = SubResource( 38 )
 
 [node name="AnimatedSprite3" type="AnimatedSprite" parent="TileMap/Portal/Part  2"]
 position = Vector2( 4579.68, -1201.43 )
 scale = Vector2( 15, 5 )
-frames = SubResource( 36 )
-frame = 3
+frames = SubResource( 37 )
+frame = 5
 playing = true
 flip_v = true
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="TileMap/Portal/Part  2"]
 position = Vector2( 11101.6, -155.52 )
 scale = Vector2( 15, 5 )
-frames = SubResource( 36 )
-frame = 3
+frames = SubResource( 37 )
+frame = 5
 playing = true
 
 [node name="Play" type="Node2D" parent="TileMap/Portal"]
@@ -940,20 +957,20 @@ __meta__ = {
 [node name="AnimatedSprite3" type="AnimatedSprite" parent="TileMap/Portal/Play/V"]
 position = Vector2( -231.746, -173.291 )
 scale = Vector2( 10, 10 )
-frames = SubResource( 29 )
-frame = 7
+frames = SubResource( 28 )
+frame = 4
 playing = true
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/Portal/Play/V"]
 position = Vector2( -227.588, -119.979 )
-shape = SubResource( 38 )
+shape = SubResource( 39 )
 
 [node name="AnimatedSprite4" type="AnimatedSprite" parent="TileMap/Portal/Play/V"]
 position = Vector2( -211.072, -1192.98 )
 scale = Vector2( 10, 10 )
-frames = SubResource( 29 )
-frame = 7
+frames = SubResource( 28 )
+frame = 4
 playing = true
 
 [node name="H" type="Area2D" parent="TileMap/Portal/Play"]
@@ -962,20 +979,20 @@ position = Vector2( 1750.02, -122.861 )
 [node name="AnimatedSprite4" type="AnimatedSprite" parent="TileMap/Portal/Play/H"]
 position = Vector2( -833.832, -341.804 )
 scale = Vector2( 15, 5 )
-frames = SubResource( 36 )
-frame = 3
+frames = SubResource( 37 )
+frame = 5
 playing = true
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/Portal/Play/H"]
 position = Vector2( -852.783, -336.877 )
-shape = SubResource( 39 )
+shape = SubResource( 40 )
 
 [node name="AnimatedSprite5" type="AnimatedSprite" parent="TileMap/Portal/Play/H"]
 position = Vector2( -560.521, 92.1532 )
 scale = Vector2( 10, 10 )
-frames = SubResource( 29 )
-frame = 6
+frames = SubResource( 28 )
+frame = 3
 playing = true
 flip_h = true
 
@@ -988,30 +1005,33 @@ __meta__ = {
 [node name="AnimatedSprite4" type="AnimatedSprite" parent="TileMap/Portal/Play/H2"]
 position = Vector2( -833.832, -341.804 )
 scale = Vector2( 15, 5 )
-frames = SubResource( 36 )
-frame = 3
+frames = SubResource( 37 )
+frame = 5
 playing = true
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/Portal/Play/H2"]
 position = Vector2( -852.783, -336.877 )
-shape = SubResource( 39 )
+shape = SubResource( 40 )
 
 [node name="AnimatedSprite3" type="AnimatedSprite" parent="TileMap/Portal/Play/H2"]
 position = Vector2( 394.193, -1353.44 )
 scale = Vector2( 10, 10 )
-frames = SubResource( 29 )
-frame = 7
+frames = SubResource( 28 )
+frame = 4
 playing = true
 
 [node name="Area2D" type="Area2D" parent="TileMap/Portal"]
 
 [node name="AnimatedSprite3" type="AnimatedSprite" parent="TileMap/Portal/Area2D"]
-position = Vector2( 22753.9, -1410.19 )
+modulate = Color( 0.972549, 0.054902, 0.054902, 1 )
+self_modulate = Color( 0.972549, 0.054902, 0.054902, 1 )
+position = Vector2( 2842.58, -657.218 )
 scale = Vector2( 10, 10 )
-frames = SubResource( 29 )
-frame = 7
+frames = SubResource( 28 )
+frame = 4
 playing = true
+flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/Portal/Area2D"]
 
@@ -1034,8 +1054,40 @@ texture = ExtResource( 16 )
 
 [node name="Skeleton" type="Node2D" parent="TileMap"]
 
-[node name="Skeleton" type="Sprite" parent="TileMap/Skeleton"]
+[node name="Area2D" type="Area2D" parent="TileMap/Skeleton"]
+
+[node name="Skeleton" type="Sprite" parent="TileMap/Skeleton/Area2D"]
 position = Vector2( -381.975, -273.343 )
+texture = ExtResource( 14 )
+
+[node name="Area2D2" type="Area2D" parent="TileMap/Skeleton"]
+
+[node name="Skeleton" type="Sprite" parent="TileMap/Skeleton/Area2D2"]
+position = Vector2( 23568.7, -89.3287 )
+rotation = 6.02139
+texture = ExtResource( 14 )
+
+[node name="Skeleton2" type="Sprite" parent="TileMap/Skeleton/Area2D2"]
+position = Vector2( 22808.3, 242.889 )
+rotation = 5.75959
+texture = ExtResource( 14 )
+
+[node name="Skeleton3" type="Sprite" parent="TileMap/Skeleton/Area2D2"]
+position = Vector2( 24176.6, -11.6151 )
+texture = ExtResource( 14 )
+
+[node name="Skeleton4" type="Sprite" parent="TileMap/Skeleton/Area2D2"]
+position = Vector2( 24541.1, 57.8729 )
+rotation = 0.523599
+texture = ExtResource( 14 )
+
+[node name="Skeleton5" type="Sprite" parent="TileMap/Skeleton/Area2D2"]
+position = Vector2( 23899.9, -144.186 )
+texture = ExtResource( 14 )
+
+[node name="Skeleton6" type="Sprite" parent="TileMap/Skeleton/Area2D2"]
+position = Vector2( 24984.9, 560.505 )
+rotation = 1.22173
 texture = ExtResource( 14 )
 
 [node name="Tree" type="Node2D" parent="TileMap"]
