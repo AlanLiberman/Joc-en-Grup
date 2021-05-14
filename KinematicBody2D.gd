@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 extends KinematicBody2D
 
 
@@ -52,3 +53,5 @@ func _on_AnimatedSprite_animation_finished():
 #	$textureporgress.value = vida
 #	if vida <= 0:
 #		queue_free()
+=======
+>>>>>>> Alan
