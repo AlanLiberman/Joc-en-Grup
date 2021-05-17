@@ -880,7 +880,7 @@ script = ExtResource( 19 )
 position = Vector2( 30006.1, -1082.16 )
 scale = Vector2( 10, 10 )
 frames = SubResource( 28 )
-frame = 4
+frame = 7
 playing = true
 flip_h = true
 
@@ -893,7 +893,7 @@ shape = SubResource( 29 )
 position = Vector2( -5068.24, -24.383 )
 scale = Vector2( 10, 10 )
 frames = SubResource( 28 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="Part 2" type="Area2D" parent="TileMap/Portal"]
@@ -917,7 +917,7 @@ self_modulate = Color( 0.972549, 0.054902, 0.054902, 1 )
 position = Vector2( 2306.58, -721.218 )
 scale = Vector2( 10, 10 )
 frames = SubResource( 28 )
-frame = 4
+frame = 7
 playing = true
 flip_h = true
 
@@ -958,7 +958,7 @@ __meta__ = {
 position = Vector2( -231.746, -173.291 )
 scale = Vector2( 10, 10 )
 frames = SubResource( 28 )
-frame = 4
+frame = 7
 playing = true
 flip_h = true
 
@@ -970,7 +970,7 @@ shape = SubResource( 39 )
 position = Vector2( -211.072, -1192.98 )
 scale = Vector2( 10, 10 )
 frames = SubResource( 28 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="H" type="Area2D" parent="TileMap/Portal/Play"]
@@ -992,7 +992,7 @@ shape = SubResource( 40 )
 position = Vector2( -560.521, 92.1532 )
 scale = Vector2( 10, 10 )
 frames = SubResource( 28 )
-frame = 3
+frame = 6
 playing = true
 flip_h = true
 
@@ -1018,7 +1018,7 @@ shape = SubResource( 40 )
 position = Vector2( 394.193, -1353.44 )
 scale = Vector2( 10, 10 )
 frames = SubResource( 28 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="SignArrow" type="Node2D" parent="TileMap"]
