@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/portal2.png-d3e103342c84de11582cfb289a1158c1.stex"
+path="res://.import/portal2.png-b553f524c800c71b6073d44be018acdb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://portal2.png"
-dest_files=[ "res://.import/portal2.png-d3e103342c84de11582cfb289a1158c1.stex" ]
+source_file="res://Enemic/portal2.png"
+dest_files=[ "res://.import/portal2.png-b553f524c800c71b6073d44be018acdb.stex" ]
 
 [params]
 

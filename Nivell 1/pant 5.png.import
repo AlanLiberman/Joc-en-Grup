@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/pant 5.png-aa3711e4211c4cbe2f1c9a4060401d1f.stex"
+path="res://.import/pant 5.png-d303e50b1e15c1f29dc48d1ed334a64d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://PNG/pant 5.png"
-dest_files=[ "res://.import/pant 5.png-aa3711e4211c4cbe2f1c9a4060401d1f.stex" ]
+source_file="res://Nivell 1/pant 5.png"
+dest_files=[ "res://.import/pant 5.png-d303e50b1e15c1f29dc48d1ed334a64d.stex" ]
 
 [params]
 

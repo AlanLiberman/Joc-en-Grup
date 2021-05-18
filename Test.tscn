@@ -20,6 +20,11 @@ animations = [ {
 "name": "run",
 "speed": 9.0
 }, {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "still",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 3 ) ],
 "loop": true,
 "name": "fall",
@@ -29,11 +34,6 @@ animations = [ {
 "loop": true,
 "name": "jump",
 "speed": 9.0
-}, {
-"frames": [ ExtResource( 1 ) ],
-"loop": true,
-"name": "still",
-"speed": 5.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=2]
