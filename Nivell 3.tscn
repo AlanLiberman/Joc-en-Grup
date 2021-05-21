@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Nivell 3/Screenshot_1.jpg" type="Texture" id=1]
+[ext_resource path="res://Nivell 3/underwater1.png" type="Texture" id=2]
+[ext_resource path="res://Nivell 3/sky.png" type="Texture" id=3]
+
+[node name="Nivell 3" type="Node2D"]
+
+[node name="Aigua" type="Node2D" parent="."]
+
+[node name="Aigua" type="Sprite" parent="Aigua"]
+position = Vector2( -5.94534, 1476.13 )
+scale = Vector2( 68.1764, 15.4456 )
+texture = ExtResource( 1 )
+region_rect = Rect2( 0, 0, 939.442, 136.492 )
+
+[node name="Cel" type="Sprite" parent="Aigua"]
+position = Vector2( -187.73, -1061.85 )
+rotation = 3.14159
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( -2225.77, 0, 64169.2, 1084.02 )
+
+[node name="AiguaCel" type="Sprite" parent="Aigua"]
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( -3.48401, 0, 63333.1, 1079.67 )
