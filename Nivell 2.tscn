@@ -826,7 +826,7 @@ scale = Vector2( 2, 2 )
 texture = ExtResource( 10 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TileMap/Cactus (2)/Area2D"]
-position = Vector2( 1585.14, -177.489 )
+position = Vector2( 1589.78, -178.505 )
 shape = SubResource( 19 )
 
 [node name="Area2D2" type="Area2D" parent="TileMap/Cactus (2)"]
@@ -882,7 +882,7 @@ visible = false
 position = Vector2( 21705.2, -511.729 )
 scale = Vector2( 10, 10 )
 frames = SubResource( 28 )
-frame = 3
+frame = 5
 playing = true
 flip_h = true
 
@@ -896,7 +896,7 @@ visible = false
 position = Vector2( 2842.93, -654.4 )
 scale = Vector2( 10, 10 )
 frames = SubResource( 28 )
-frame = 3
+frame = 5
 playing = true
 flip_h = true
 
@@ -911,14 +911,14 @@ shape = SubResource( 30 )
 position = Vector2( -5068.24, -24.383 )
 scale = Vector2( 10, 10 )
 frames = SubResource( 28 )
-frame = 3
+frame = 5
 playing = true
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="TileMap/Portal/Part 2"]
 position = Vector2( 8695.31, -410.545 )
 scale = Vector2( 15, 5 )
 frames = SubResource( 37 )
-frame = 1
+frame = 3
 playing = true
 flip_v = true
 
@@ -934,7 +934,7 @@ shape = SubResource( 38 )
 position = Vector2( 4579.68, -1201.43 )
 scale = Vector2( 15, 5 )
 frames = SubResource( 37 )
-frame = 1
+frame = 3
 playing = true
 flip_v = true
 
@@ -942,7 +942,7 @@ flip_v = true
 position = Vector2( 11101.6, -155.52 )
 scale = Vector2( 15, 5 )
 frames = SubResource( 37 )
-frame = 1
+frame = 3
 playing = true
 
 [node name="Play" type="Node2D" parent="TileMap/Portal"]
@@ -959,7 +959,7 @@ __meta__ = {
 position = Vector2( -231.746, -173.291 )
 scale = Vector2( 10, 10 )
 frames = SubResource( 28 )
-frame = 3
+frame = 5
 playing = true
 flip_h = true
 
@@ -971,7 +971,7 @@ shape = SubResource( 39 )
 position = Vector2( -211.072, -1192.98 )
 scale = Vector2( 10, 10 )
 frames = SubResource( 28 )
-frame = 3
+frame = 5
 playing = true
 
 [node name="H" type="Area2D" parent="TileMap/Portal/Play"]
@@ -981,7 +981,7 @@ position = Vector2( 1750.02, -122.861 )
 position = Vector2( -833.832, -341.804 )
 scale = Vector2( 15, 5 )
 frames = SubResource( 37 )
-frame = 1
+frame = 3
 playing = true
 flip_h = true
 
@@ -993,7 +993,7 @@ shape = SubResource( 40 )
 position = Vector2( -560.521, 92.1532 )
 scale = Vector2( 10, 10 )
 frames = SubResource( 28 )
-frame = 2
+frame = 4
 playing = true
 flip_h = true
 
@@ -1007,7 +1007,7 @@ __meta__ = {
 position = Vector2( -833.832, -341.804 )
 scale = Vector2( 15, 5 )
 frames = SubResource( 37 )
-frame = 1
+frame = 3
 playing = true
 flip_h = true
 
@@ -1019,7 +1019,7 @@ shape = SubResource( 40 )
 position = Vector2( 394.193, -1353.44 )
 scale = Vector2( 10, 10 )
 frames = SubResource( 28 )
-frame = 3
+frame = 5
 playing = true
 
 [node name="Area2D" type="Area2D" parent="TileMap/Portal"]
@@ -1030,7 +1030,7 @@ self_modulate = Color( 0.972549, 0.054902, 0.054902, 1 )
 position = Vector2( 2842.58, -657.218 )
 scale = Vector2( 10, 10 )
 frames = SubResource( 28 )
-frame = 3
+frame = 5
 playing = true
 flip_h = true
 
@@ -1173,7 +1173,12 @@ position = Vector2( 26575.7, 113.041 )
 position = Vector2( 28638.4, -866.819 )
 
 [node name="Jugador" parent="." instance=ExtResource( 21 )]
-position = Vector2( -4785.77, 98.9061 )
+position = Vector2( 1419.8, -319.701 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Camera2D" type="Camera2D" parent="Jugador"]
+current = true
+zoom = Vector2( 2, 2 )
 [connection signal="body_entered" from="TileMap/Cactus (2)/Area2D" to="TileMap/Cactus (2)" method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="TileMap/Cactus (2)/Area2D2" to="TileMap/Cactus (2)" method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="TileMap/Cactus (2)/Area2D3" to="TileMap/Cactus (2)" method="_on_Area2D_body_entered"]

@@ -16,9 +16,9 @@ func _physics_process(delta):
 			velocitat.y += -1630
 	velocitat.y += gravity * delta
 	if Input.is_action_pressed("ui_left"):
-		velocitat.x = -1500
+		velocitat.x = -70000 * delta
 	if Input.is_action_pressed("ui_right"):
-		velocitat.x = 1500
+		velocitat.x = 70000 * delta
 	velocitat = move_and_slide(velocitat,Vector2.UP)
 	
 	

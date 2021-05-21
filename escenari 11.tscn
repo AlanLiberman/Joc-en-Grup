@@ -1,4 +1,4 @@
-[gd_scene load_steps=91 format=2]
+[gd_scene load_steps=90 format=2]
 
 [ext_resource path="res://Nivell 1/mossy rock 1.png" type="Texture" id=2]
 [ext_resource path="res://Nivell 1/Mossy 1.png" type="Texture" id=3]
@@ -135,156 +135,148 @@ extents = Vector2( 11326.4, 220.292 )
 [sub_resource type="RectangleShape2D" id=21]
 extents = Vector2( 89.1992, 210.628 )
 
-[sub_resource type="AtlasTexture" id=38]
+[sub_resource type="AtlasTexture" id=22]
 flags = 4
 atlas = ExtResource( 38 )
 region = Rect2( 0, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=39]
+[sub_resource type="AtlasTexture" id=23]
 flags = 4
 atlas = ExtResource( 38 )
 region = Rect2( 64, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=40]
+[sub_resource type="AtlasTexture" id=24]
 flags = 4
 atlas = ExtResource( 38 )
 region = Rect2( 128, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=41]
+[sub_resource type="AtlasTexture" id=25]
 flags = 4
 atlas = ExtResource( 38 )
 region = Rect2( 192, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=42]
+[sub_resource type="AtlasTexture" id=26]
 flags = 4
 atlas = ExtResource( 38 )
 region = Rect2( 256, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=43]
+[sub_resource type="AtlasTexture" id=27]
 flags = 4
 atlas = ExtResource( 38 )
 region = Rect2( 320, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=44]
+[sub_resource type="AtlasTexture" id=28]
 flags = 4
 atlas = ExtResource( 38 )
 region = Rect2( 384, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=45]
+[sub_resource type="AtlasTexture" id=29]
 flags = 4
 atlas = ExtResource( 38 )
 region = Rect2( 448, 0, 64, 64 )
 
-[sub_resource type="SpriteFrames" id=22]
+[sub_resource type="SpriteFrames" id=30]
 animations = [ {
-"frames": [ SubResource( 38 ), SubResource( 39 ), SubResource( 40 ), SubResource( 41 ), SubResource( 42 ), SubResource( 43 ), SubResource( 44 ), SubResource( 45 ) ],
+"frames": [ SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ), SubResource( 28 ), SubResource( 29 ) ],
 "loop": true,
 "name": "default",
 "speed": 8.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=23]
+[sub_resource type="RectangleShape2D" id=31]
 extents = Vector2( 150.164, 173.362 )
 
-[sub_resource type="SpriteFrames" id=24]
-animations = [ {
-"frames": [  ],
-"loop": true,
-"name": "default",
-"speed": 5.0
-} ]
-
-[sub_resource type="AtlasTexture" id=25]
+[sub_resource type="AtlasTexture" id=33]
 flags = 4
 atlas = ExtResource( 38 )
 region = Rect2( 0, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=26]
+[sub_resource type="AtlasTexture" id=34]
 flags = 4
 atlas = ExtResource( 38 )
 region = Rect2( 64, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=27]
+[sub_resource type="AtlasTexture" id=35]
 flags = 4
 atlas = ExtResource( 38 )
 region = Rect2( 128, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=28]
+[sub_resource type="AtlasTexture" id=36]
 flags = 4
 atlas = ExtResource( 38 )
 region = Rect2( 192, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=29]
+[sub_resource type="AtlasTexture" id=37]
 flags = 4
 atlas = ExtResource( 38 )
 region = Rect2( 256, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=30]
+[sub_resource type="AtlasTexture" id=38]
 flags = 4
 atlas = ExtResource( 38 )
 region = Rect2( 320, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=31]
+[sub_resource type="AtlasTexture" id=39]
 flags = 4
 atlas = ExtResource( 38 )
 region = Rect2( 384, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=32]
+[sub_resource type="AtlasTexture" id=40]
 flags = 4
 atlas = ExtResource( 38 )
 region = Rect2( 448, 0, 64, 64 )
 
-[sub_resource type="SpriteFrames" id=33]
+[sub_resource type="SpriteFrames" id=41]
 animations = [ {
-"frames": [ SubResource( 25 ), SubResource( 26 ), SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ) ],
+"frames": [ SubResource( 33 ), SubResource( 34 ), SubResource( 35 ), SubResource( 36 ), SubResource( 37 ), SubResource( 38 ), SubResource( 39 ), SubResource( 40 ) ],
 "loop": true,
 "name": "default",
 "speed": 9.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=34]
+[sub_resource type="RectangleShape2D" id=42]
 extents = Vector2( 201.297, 95.9395 )
 
-[sub_resource type="RectangleShape2D" id=35]
+[sub_resource type="RectangleShape2D" id=43]
 extents = Vector2( 14893.4, 263.556 )
 
-[sub_resource type="RectangleShape2D" id=36]
+[sub_resource type="RectangleShape2D" id=44]
 extents = Vector2( 1225.56, 764.205 )
 
-[sub_resource type="RectangleShape2D" id=37]
+[sub_resource type="RectangleShape2D" id=45]
 extents = Vector2( 71.0039, 885.941 )
 
 [node name="Node2D" type="Node2D"]
 z_index = -100
 
-[node name="Fons" type="Sprite" parent="."]
+[node name="Fons1" type="Sprite" parent="."]
 position = Vector2( 1815.14, 411.727 )
 scale = Vector2( 17.4687, 10.2442 )
 texture = ExtResource( 9 )
 region_enabled = true
 region_rect = Rect2( -379.264, -66.9825, 775.204, 258.154 )
 
-[node name="Fons2" type="Sprite" parent="Fons"]
+[node name="Fons1-2" type="Sprite" parent="Fons1"]
 position = Vector2( 773.215, -0.587505 )
 texture = ExtResource( 9 )
 flip_h = true
 region_enabled = true
 region_rect = Rect2( -379.264, -66.9825, 775.204, 258.154 )
 
-[node name="Fons3" type="Sprite" parent="Fons"]
+[node name="Fons1-3" type="Sprite" parent="Fons1"]
 position = Vector2( 1547.34, -1.41484 )
 texture = ExtResource( 9 )
 region_enabled = true
 region_rect = Rect2( -379.264, -66.9825, 775.204, 258.154 )
 
-[node name="Fons4" type="Sprite" parent="Fons"]
+[node name="Fons1-4" type="Sprite" parent="Fons1"]
 position = Vector2( 2320.09, -1.41484 )
 texture = ExtResource( 9 )
 flip_h = true
 region_enabled = true
 region_rect = Rect2( -379.264, -66.9825, 775.204, 258.154 )
 
-[node name="Fons5" type="Sprite" parent="Fons"]
+[node name="Fons1-5" type="Sprite" parent="Fons1"]
 position = Vector2( 3094.72, -0.610882 )
 texture = ExtResource( 9 )
 region_enabled = true
@@ -298,7 +290,7 @@ flip_v = true
 region_enabled = true
 region_rect = Rect2( -379.264, -66.9825, 775.204, 258.154 )
 
-[node name="Fons2" type="Sprite" parent="Fons3"]
+[node name="Fons3-1" type="Sprite" parent="Fons3"]
 position = Vector2( 773.215, -0.587505 )
 texture = ExtResource( 9 )
 flip_h = true
@@ -306,14 +298,14 @@ flip_v = true
 region_enabled = true
 region_rect = Rect2( -379.264, -66.9825, 775.204, 258.154 )
 
-[node name="Fons3" type="Sprite" parent="Fons3"]
+[node name="Fons3-2" type="Sprite" parent="Fons3"]
 position = Vector2( 1547.34, -1.41484 )
 texture = ExtResource( 9 )
 flip_v = true
 region_enabled = true
 region_rect = Rect2( -379.264, -66.9825, 775.204, 258.154 )
 
-[node name="Fons4" type="Sprite" parent="Fons3"]
+[node name="Fons3-3" type="Sprite" parent="Fons3"]
 position = Vector2( 2320.09, -1.41484 )
 texture = ExtResource( 9 )
 flip_h = true
@@ -321,7 +313,7 @@ flip_v = true
 region_enabled = true
 region_rect = Rect2( -379.264, -66.9825, 775.204, 258.154 )
 
-[node name="Fons5" type="Sprite" parent="Fons3"]
+[node name="Fons3-4" type="Sprite" parent="Fons3"]
 position = Vector2( 3094.72, -0.610882 )
 texture = ExtResource( 9 )
 flip_v = true
@@ -336,7 +328,7 @@ flip_v = true
 region_enabled = true
 region_rect = Rect2( -379.264, -66.9825, 775.204, 258.154 )
 
-[node name="Fons2" type="Sprite" parent="Fons2"]
+[node name="Fons2-1" type="Sprite" parent="Fons2"]
 position = Vector2( 773.215, -0.587505 )
 texture = ExtResource( 9 )
 flip_h = true
@@ -344,14 +336,14 @@ flip_v = true
 region_enabled = true
 region_rect = Rect2( -379.264, -66.9825, 775.204, 258.154 )
 
-[node name="Fons3" type="Sprite" parent="Fons2"]
+[node name="Fons2-2" type="Sprite" parent="Fons2"]
 position = Vector2( 1547.34, -1.41484 )
 texture = ExtResource( 9 )
 flip_v = true
 region_enabled = true
 region_rect = Rect2( -379.264, -66.9825, 775.204, 258.154 )
 
-[node name="Fons4" type="Sprite" parent="Fons2"]
+[node name="Fons2-3" type="Sprite" parent="Fons2"]
 position = Vector2( 2320.09, -1.41484 )
 texture = ExtResource( 9 )
 flip_h = true
@@ -359,7 +351,7 @@ flip_v = true
 region_enabled = true
 region_rect = Rect2( -379.264, -66.9825, 775.204, 258.154 )
 
-[node name="Fons5" type="Sprite" parent="Fons2"]
+[node name="Fons2-4" type="Sprite" parent="Fons2"]
 position = Vector2( 3094.72, -0.610882 )
 texture = ExtResource( 9 )
 flip_v = true
@@ -435,7 +427,7 @@ texture = ExtResource( 60 )
 flip_v = true
 
 [node name="Jugador" parent="." instance=ExtResource( 11 )]
-position = Vector2( 176.654, 35.834 )
+position = Vector2( 132.082, 173.058 )
 scale = Vector2( 0.891558, 0.910538 )
 
 [node name="Enemic 1" type="KinematicBody2D" parent="."]
@@ -689,11 +681,11 @@ position = Vector2( -281.148, -184.205 )
 shape = SubResource( 19 )
 
 [node name="Level1m" type="Area2D" parent="."]
-position = Vector2( 2153.67, 1521.57 )
+position = Vector2( -1918.17, 532.15 )
 script = ExtResource( 10 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Level1m"]
-position = Vector2( 8915.04, 112.497 )
+position = Vector2( 12890.8, 1215.75 )
 shape = SubResource( 20 )
 
 [node name="Level 2" type="Area2D" parent="."]
@@ -716,7 +708,8 @@ shape = SubResource( 21 )
 modulate = Color( 0, 1, 0.0156863, 1 )
 position = Vector2( 2203.2, 265.372 )
 scale = Vector2( 8, 8 )
-frames = SubResource( 22 )
+frames = SubResource( 30 )
+frame = 1
 playing = true
 flip_h = true
 
@@ -732,7 +725,8 @@ shape = SubResource( 21 )
 modulate = Color( 0.243137, 1, 0, 1 )
 position = Vector2( 2203.2, 265.372 )
 scale = Vector2( 8, 8 )
-frames = SubResource( 22 )
+frames = SubResource( 30 )
+frame = 1
 playing = true
 
 [node name="final" type="Area2D" parent="."]
@@ -745,9 +739,10 @@ shape = SubResource( 21 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="final"]
 modulate = Color( 0, 1, 0.0392157, 1 )
-position = Vector2( 2203.2, 265.372 )
+position = Vector2( 2203.2, 254.058 )
 scale = Vector2( 8, 8 )
-frames = SubResource( 22 )
+frames = SubResource( 30 )
+frame = 1
 playing = true
 flip_h = true
 
@@ -760,7 +755,7 @@ texture = ExtResource( 35 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Mossy block"]
 position = Vector2( 635.955, 541.097 )
-shape = SubResource( 23 )
+shape = SubResource( 31 )
 
 [node name="Mossy block2" type="KinematicBody2D" parent="."]
 position = Vector2( 29516.5, -262.193 )
@@ -771,7 +766,7 @@ texture = ExtResource( 35 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Mossy block2"]
 position = Vector2( 635.955, 541.097 )
-shape = SubResource( 23 )
+shape = SubResource( 31 )
 
 [node name="Mossy block3" type="KinematicBody2D" parent="."]
 position = Vector2( 30596.3, -547.603 )
@@ -782,7 +777,7 @@ texture = ExtResource( 35 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Mossy block3"]
 position = Vector2( 635.955, 531.018 )
-shape = SubResource( 23 )
+shape = SubResource( 31 )
 
 [node name="Mossy block4" type="KinematicBody2D" parent="."]
 position = Vector2( 31612.4, -234.405 )
@@ -793,7 +788,7 @@ texture = ExtResource( 35 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Mossy block4"]
 position = Vector2( 652.604, 543.475 )
-shape = SubResource( 23 )
+shape = SubResource( 31 )
 
 [node name="Mossy block5" type="KinematicBody2D" parent="."]
 position = Vector2( 32820.4, -226.405 )
@@ -804,7 +799,7 @@ texture = ExtResource( 35 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Mossy block5"]
 position = Vector2( 652.604, 553.554 )
-shape = SubResource( 23 )
+shape = SubResource( 31 )
 
 [node name="Mossy block6" type="KinematicBody2D" parent="."]
 position = Vector2( 33849.5, -494.925 )
@@ -815,10 +810,10 @@ texture = ExtResource( 35 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Mossy block6"]
 position = Vector2( 662.686, 543.475 )
-shape = SubResource( 23 )
+shape = SubResource( 31 )
 
 [node name="Mossy block7" type="KinematicBody2D" parent="."]
-position = Vector2( 34969.7, -836.805 )
+position = Vector2( 34877.7, -776.805 )
 
 [node name="mossy block" type="Sprite" parent="Mossy block7"]
 position = Vector2( 624.439, 488.495 )
@@ -826,7 +821,7 @@ texture = ExtResource( 35 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Mossy block7"]
 position = Vector2( 652.604, 543.475 )
-shape = SubResource( 23 )
+shape = SubResource( 31 )
 
 [node name="Mossy block8" type="KinematicBody2D" parent="."]
 position = Vector2( 36095.6, -588.151 )
@@ -837,7 +832,7 @@ texture = ExtResource( 35 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Mossy block8"]
 position = Vector2( 652.604, 543.475 )
-shape = SubResource( 23 )
+shape = SubResource( 31 )
 
 [node name="Mossy block9" type="KinematicBody2D" parent="."]
 position = Vector2( 37264.4, -189.028 )
@@ -848,7 +843,7 @@ texture = ExtResource( 35 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Mossy block9"]
 position = Vector2( 652.604, 543.475 )
-shape = SubResource( 23 )
+shape = SubResource( 31 )
 
 [node name="Mossy block10" type="KinematicBody2D" parent="."]
 position = Vector2( 38561.6, -203.282 )
@@ -859,7 +854,7 @@ texture = ExtResource( 35 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Mossy block10"]
 position = Vector2( 652.604, 543.475 )
-shape = SubResource( 23 )
+shape = SubResource( 31 )
 
 [node name="Mossy block11" type="KinematicBody2D" parent="."]
 position = Vector2( 45493.4, -1592.66 )
@@ -870,7 +865,7 @@ texture = ExtResource( 35 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Mossy block11"]
 position = Vector2( 652.604, 543.475 )
-shape = SubResource( 23 )
+shape = SubResource( 31 )
 
 [node name="Mossy block12" type="KinematicBody2D" parent="."]
 position = Vector2( 47018.7, -1464.3 )
@@ -881,7 +876,7 @@ texture = ExtResource( 35 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Mossy block12"]
 position = Vector2( 652.604, 543.475 )
-shape = SubResource( 23 )
+shape = SubResource( 31 )
 
 [node name="Mossy block13" type="KinematicBody2D" parent="."]
 position = Vector2( 48116.4, -1570.06 )
@@ -892,24 +887,7 @@ texture = ExtResource( 35 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Mossy block13"]
 position = Vector2( 652.604, 543.475 )
-shape = SubResource( 23 )
-
-[node name="Mossy block14" type="KinematicBody2D" parent="."]
-position = Vector2( 50671.7, -2223.24 )
-
-[node name="AnimatedSprite" type="AnimatedSprite" parent="Mossy block14"]
-position = Vector2( 639.793, 200.622 )
-frames = SubResource( 24 )
-playing = true
-flip_h = true
-
-[node name="mossy block" type="Sprite" parent="Mossy block14"]
-position = Vector2( 624.439, 488.495 )
-texture = ExtResource( 35 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Mossy block14"]
-position = Vector2( 652.604, 543.475 )
-shape = SubResource( 23 )
+shape = SubResource( 31 )
 
 [node name="Area2D3" type="Area2D" parent="."]
 position = Vector2( 38688.6, 519.35 )
@@ -919,13 +897,13 @@ script = ExtResource( 37 )
 position = Vector2( 1467.04, 113.765 )
 rotation = 1.5708
 scale = Vector2( 10, 10 )
-frames = SubResource( 33 )
+frames = SubResource( 41 )
 playing = true
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
 position = Vector2( 1417.98, 120.379 )
-shape = SubResource( 34 )
+shape = SubResource( 42 )
 
 [node name="Pinchos" type="Area2D" parent="."]
 position = Vector2( 45357.4, -712.72 )
@@ -941,7 +919,7 @@ script = ExtResource( 62 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Level 3"]
 position = Vector2( 15969.6, 762.649 )
-shape = SubResource( 35 )
+shape = SubResource( 43 )
 
 [node name="Bala" parent="." instance=ExtResource( 40 )]
 position = Vector2( 49776.6, -1532.22 )
@@ -960,19 +938,19 @@ script = ExtResource( 41 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D4"]
 position = Vector2( 41537.3, -1713.52 )
-shape = SubResource( 36 )
+shape = SubResource( 44 )
 
 [node name="Area2D5" type="Area2D" parent="."]
 script = ExtResource( 65 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D5"]
 position = Vector2( 43027.1, -1691.77 )
-shape = SubResource( 37 )
-[connection signal="body_entered" from="Level1m" to="Level1m" method="_on_Level_1_body_entered"]
+shape = SubResource( 45 )
+[connection signal="body_entered" from="Level1m" to="Level1m" method="_on_Level1m_body_entered"]
 [connection signal="body_entered" from="Level 2" to="Level 2" method="_on_Level_1_body_entered"]
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_Area2D_body_entered"]
-[connection signal="body_entered" from="final" to="final" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="final" to="final" method="_on_final_body_entered"]
 [connection signal="body_entered" from="Area2D3" to="Area2D3" method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="Pinchos" to="Pinchos" method="_on_Pinchos_body_entered"]
 [connection signal="body_exited" from="Level 3" to="Level 3" method="_on_Level_3_body_exited"]
