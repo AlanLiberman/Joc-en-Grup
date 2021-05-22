@@ -1,0 +1,249 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://Jugador.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Nivell 5/old-dark-castle-interior-background.png" type="Texture" id=2]
+[ext_resource path="res://llop.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Nivell 5/tile 6.png" type="Texture" id=4]
+[ext_resource path="res://Nivell 5/tile 2.png" type="Texture" id=5]
+[ext_resource path="res://Nivell 5/tile 3.png" type="Texture" id=6]
+[ext_resource path="res://Nivell 5/llum 1.png" type="Texture" id=7]
+[ext_resource path="res://Nivell 5/negre 1.png" type="Texture" id=8]
+[ext_resource path="res://Nivell 5/tile 8.png" type="Texture" id=11]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 16.0623, 15.6362 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 176, 584 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 16, 31.2727 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 440, 232 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 328, 448 )
+
+[node name="Nivell 5" type="Node2D"]
+
+[node name="Fons lvl 5 1" type="Sprite" parent="."]
+position = Vector2( 2216, -1816 )
+scale = Vector2( 5.0966, 6.49249 )
+texture = ExtResource( 2 )
+
+[node name="Fons lvl 5 2" type="Sprite" parent="Fons lvl 5 1"]
+position = Vector2( 959.071, 3.05176e-05 )
+texture = ExtResource( 2 )
+
+[node name="Fons lvl 5 3" type="Sprite" parent="Fons lvl 5 1"]
+position = Vector2( -959.071, -1.52588e-05 )
+texture = ExtResource( 2 )
+
+[node name="negre 1" type="Sprite" parent="Fons lvl 5 1"]
+position = Vector2( 1261.05, 268.618 )
+scale = Vector2( 4.46978, 3.69658 )
+texture = ExtResource( 8 )
+
+[node name="negre 2" type="Sprite" parent="Fons lvl 5 1"]
+position = Vector2( -74.548, 270.466 )
+scale = Vector2( 17.7661, 3.75434 )
+texture = ExtResource( 8 )
+
+[node name="negre 3" type="Sprite" parent="Fons lvl 5 1"]
+position = Vector2( 510.917, -225.491 )
+scale = Vector2( 18.1656, 3.196 )
+texture = ExtResource( 8 )
+
+[node name="llum 1" type="Sprite" parent="Fons lvl 5 1"]
+position = Vector2( 992.034, 255.064 )
+texture = ExtResource( 7 )
+
+[node name="Naranja 1" type="StaticBody2D" parent="."]
+
+[node name="Tile 1" type="Sprite" parent="Naranja 1"]
+position = Vector2( 329.736, -655.161 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Naranja 1"]
+position = Vector2( 320, -672 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Naranja 1"]
+position = Vector2( -320, -1360 )
+shape = SubResource( 2 )
+
+[node name="Naranja 2" type="StaticBody2D" parent="."]
+
+[node name="Tile 1" type="Sprite" parent="Naranja 2"]
+position = Vector2( 1368, -656 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Naranja 2"]
+position = Vector2( 1376, -672 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="Naranja 3" type="StaticBody2D" parent="."]
+
+[node name="Tile 1" type="Sprite" parent="Naranja 3"]
+position = Vector2( 2408, -656 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Naranja 3"]
+position = Vector2( 2416, -672 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="Naranja 4" type="StaticBody2D" parent="."]
+
+[node name="Tile 1" type="Sprite" parent="Naranja 4"]
+position = Vector2( 3448, -656 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Naranja 4"]
+position = Vector2( 3456, -672 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="Naranja 5" type="StaticBody2D" parent="."]
+
+[node name="Tile 1" type="Sprite" parent="Naranja 5"]
+position = Vector2( 4488, -656 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Naranja 5"]
+position = Vector2( 4504, -672 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="Naranja 6" type="StaticBody2D" parent="."]
+
+[node name="tile 2" type="Sprite" parent="Naranja 6"]
+position = Vector2( 5568, -808 )
+scale = Vector2( 33, 17 )
+texture = ExtResource( 5 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Naranja 6"]
+polygon = PoolVector2Array( 5008, -840, 5264, -840, 5440, -920, 5784, -960, 5936, -1056, 6064, -1128, 6072, -1112, 6072, -432, 5000, -448 )
+
+[node name="Pera" type="StaticBody2D" parent="."]
+position = Vector2( 7944, -886.625 )
+scale = Vector2( 33, 11 )
+
+[node name="tile 8" type="Sprite" parent="Pera"]
+texture = ExtResource( 11 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pera"]
+position = Vector2( -0.72728, -0.125 )
+shape = SubResource( 3 )
+
+[node name="Pera2" type="StaticBody2D" parent="."]
+position = Vector2( 7944, -886.625 )
+scale = Vector2( 33, 11 )
+
+[node name="tile 8" type="Sprite" parent="Pera2"]
+position = Vector2( 47.515, 0 )
+texture = ExtResource( 11 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pera2"]
+position = Vector2( 46.788, -0.125 )
+shape = SubResource( 3 )
+
+[node name="Naranja 7" type="StaticBody2D" parent="."]
+
+[node name="tile 3" type="Sprite" parent="Naranja 7"]
+position = Vector2( 6544, -872 )
+scale = Vector2( 25.8617, 9.47297 )
+texture = ExtResource( 6 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Naranja 7"]
+position = Vector2( 6504, -896 )
+shape = SubResource( 4 )
+
+[node name="Naranja 8" type="StaticBody2D" parent="."]
+
+[node name="tile 3" type="Sprite" parent="Naranja 8"]
+position = Vector2( 6544, -872 )
+scale = Vector2( 25.8617, 9.47297 )
+texture = ExtResource( 6 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Naranja 8"]
+position = Vector2( 6504, -896 )
+shape = SubResource( 4 )
+
+[node name="Jugador" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1869.67, -1519.57 )
+
+[node name="Mazmorra 1" type="Node2D" parent="."]
+
+[node name="Naranja 9" type="StaticBody2D" parent="Mazmorra 1"]
+position = Vector2( 2656, 1352 )
+
+[node name="Tile 1" type="Sprite" parent="Mazmorra 1/Naranja 9"]
+position = Vector2( 4488, -656 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mazmorra 1/Naranja 9"]
+position = Vector2( 4504, -672 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Mazmorra 1/Naranja 9"]
+position = Vector2( 3704, -1264 )
+shape = SubResource( 5 )
+
+[node name="Naranja 10" type="StaticBody2D" parent="Mazmorra 1"]
+position = Vector2( 3712, 1304 )
+
+[node name="Tile 1" type="Sprite" parent="Mazmorra 1/Naranja 10"]
+position = Vector2( 4472, -608 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mazmorra 1/Naranja 10"]
+position = Vector2( 4488, -624 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="Naranja 11" type="StaticBody2D" parent="Mazmorra 1"]
+position = Vector2( 3712, 1304 )
+
+[node name="Tile 1" type="Sprite" parent="Mazmorra 1/Naranja 11"]
+position = Vector2( 5512, -608 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mazmorra 1/Naranja 11"]
+position = Vector2( 5512, -624 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="Naranja 12" type="StaticBody2D" parent="Mazmorra 1"]
+position = Vector2( 3712, 1304 )
+
+[node name="Tile 1" type="Sprite" parent="Mazmorra 1/Naranja 12"]
+position = Vector2( 6552, -608 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mazmorra 1/Naranja 12"]
+position = Vector2( 6544, -624 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="llop" parent="Mazmorra 1" instance=ExtResource( 3 )]
+position = Vector2( 7390.2, 238.88 )
+scale = Vector2( 10, 10 )
+collision_layer = 2
