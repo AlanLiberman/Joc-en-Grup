@@ -36,13 +36,22 @@ texture = ExtResource( 2 )
 position = Vector2( 959.071, 3.05176e-05 )
 texture = ExtResource( 2 )
 
+[node name="Fons lvl 5 4" type="Sprite" parent="Fons lvl 5 1"]
+position = Vector2( 1918.14, -0.411224 )
+texture = ExtResource( 2 )
+
 [node name="Fons lvl 5 3" type="Sprite" parent="Fons lvl 5 1"]
 position = Vector2( -959.071, -1.52588e-05 )
 texture = ExtResource( 2 )
 
 [node name="negre 1" type="Sprite" parent="Fons lvl 5 1"]
-position = Vector2( 1261.05, 268.618 )
+position = Vector2( 1260.45, 267.386 )
 scale = Vector2( 4.46978, 3.69658 )
+texture = ExtResource( 8 )
+
+[node name="negre 4" type="Sprite" parent="Fons lvl 5 1"]
+position = Vector2( 1336.03, 426.339 )
+scale = Vector2( 15.1304, 8.65423 )
 texture = ExtResource( 8 )
 
 [node name="negre 2" type="Sprite" parent="Fons lvl 5 1"]
@@ -51,12 +60,16 @@ scale = Vector2( 17.7661, 3.75434 )
 texture = ExtResource( 8 )
 
 [node name="negre 3" type="Sprite" parent="Fons lvl 5 1"]
-position = Vector2( 510.917, -225.491 )
-scale = Vector2( 18.1656, 3.196 )
+position = Vector2( 1048.3, -251.367 )
+scale = Vector2( 27.9512, 3.196 )
 texture = ExtResource( 8 )
 
 [node name="llum 1" type="Sprite" parent="Fons lvl 5 1"]
 position = Vector2( 992.034, 255.064 )
+texture = ExtResource( 7 )
+
+[node name="llum 2" type="Sprite" parent="Fons lvl 5 1"]
+position = Vector2( 1591.65, 267.386 )
 texture = ExtResource( 7 )
 
 [node name="Naranja 1" type="StaticBody2D" parent="."]
@@ -158,6 +171,18 @@ texture = ExtResource( 11 )
 position = Vector2( 46.788, -0.125 )
 shape = SubResource( 3 )
 
+[node name="Pera3" type="StaticBody2D" parent="."]
+position = Vector2( 7944, -886.625 )
+scale = Vector2( 33, 11 )
+
+[node name="tile 8" type="Sprite" parent="Pera3"]
+position = Vector2( 110.804, 0 )
+texture = ExtResource( 11 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Pera3"]
+position = Vector2( 109.623, -0.125 )
+shape = SubResource( 3 )
+
 [node name="Naranja 7" type="StaticBody2D" parent="."]
 
 [node name="tile 3" type="Sprite" parent="Naranja 7"]
@@ -202,6 +227,10 @@ shape = SubResource( 1 )
 position = Vector2( 3704, -1264 )
 shape = SubResource( 5 )
 
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Mazmorra 1/Naranja 9"]
+position = Vector2( 9449.15, -1317.39 )
+shape = SubResource( 5 )
+
 [node name="Naranja 10" type="StaticBody2D" parent="Mazmorra 1"]
 position = Vector2( 3712, 1304 )
 
@@ -240,6 +269,19 @@ flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Mazmorra 1/Naranja 12"]
 position = Vector2( 6544, -624 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="Naranja 13" type="StaticBody2D" parent="Mazmorra 1"]
+position = Vector2( 3712, 1304 )
+
+[node name="Tile 1" type="Sprite" parent="Mazmorra 1/Naranja 13"]
+position = Vector2( 7584, -608 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mazmorra 1/Naranja 13"]
+position = Vector2( 7600, -624 )
 scale = Vector2( 33, 11 )
 shape = SubResource( 1 )
 
