@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Jugador.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Nivell 5/old-dark-castle-interior-background.png" type="Texture" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Nivell 5/tile 3.png" type="Texture" id=6]
 [ext_resource path="res://Nivell 5/llum 1.png" type="Texture" id=7]
 [ext_resource path="res://Nivell 5/negre 1.png" type="Texture" id=8]
+[ext_resource path="res://enemic_lvl_5.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Nivell 5/tile 8.png" type="Texture" id=11]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -284,6 +285,9 @@ texture = ExtResource( 4 )
 position = Vector2( 7600, -624 )
 scale = Vector2( 33, 11 )
 shape = SubResource( 1 )
+
+[node name="Area2D" parent="Mazmorra 1" instance=ExtResource( 9 )]
+position = Vector2( 3548.96, -1245.12 )
 
 [node name="llop" parent="Mazmorra 1" instance=ExtResource( 3 )]
 position = Vector2( 7305.66, 63.5084 )

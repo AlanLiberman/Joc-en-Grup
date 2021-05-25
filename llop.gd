@@ -5,6 +5,7 @@ const MAX_SPEED : float = 700.0
 const GRAVITY : float = 25.0
 
 var motion := Vector2()
+var morir = false
 
 func _ready():
 	motion.x = MAX_SPEED
@@ -37,3 +38,9 @@ func _process(delta):
 	
 		$LeftRay.enabled = true
 		$RightRay.enabled = false
+
+
+func _on_llop_area_entered(area):
+	if area.is_in_group("arma"):
+		morir = true
+		queue_free()

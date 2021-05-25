@@ -120,7 +120,7 @@ position = Vector2( -0.672729, 3.02723 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 11 )
 animation = "portal"
-frame = 2
+frame = 4
 playing = true
 flip_h = true
 
@@ -146,7 +146,7 @@ position = Vector2( -0.0783691, 2.82478 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 11 )
 animation = "portal"
-frame = 2
+frame = 4
 playing = true
 flip_h = true
 
@@ -172,7 +172,7 @@ position = Vector2( -1.39603, 8.24359 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 11 )
 animation = "portal"
-frame = 1
+frame = 3
 playing = true
 flip_h = true
 
@@ -198,7 +198,7 @@ position = Vector2( -0.766529, 6.80818 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 11 )
 animation = "portal"
-frame = 1
+frame = 3
 playing = true
 flip_h = true
 
@@ -224,6 +224,7 @@ position = Vector2( -0.106995, 6.21104 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 11 )
 animation = "portal"
+frame = 2
 playing = true
 flip_h = true
 

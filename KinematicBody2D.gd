@@ -7,6 +7,7 @@ var velocitat = Vector2.ZERO
 var moviment = Vector2(0,0)
 var Monedes = 0
 var atacant = false
+var vida = 100
 #var vida:int = 100 setget perd_vida
 func _physics_process(delta):
 	velocitat.x = 0
@@ -37,18 +38,22 @@ func _physics_process(delta):
 		if Input.is_action_just_pressed("Atacar"):
 			$AnimatedSprite.play("Atacar")		
 			atacant = true
+			$AnimatedSprite/arma/CollisionShape2D.disabled = false
 
 func _on_AnimatedSprite_animation_finished():
 	if $AnimatedSprite.animation == "Saltar":
 		$AnimatedSprite.animation = "Correr"
 	if $AnimatedSprite.animation == "Atacar":
+		$AnimatedSprite/arma/CollisionShape2D.disabled = true
 		atacant = false
 #func process(delta):
 #	if Input.is_action_just_pressed("Curar"):
 #		self.vida -= 10
 
-#func perd_vida(nova_vida):
-#	vida -= nova_vida
-#	$textureporgress.value = vida
-#	if vida <= 0:
-#		queue_free()
+func perd_vida(nova_vida):
+	vida -= nova_vida
+	$textureporgress.value = vida
+	if vida <= 0:
+		queue_free()
+		
+

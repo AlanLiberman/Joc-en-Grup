@@ -25,10 +25,10 @@ animations = [ {
 "name": "Caure",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 17 ), ExtResource( 2 ), ExtResource( 4 ), ExtResource( 8 ), ExtResource( 11 ) ],
-"loop": false,
-"name": "Atacar",
-"speed": 9.0
+"frames": [ ExtResource( 5 ), ExtResource( 9 ), ExtResource( 16 ), ExtResource( 13 ), ExtResource( 15 ), ExtResource( 12 ) ],
+"loop": true,
+"name": "Correr",
+"speed": 8.0
 }, {
 "frames": [ ExtResource( 6 ) ],
 "loop": true,
@@ -40,8 +40,8 @@ animations = [ {
 "name": "Saltar",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 5 ), ExtResource( 9 ), ExtResource( 16 ), ExtResource( 13 ), ExtResource( 15 ), ExtResource( 12 ) ],
-"loop": true,
-"name": "Correr",
-"speed": 8.0
+"frames": [ ExtResource( 17 ), ExtResource( 2 ), ExtResource( 4 ), ExtResource( 8 ), ExtResource( 11 ) ],
+"loop": false,
+"name": "Atacar",
+"speed": 9.0
 } ]
