@@ -286,6 +286,6 @@ scale = Vector2( 33, 11 )
 shape = SubResource( 1 )
 
 [node name="llop" parent="Mazmorra 1" instance=ExtResource( 3 )]
-position = Vector2( 7390.2, 238.88 )
+position = Vector2( 7305.66, 63.5084 )
 scale = Vector2( 10, 10 )
 collision_layer = 2
