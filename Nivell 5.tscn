@@ -65,8 +65,8 @@ scale = Vector2( 17.7661, 3.75434 )
 texture = ExtResource( 8 )
 
 [node name="negre 3" type="Sprite" parent="Fons lvl 5 1"]
-position = Vector2( 1535.56, -251.367 )
-scale = Vector2( 36.8105, 3.196 )
+position = Vector2( 1113.7, -251.367 )
+scale = Vector2( 44.4808, 3.196 )
 texture = ExtResource( 8 )
 
 [node name="llum 1" type="Sprite" parent="Fons lvl 5 1"]
@@ -92,7 +92,9 @@ position = Vector2( 1376, -672 )
 scale = Vector2( 33, 11 )
 shape = SubResource( 1 )
 
-[node name="Naranja 1" type="StaticBody2D" parent="Cami_principal"]
+[node name="Naranja 1" type="StaticBody2D" parent="Cami_principal" groups=[
+"pared",
+]]
 
 [node name="Tile 1" type="Sprite" parent="Cami_principal/Naranja 1"]
 position = Vector2( 329.736, -655.161 )
@@ -104,7 +106,9 @@ position = Vector2( 320, -672 )
 scale = Vector2( 33, 11 )
 shape = SubResource( 1 )
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Cami_principal/Naranja 1"]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Cami_principal/Naranja 1" groups=[
+"pared",
+]]
 position = Vector2( -320, -1360 )
 shape = SubResource( 2 )
 
@@ -253,7 +257,7 @@ position = Vector2( 6504, -896 )
 shape = SubResource( 4 )
 
 [node name="Jugador" parent="." instance=ExtResource( 1 )]
-position = Vector2( 3108.87, -1196.3 )
+position = Vector2( 1730.43, -1297.85 )
 
 [node name="Mazmorra 1" type="Node2D" parent="."]
 
@@ -333,7 +337,7 @@ scale = Vector2( 33, 11 )
 shape = SubResource( 1 )
 
 [node name="Area2D" parent="Mazmorra 1" instance=ExtResource( 9 )]
-position = Vector2( 3528, -1120 )
+position = Vector2( 3417.13, -1268.33 )
 
 [node name="llop" parent="Mazmorra 1" instance=ExtResource( 3 )]
 position = Vector2( 7305.66, 63.5084 )

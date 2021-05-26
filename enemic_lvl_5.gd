@@ -6,4 +6,4 @@ var morir = false
 func _on_Enemic_lvl_5_area_entered(area):
 	if area.is_in_group("arma"):
 		morir = true
-		queue_free()
+		get_parent().queue_free()
