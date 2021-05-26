@@ -1,4 +1,4 @@
-extends Sprite
+extends StaticBody2D
 
 func _ready():
 	region_filter_clip = true

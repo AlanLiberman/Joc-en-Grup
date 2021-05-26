@@ -1,16 +1,20 @@
 extends Area2D
 
-var delay: float
-var dmg: float
-onready var timer := $Timer
+var dmg: float = 10
 
+func _on_Aigua2_body_entered(body):
+	if body.name == 'Jugador':
+		$Timer.start()
+		print('COUNTDOWN')
+	
+func _on_Timer_timeout():
+	$TickDmg.start()
+	print('TICK')
 
-func _ready():
-	delay = 5
-	dmg = 100/delay
+func _on_TickDmg_timeout():
+	$Jugador.vida -= dmg
+	print('DMG')
 
-func _on_Aigua2_body_entered(body, delay):
-	yield(get_tree().create_timer(5), "timeout")
-	if body.name == 'Cap':
-		body.vida = 0
-
+func _on_Aigua2_body_exited(body):
+	if body.name == 'Jugador':
+		$TickDmg.stop()

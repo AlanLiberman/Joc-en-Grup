@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 var velocity : Vector2
-var vida = 0
+var vida = 100
 
 func _ready():
 	visible = true
@@ -23,5 +23,8 @@ func _process(delta):
 		$AnimatedSprite.flip_h = true
 		
 	velocity = move_and_slide(velocity, Vector2.UP)
+	mort()
+
+func mort():
 	if vida <= 0:
-		visible = false
+		$AnimatedSprite.visible = false
