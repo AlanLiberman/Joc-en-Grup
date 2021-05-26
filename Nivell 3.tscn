@@ -5,24 +5,31 @@
 [ext_resource path="res://Nivell 3/sky.png" type="Texture" id=3]
 [ext_resource path="res://Nivell 3/corrent.d'aigua.png" type="Texture" id=4]
 [ext_resource path="res://Corrent d'aigua.gd" type="Script" id=5]
-[ext_resource path="res://Aigua.gd" type="Script" id=6]
+[ext_resource path="res://Nivell 3.gd" type="Script" id=6]
 [ext_resource path="res://Test.tscn" type="PackedScene" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 31605.8, 1389.16 )
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 1626.37, 48.0597 )
+extents = Vector2( 34323.2, 48.0597 )
 
 [node name="Nivell 3" type="Node2D"]
+script = ExtResource( 6 )
 
-[node name="Aigua" type="Node2D" parent="."]
+[node name="TickDmg" type="Timer" parent="."]
+wait_time = 0.5
 
-[node name="Aigua" type="Sprite" parent="Aigua"]
-position = Vector2( -5.94534, 1476.13 )
-scale = Vector2( 68.1764, 15.4456 )
-texture = ExtResource( 1 )
-region_rect = Rect2( 0, 0, 939.442, 136.492 )
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+
+[node name="Aigua" type="Area2D" parent="."]
+
+[node name="AiguaCel" type="Sprite" parent="Aigua"]
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( -3.48401, 0, 63333.1, 1079.67 )
 
 [node name="Cel" type="Sprite" parent="Aigua"]
 position = Vector2( -187.73, -1061.85 )
@@ -31,27 +38,15 @@ texture = ExtResource( 3 )
 region_enabled = true
 region_rect = Rect2( -2225.77, 0, 64169.2, 1084.02 )
 
-[node name="AiguaCel" type="Sprite" parent="Aigua"]
-texture = ExtResource( 2 )
-region_enabled = true
-region_rect = Rect2( -3.48401, 0, 63333.1, 1079.67 )
+[node name="Aigua" type="Sprite" parent="Aigua"]
+position = Vector2( -5.94534, 1476.13 )
+scale = Vector2( 68.1764, 15.4456 )
+texture = ExtResource( 1 )
+region_rect = Rect2( 0, 0, 939.442, 136.492 )
 
-[node name="Aigua2" type="Area2D" parent="Aigua"]
-script = ExtResource( 6 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Aigua/Aigua2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Aigua"]
 position = Vector2( 0, 1132.72 )
 shape = SubResource( 1 )
-
-[node name="Timer" type="Timer" parent="Aigua/Aigua2"]
-wait_time = 3.0
-one_shot = true
-
-[node name="TickDmg" type="Timer" parent="Aigua/Aigua2"]
-wait_time = 0.5
-
-[node name="Test" parent="Aigua/Aigua2" instance=ExtResource( 7 )]
-position = Vector2( 901.208, 430.889 )
 
 [node name="Corrent d\'aigua" type="Node2D" parent="."]
 position = Vector2( 23.9727, 791.106 )
@@ -70,10 +65,13 @@ polygon = PoolVector2Array( -531.681, 744.212, -219.22, 745.472, -177.643, 759.3
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 824.069, 1129.72 )
+position = Vector2( 0, 2070.41 )
 shape = SubResource( 2 )
-[connection signal="body_entered" from="Aigua/Aigua2" to="Aigua/Aigua2" method="_on_Aigua2_body_entered"]
-[connection signal="body_exited" from="Aigua/Aigua2" to="Aigua/Aigua2" method="_on_Aigua2_body_exited"]
-[connection signal="timeout" from="Aigua/Aigua2/Timer" to="Aigua/Aigua2" method="_on_Timer_timeout"]
-[connection signal="timeout" from="Aigua/Aigua2/TickDmg" to="Aigua/Aigua2" method="_on_TickDmg_timeout"]
+
+[node name="Test" parent="." instance=ExtResource( 7 )]
+position = Vector2( 901.208, 430.889 )
+[connection signal="timeout" from="TickDmg" to="." method="_on_TickDmg_timeout"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="body_entered" from="Aigua" to="." method="_on_Aigua2_body_entered"]
+[connection signal="body_exited" from="Aigua" to="." method="_on_Aigua2_body_exited"]
 [connection signal="body_entered" from="Corrent d'aigua/Corrent 1" to="Corrent d'aigua" method="_on_Corrent_1_body_entered"]
