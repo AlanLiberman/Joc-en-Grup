@@ -6,6 +6,8 @@ const GRAVITY : float = 25.0
 
 var motion := Vector2()
 var morir = false
+var vida = 50
+
 
 func _ready():
 	motion.x = MAX_SPEED
@@ -40,7 +42,4 @@ func _process(delta):
 		$RightRay.enabled = false
 
 
-func _on_llop_area_entered(area):
-	if area.is_in_group("arma"):
-		morir = true
-		queue_free()
+

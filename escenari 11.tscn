@@ -419,7 +419,7 @@ texture = ExtResource( 60 )
 flip_v = true
 
 [node name="Jugador" parent="." instance=ExtResource( 11 )]
-position = Vector2( 212.834, 212.564 )
+position = Vector2( 43525.3, -1569.47 )
 scale = Vector2( 0.891558, 0.910538 )
 
 [node name="Enemic 1" type="KinematicBody2D" parent="."]
@@ -615,7 +615,6 @@ position = Vector2( 98.2773, -400.655 )
 rotation = 1.5708
 scale = Vector2( 10, 10 )
 frames = SubResource( 12 )
-frame = 2
 playing = true
 
 [node name="Escenari12" type="KinematicBody2D" parent="."]
@@ -702,6 +701,7 @@ shape = SubResource( 21 )
 position = Vector2( 2203.2, 265.372 )
 scale = Vector2( 8, 8 )
 frames = SubResource( 30 )
+frame = 4
 playing = true
 flip_h = true
 
@@ -717,6 +717,7 @@ shape = SubResource( 21 )
 position = Vector2( 2203.2, 265.372 )
 scale = Vector2( 8, 8 )
 frames = SubResource( 30 )
+frame = 4
 playing = true
 
 [node name="Area2D6" type="Area2D" parent="."]
@@ -731,6 +732,7 @@ shape = SubResource( 21 )
 position = Vector2( 2203.2, 265.372 )
 scale = Vector2( 8, 8 )
 frames = SubResource( 30 )
+frame = 4
 playing = true
 
 [node name="Mossy block" type="KinematicBody2D" parent="."]
@@ -882,7 +884,7 @@ position = Vector2( 50671.7, -2223.24 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Mossy block14"]
 position = Vector2( 639.793, 200.622 )
 frames = SubResource( 32 )
-frame = 1
+frame = 8
 playing = true
 flip_h = true
 
@@ -903,6 +905,7 @@ position = Vector2( 1467.04, 113.765 )
 rotation = 1.5708
 scale = Vector2( 10, 10 )
 frames = SubResource( 41 )
+frame = 6
 playing = true
 flip_h = true
 
@@ -927,7 +930,7 @@ position = Vector2( 15969.6, 762.649 )
 shape = SubResource( 43 )
 
 [node name="Bala" parent="." instance=ExtResource( 40 )]
-position = Vector2( 49776.6, -1532.22 )
+position = Vector2( 49764.7, -1557.62 )
 scale = Vector2( 0.3, 0.3 )
 
 [node name="Bala3" parent="." instance=ExtResource( 40 )]
@@ -951,6 +954,7 @@ script = ExtResource( 65 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D5"]
 position = Vector2( 43027.1, -1691.77 )
 shape = SubResource( 45 )
+
 [connection signal="body_entered" from="Level 1" to="Level 1" method="_on_Level_1_body_entered"]
 [connection signal="body_entered" from="Level 2" to="Level 2" method="_on_Level_1_body_entered"]
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]

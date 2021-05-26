@@ -9,7 +9,6 @@ func _physics_process(delta):
 func _on_Bala_body_entered(body):
 	body.position = Vector2(43250,-1500)
 
-
 func _on_Bala3_body_entered(body):
 	body.position = Vector2(43250,-1500)
 

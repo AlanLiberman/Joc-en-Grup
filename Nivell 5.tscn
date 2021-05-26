@@ -41,6 +41,10 @@ texture = ExtResource( 2 )
 position = Vector2( 1918.14, -0.411224 )
 texture = ExtResource( 2 )
 
+[node name="Fons lvl 5 5" type="Sprite" parent="Fons lvl 5 1"]
+position = Vector2( 2877.7, -0.353546 )
+texture = ExtResource( 2 )
+
 [node name="Fons lvl 5 3" type="Sprite" parent="Fons lvl 5 1"]
 position = Vector2( -959.071, -1.52588e-05 )
 texture = ExtResource( 2 )
@@ -61,8 +65,8 @@ scale = Vector2( 17.7661, 3.75434 )
 texture = ExtResource( 8 )
 
 [node name="negre 3" type="Sprite" parent="Fons lvl 5 1"]
-position = Vector2( 1048.3, -251.367 )
-scale = Vector2( 27.9512, 3.196 )
+position = Vector2( 1535.56, -251.367 )
+scale = Vector2( 36.8105, 3.196 )
 texture = ExtResource( 8 )
 
 [node name="llum 1" type="Sprite" parent="Fons lvl 5 1"]
@@ -73,136 +77,178 @@ texture = ExtResource( 7 )
 position = Vector2( 1591.65, 267.386 )
 texture = ExtResource( 7 )
 
-[node name="Naranja 1" type="StaticBody2D" parent="."]
+[node name="Cami_principal" type="Node2D" parent="."]
 
-[node name="Tile 1" type="Sprite" parent="Naranja 1"]
-position = Vector2( 329.736, -655.161 )
-scale = Vector2( 33, 11 )
-texture = ExtResource( 4 )
+[node name="Naranja 2" type="StaticBody2D" parent="Cami_principal"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Naranja 1"]
-position = Vector2( 320, -672 )
-scale = Vector2( 33, 11 )
-shape = SubResource( 1 )
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Naranja 1"]
-position = Vector2( -320, -1360 )
-shape = SubResource( 2 )
-
-[node name="Naranja 2" type="StaticBody2D" parent="."]
-
-[node name="Tile 1" type="Sprite" parent="Naranja 2"]
+[node name="Tile 1" type="Sprite" parent="Cami_principal/Naranja 2"]
 position = Vector2( 1368, -656 )
 scale = Vector2( 33, 11 )
 texture = ExtResource( 4 )
 flip_h = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Naranja 2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Naranja 2"]
 position = Vector2( 1376, -672 )
 scale = Vector2( 33, 11 )
 shape = SubResource( 1 )
 
-[node name="Naranja 3" type="StaticBody2D" parent="."]
+[node name="Naranja 1" type="StaticBody2D" parent="Cami_principal"]
 
-[node name="Tile 1" type="Sprite" parent="Naranja 3"]
+[node name="Tile 1" type="Sprite" parent="Cami_principal/Naranja 1"]
+position = Vector2( 329.736, -655.161 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Naranja 1"]
+position = Vector2( 320, -672 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Cami_principal/Naranja 1"]
+position = Vector2( -320, -1360 )
+shape = SubResource( 2 )
+
+[node name="Naranja 3" type="StaticBody2D" parent="Cami_principal"]
+
+[node name="Tile 1" type="Sprite" parent="Cami_principal/Naranja 3"]
 position = Vector2( 2408, -656 )
 scale = Vector2( 33, 11 )
 texture = ExtResource( 4 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Naranja 3"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Naranja 3"]
 position = Vector2( 2416, -672 )
 scale = Vector2( 33, 11 )
 shape = SubResource( 1 )
 
-[node name="Naranja 4" type="StaticBody2D" parent="."]
+[node name="Naranja 4" type="StaticBody2D" parent="Cami_principal"]
 
-[node name="Tile 1" type="Sprite" parent="Naranja 4"]
+[node name="Tile 1" type="Sprite" parent="Cami_principal/Naranja 4"]
 position = Vector2( 3448, -656 )
 scale = Vector2( 33, 11 )
 texture = ExtResource( 4 )
 flip_h = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Naranja 4"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Naranja 4"]
 position = Vector2( 3456, -672 )
 scale = Vector2( 33, 11 )
 shape = SubResource( 1 )
 
-[node name="Naranja 5" type="StaticBody2D" parent="."]
+[node name="Naranja 5" type="StaticBody2D" parent="Cami_principal"]
 
-[node name="Tile 1" type="Sprite" parent="Naranja 5"]
+[node name="Tile 1" type="Sprite" parent="Cami_principal/Naranja 5"]
 position = Vector2( 4488, -656 )
 scale = Vector2( 33, 11 )
 texture = ExtResource( 4 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Naranja 5"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Naranja 5"]
 position = Vector2( 4504, -672 )
 scale = Vector2( 33, 11 )
 shape = SubResource( 1 )
 
-[node name="Naranja 6" type="StaticBody2D" parent="."]
+[node name="Naranja 9" type="StaticBody2D" parent="Cami_principal"]
+position = Vector2( 8927.54, -495.269 )
 
-[node name="tile 2" type="Sprite" parent="Naranja 6"]
+[node name="Tile 1" type="Sprite" parent="Cami_principal/Naranja 9"]
+position = Vector2( 4488, -656 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Naranja 9"]
+position = Vector2( 4504, -672 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="Naranja 10" type="StaticBody2D" parent="Cami_principal"]
+position = Vector2( 9984, -496 )
+
+[node name="Tile 1" type="Sprite" parent="Cami_principal/Naranja 10"]
+position = Vector2( 4488, -656 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Naranja 10"]
+position = Vector2( 4504, -672 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="Naranja 11" type="StaticBody2D" parent="Cami_principal"]
+position = Vector2( 11032, -496 )
+
+[node name="Tile 1" type="Sprite" parent="Cami_principal/Naranja 11"]
+position = Vector2( 4488, -656 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Naranja 11"]
+position = Vector2( 4504, -672 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="Naranja 6" type="StaticBody2D" parent="Cami_principal"]
+
+[node name="tile 2" type="Sprite" parent="Cami_principal/Naranja 6"]
 position = Vector2( 5568, -808 )
 scale = Vector2( 33, 17 )
 texture = ExtResource( 5 )
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Naranja 6"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Cami_principal/Naranja 6"]
 polygon = PoolVector2Array( 5008, -840, 5264, -840, 5440, -920, 5784, -960, 5936, -1056, 6064, -1128, 6072, -1112, 6072, -432, 5000, -448 )
 
-[node name="Pera" type="StaticBody2D" parent="."]
+[node name="Pera" type="StaticBody2D" parent="Cami_principal"]
 position = Vector2( 7944, -886.625 )
 scale = Vector2( 33, 11 )
 
-[node name="tile 8" type="Sprite" parent="Pera"]
+[node name="tile 8" type="Sprite" parent="Cami_principal/Pera"]
 texture = ExtResource( 11 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Pera"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Pera"]
 position = Vector2( -0.72728, -0.125 )
 shape = SubResource( 3 )
 
-[node name="Pera2" type="StaticBody2D" parent="."]
+[node name="Pera2" type="StaticBody2D" parent="Cami_principal"]
 position = Vector2( 7944, -886.625 )
 scale = Vector2( 33, 11 )
 
-[node name="tile 8" type="Sprite" parent="Pera2"]
+[node name="tile 8" type="Sprite" parent="Cami_principal/Pera2"]
 position = Vector2( 47.515, 0 )
 texture = ExtResource( 11 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Pera2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Pera2"]
 position = Vector2( 46.788, -0.125 )
 shape = SubResource( 3 )
 
-[node name="Pera3" type="StaticBody2D" parent="."]
+[node name="Pera3" type="StaticBody2D" parent="Cami_principal"]
 position = Vector2( 7944, -886.625 )
 scale = Vector2( 33, 11 )
 
-[node name="tile 8" type="Sprite" parent="Pera3"]
+[node name="tile 8" type="Sprite" parent="Cami_principal/Pera3"]
 position = Vector2( 110.804, 0 )
 texture = ExtResource( 11 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Pera3"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Pera3"]
 position = Vector2( 109.623, -0.125 )
 shape = SubResource( 3 )
 
-[node name="Naranja 7" type="StaticBody2D" parent="."]
+[node name="Naranja 7" type="StaticBody2D" parent="Cami_principal"]
 
-[node name="tile 3" type="Sprite" parent="Naranja 7"]
+[node name="tile 3" type="Sprite" parent="Cami_principal/Naranja 7"]
 position = Vector2( 6544, -872 )
 scale = Vector2( 25.8617, 9.47297 )
 texture = ExtResource( 6 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Naranja 7"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Naranja 7"]
 position = Vector2( 6504, -896 )
 shape = SubResource( 4 )
 
-[node name="Naranja 8" type="StaticBody2D" parent="."]
+[node name="Naranja 8" type="StaticBody2D" parent="Cami_principal"]
 
-[node name="tile 3" type="Sprite" parent="Naranja 8"]
+[node name="tile 3" type="Sprite" parent="Cami_principal/Naranja 8"]
 position = Vector2( 6544, -872 )
 scale = Vector2( 25.8617, 9.47297 )
 texture = ExtResource( 6 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Naranja 8"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Naranja 8"]
 position = Vector2( 6504, -896 )
 shape = SubResource( 4 )
 

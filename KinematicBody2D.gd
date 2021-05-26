@@ -7,7 +7,8 @@ var velocitat = Vector2.ZERO
 var moviment = Vector2(0,0)
 var Monedes = 0
 var atacant = false
-var vida = 100
+export var vida = 100
+var mal = 25
 #var vida:int = 100 setget perd_vida
 func _physics_process(delta):
 	velocitat.x = 0
