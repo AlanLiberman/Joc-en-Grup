@@ -25,7 +25,9 @@ zoom = Vector2( 3, 3 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = ExtResource( 2 )
-animation = "Caure"
+animation = "mort"
+frame = 5
+playing = true
 
 [node name="arma" type="Area2D" parent="AnimatedSprite" groups=[
 "arma",
@@ -39,9 +41,9 @@ disabled = true
 [node name="TextureProgress" type="TextureProgress" parent="."]
 anchor_right = 5.0
 margin_left = -1371.57
-margin_top = -1288.39
+margin_top = -1286.98
 margin_right = -771.573
-margin_bottom = -769.387
+margin_bottom = -767.973
 rect_scale = Vector2( 3, 3 )
 value = 100.0
 texture_under = ExtResource( 4 )
@@ -50,4 +52,8 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
 [connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

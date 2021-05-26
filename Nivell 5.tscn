@@ -154,7 +154,7 @@ scale = Vector2( 33, 11 )
 texture = ExtResource( 4 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Naranja 9"]
-position = Vector2( 4504, -672 )
+position = Vector2( 4504.46, -672.731 )
 scale = Vector2( 33, 11 )
 shape = SubResource( 1 )
 
@@ -253,7 +253,7 @@ position = Vector2( 6504, -896 )
 shape = SubResource( 4 )
 
 [node name="Jugador" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1869.67, -1519.57 )
+position = Vector2( 3108.87, -1196.3 )
 
 [node name="Mazmorra 1" type="Node2D" parent="."]
 
@@ -333,7 +333,7 @@ scale = Vector2( 33, 11 )
 shape = SubResource( 1 )
 
 [node name="Area2D" parent="Mazmorra 1" instance=ExtResource( 9 )]
-position = Vector2( 3548.96, -1245.12 )
+position = Vector2( 3528, -1120 )
 
 [node name="llop" parent="Mazmorra 1" instance=ExtResource( 3 )]
 position = Vector2( 7305.66, 63.5084 )
