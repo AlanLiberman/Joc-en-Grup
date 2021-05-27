@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Nivell 3/corrent.d'aigua.png" type="Texture" id=1]
+
+[node name="Corrent 1" type="Area2D"]
+position = Vector2( 0, 173.804 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2( 0, 1.52588e-05 )
+polygon = PoolVector2Array( -531.681, 744.212, -219.22, 745.472, -177.643, 759.331, -153.704, 770.67, -102.048, 779.49, -25.1925, 778.23, 51.6627, 775.71, 167.575, 774.45, 289.788, 771.93, 354.044, 766.89, 354.044, 965.958, 238.131, 944.539, 149.937, 936.98, 11.3452, 942.019, -55.4305, 944.539, -273.397, 969.738, -362.851, 976.037, -370.411, 962.178, -326.314, 943.279, -299.855, 926.9, -298.595, 914.301, -340.173, 906.742, -341.433, 895.402, -511.522, 886.583, -531.681, 881.543 )
+
+[node name="correntd\'aigua" type="Sprite" parent="."]
+position = Vector2( -89.5789, 866.361 )
+texture = ExtResource( 1 )
