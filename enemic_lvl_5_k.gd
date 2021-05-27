@@ -36,3 +36,6 @@ func _on_Area2D_body_entered(body):
 	if body.is_in_group('pared'):
 		MAX_SPEED *= -1
 		$Enemic_lvl_5/AnimatedSprite.scale.x *= -1
+
+
+

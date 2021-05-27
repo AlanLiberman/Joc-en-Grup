@@ -1,8 +1,7 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Jugador.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Nivell 5/old-dark-castle-interior-background.png" type="Texture" id=2]
-[ext_resource path="res://llop.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Nivell 5/tile 6.png" type="Texture" id=4]
 [ext_resource path="res://Nivell 5/tile 2.png" type="Texture" id=5]
 [ext_resource path="res://Nivell 5/tile 3.png" type="Texture" id=6]
@@ -197,7 +196,7 @@ scale = Vector2( 33, 17 )
 texture = ExtResource( 5 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Cami_principal/Naranja 6"]
-polygon = PoolVector2Array( 5008, -840, 5264, -840, 5440, -920, 5784, -960, 5936, -1056, 6064, -1128, 6072, -1112, 6072, -432, 5000, -448 )
+polygon = PoolVector2Array( 5008.27, -844.039, 5264, -840, 5440, -920, 5784, -960, 5936, -1056, 6064, -1128, 6072, -1112, 6072, -432, 5000, -448 )
 
 [node name="Pera" type="StaticBody2D" parent="Cami_principal"]
 position = Vector2( 7944, -886.625 )
@@ -257,11 +256,13 @@ position = Vector2( 6504, -896 )
 shape = SubResource( 4 )
 
 [node name="Jugador" parent="." instance=ExtResource( 1 )]
-position = Vector2( 1730.43, -1297.85 )
+position = Vector2( 6858.43, -1393.85 )
 
 [node name="Mazmorra 1" type="Node2D" parent="."]
 
-[node name="Naranja 9" type="StaticBody2D" parent="Mazmorra 1"]
+[node name="Naranja 9" type="StaticBody2D" parent="Mazmorra 1" groups=[
+"pared",
+]]
 position = Vector2( 2656, 1352 )
 
 [node name="Tile 1" type="Sprite" parent="Mazmorra 1/Naranja 9"]
@@ -337,9 +338,4 @@ scale = Vector2( 33, 11 )
 shape = SubResource( 1 )
 
 [node name="Area2D" parent="Mazmorra 1" instance=ExtResource( 9 )]
-position = Vector2( 3417.13, -1268.33 )
-
-[node name="llop" parent="Mazmorra 1" instance=ExtResource( 3 )]
-position = Vector2( 7305.66, 63.5084 )
-scale = Vector2( 10, 10 )
-collision_layer = 2
+position = Vector2( 8521.6, 287.175 )

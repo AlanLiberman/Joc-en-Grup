@@ -120,7 +120,7 @@ position = Vector2( -0.672729, 3.02723 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 11 )
 animation = "portal"
-frame = 4
+frame = 7
 playing = true
 flip_h = true
 
@@ -146,7 +146,7 @@ position = Vector2( -0.0783691, 2.82478 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 11 )
 animation = "portal"
-frame = 4
+frame = 7
 playing = true
 flip_h = true
 
@@ -172,7 +172,7 @@ position = Vector2( -1.39603, 8.24359 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 11 )
 animation = "portal"
-frame = 3
+frame = 6
 playing = true
 flip_h = true
 
@@ -198,7 +198,7 @@ position = Vector2( -0.766529, 6.80818 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 11 )
 animation = "portal"
-frame = 3
+frame = 6
 playing = true
 flip_h = true
 
@@ -224,7 +224,7 @@ position = Vector2( -0.106995, 6.21104 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 11 )
 animation = "portal"
-frame = 2
+frame = 5
 playing = true
 flip_h = true
 
@@ -239,6 +239,7 @@ shape = SubResource( 17 )
 [node name="Jugador" parent="." instance=ExtResource( 13 )]
 position = Vector2( -4278.83, 94.2867 )
 scale = Vector2( 0.5, 0.5 )
+
 [connection signal="body_entered" from="Level 1" to="Level 1" method="_on_Level_1_body_entered"]
 [connection signal="body_entered" from="Level 2" to="Level 2" method="_on_Level_2_body_entered"]
 [connection signal="body_entered" from="Level 3" to="Level 3" method="_on_Level_3_body_entered"]

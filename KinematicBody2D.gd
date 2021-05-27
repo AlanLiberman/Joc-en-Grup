@@ -53,7 +53,7 @@ func mort():
 	velocitat = Vector2(0,0)
 	$AnimatedSprite.play('mort')
 	$CollisionShape2D.disabled = true
-	$timer.start()
+	
 	
 	
 func _on_AnimatedSprite_animation_finished():
@@ -70,10 +70,7 @@ func perd_vida(nova_vida):
 		vida -= nova_vida
 		$textureporgress.value = vida
 		if vida <= 0:
-			queue_free()
+			get_tree().change_scene("res://Menu.tscn")
 			
-
-
-
-func _on_Timer_timeout():
-	get_tree().change_sceen("Menu.tscn")
+#func _on_Timer_timeout():
+#	get_tree().change_sceen("Menu.tscn")
