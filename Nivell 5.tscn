@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Jugador.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Nivell 5/old-dark-castle-interior-background.png" type="Texture" id=2]
@@ -27,6 +27,9 @@ extents = Vector2( 440, 232 )
 [sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 328, 448 )
 
+[sub_resource type="CircleShape2D" id=6]
+radius = 202.386
+
 [node name="Nivell 5" type="Node2D"]
 
 [node name="Fons lvl 5 1" type="Sprite" parent="."]
@@ -39,11 +42,23 @@ position = Vector2( 959.071, 3.05176e-05 )
 texture = ExtResource( 2 )
 
 [node name="Fons lvl 5 4" type="Sprite" parent="Fons lvl 5 1"]
-position = Vector2( 1918.14, -0.411224 )
+position = Vector2( 1918.14, -2.15381 )
 texture = ExtResource( 2 )
 
 [node name="Fons lvl 5 5" type="Sprite" parent="Fons lvl 5 1"]
 position = Vector2( 2877.7, -0.353546 )
+texture = ExtResource( 2 )
+
+[node name="Fons lvl 5 6" type="Sprite" parent="Fons lvl 5 1"]
+position = Vector2( 3492.49, -406.196 )
+texture = ExtResource( 2 )
+
+[node name="Fons lvl 5 8" type="Sprite" parent="Fons lvl 5 1"]
+position = Vector2( 4450.77, -403.451 )
+texture = ExtResource( 2 )
+
+[node name="Fons lvl 5 7" type="Sprite" parent="Fons lvl 5 1"]
+position = Vector2( 2534.7, -405.804 )
 texture = ExtResource( 2 )
 
 [node name="Fons lvl 5 3" type="Sprite" parent="Fons lvl 5 1"]
@@ -65,14 +80,14 @@ position = Vector2( -74.548, 270.466 )
 scale = Vector2( 17.7661, 3.75434 )
 texture = ExtResource( 8 )
 
-[node name="negre 3" type="Sprite" parent="Fons lvl 5 1"]
-position = Vector2( 1113.7, -251.367 )
-scale = Vector2( 44.4808, 3.196 )
+[node name="negre 5" type="Sprite" parent="Fons lvl 5 1"]
+position = Vector2( 1443.2, -203.385 )
+scale = Vector2( 50.4718, 1.65576 )
 texture = ExtResource( 8 )
 
-[node name="negre 5" type="Sprite" parent="Fons lvl 5 1"]
-position = Vector2( 1113.7, -251.367 )
-scale = Vector2( 44.4808, 3.196 )
+[node name="negre 6" type="Sprite" parent="Fons lvl 5 1"]
+position = Vector2( 1720.39, -607.231 )
+scale = Vector2( 50.4718, 1.65576 )
 texture = ExtResource( 8 )
 
 [node name="llum 1" type="Sprite" parent="Fons lvl 5 1"]
@@ -240,6 +255,59 @@ texture = ExtResource( 11 )
 position = Vector2( 109.623, -0.125 )
 shape = SubResource( 3 )
 
+[node name="Pera4" type="StaticBody2D" parent="Cami_principal"]
+position = Vector2( 14222.7, 10.6543 )
+rotation = -0.380482
+scale = Vector2( 33, 11 )
+
+[node name="tile 8" type="Sprite" parent="Cami_principal/Pera4"]
+position = Vector2( 110.804, 0 )
+texture = ExtResource( 11 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Pera4"]
+position = Vector2( 109.58, 0.193665 )
+shape = SubResource( 3 )
+
+[node name="Flor blava7" parent="Cami_principal" instance=ExtResource( 3 )]
+position = Vector2( 17015.7, -1627.49 )
+rotation = -0.541052
+scale = Vector2( 1, 1 )
+
+[node name="Pera5" type="StaticBody2D" parent="Cami_principal"]
+position = Vector2( 16698, -6272.84 )
+rotation = 1.90415
+scale = Vector2( 33, 11 )
+
+[node name="tile 8" type="Sprite" parent="Cami_principal/Pera5"]
+position = Vector2( 110.804, 0 )
+texture = ExtResource( 11 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Pera5"]
+position = Vector2( 109.58, 0.193665 )
+shape = SubResource( 3 )
+
+[node name="Pera6" type="StaticBody2D" parent="Cami_principal"]
+position = Vector2( 19098.7, -6325.33 )
+rotation = 1.90415
+scale = Vector2( 33, 11 )
+
+[node name="tile 8" type="Sprite" parent="Cami_principal/Pera6"]
+position = Vector2( 110.804, 0 )
+texture = ExtResource( 11 )
+flip_v = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Pera6"]
+position = Vector2( 109.58, 0.193665 )
+shape = SubResource( 3 )
+
+[node name="Flor blava6" parent="Cami_principal" instance=ExtResource( 3 )]
+position = Vector2( 15834.9, -2367.51 )
+rotation = 1.89194
+
+[node name="Flor blava8" parent="Cami_principal" instance=ExtResource( 3 )]
+position = Vector2( 17364.9, -2704.65 )
+rotation = -1.21475
+
 [node name="Naranja 7" type="StaticBody2D" parent="Cami_principal"]
 
 [node name="tile 3" type="Sprite" parent="Cami_principal/Naranja 7"]
@@ -261,9 +329,6 @@ texture = ExtResource( 6 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Naranja 8"]
 position = Vector2( 6504, -896 )
 shape = SubResource( 4 )
-
-[node name="Jugador" parent="." instance=ExtResource( 1 )]
-position = Vector2( 9883.63, -50.047 )
 
 [node name="Mazmorra 1" type="Node2D" parent="."]
 
@@ -369,3 +434,100 @@ rotation = -0.675442
 [node name="Flor blava5" parent="Mazmorra 1" instance=ExtResource( 3 )]
 position = Vector2( 10120.2, -700.239 )
 rotation = 1.5708
+
+[node name="Jugador" parent="." instance=ExtResource( 1 )]
+position = Vector2( 18320, -3744 )
+
+[node name="Cami_amunt" type="Node2D" parent="."]
+
+[node name="Naranja 12" type="StaticBody2D" parent="Cami_amunt"]
+position = Vector2( 13848, -2712 )
+
+[node name="Tile 1" type="Sprite" parent="Cami_amunt/Naranja 12"]
+position = Vector2( 4488, -656 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_amunt/Naranja 12"]
+position = Vector2( 4504, -672 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="Naranja 13" type="StaticBody2D" parent="Cami_amunt"]
+position = Vector2( 14904, -2712 )
+
+[node name="Tile 1" type="Sprite" parent="Cami_amunt/Naranja 13"]
+position = Vector2( 4488, -656 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_amunt/Naranja 13"]
+position = Vector2( 4504, -672 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="Naranja 14" type="StaticBody2D" parent="Cami_amunt"]
+position = Vector2( 15960, -2712 )
+
+[node name="Tile 1" type="Sprite" parent="Cami_amunt/Naranja 14"]
+position = Vector2( 5496, -752 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+offset = Vector2( -30.5454, 8.72726 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_amunt/Naranja 14"]
+position = Vector2( 4504, -672 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="Naranja 15" type="StaticBody2D" parent="Cami_amunt"]
+position = Vector2( 17016, -2712 )
+
+[node name="Tile 1" type="Sprite" parent="Cami_amunt/Naranja 15"]
+position = Vector2( 5496, -752 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+offset = Vector2( -30.5454, 8.72726 )
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_amunt/Naranja 15"]
+position = Vector2( 4504, -672 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="Naranja 16" type="StaticBody2D" parent="Cami_amunt"]
+position = Vector2( 18064, -2712 )
+
+[node name="Tile 1" type="Sprite" parent="Cami_amunt/Naranja 16"]
+position = Vector2( 5496, -752 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+offset = Vector2( -30.5454, 8.72726 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_amunt/Naranja 16"]
+position = Vector2( 4504, -672 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="Area2D2" parent="Cami_amunt" instance=ExtResource( 9 )]
+position = Vector2( 18136, -3704 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Cami_amunt" groups=[
+"pared",
+]]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_amunt/StaticBody2D"]
+position = Vector2( 17816, -4032 )
+shape = SubResource( 6 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Cami_amunt" groups=[
+"pared",
+]]
+position = Vector2( 2864, 0 )
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_amunt/StaticBody2D2"]
+position = Vector2( 17816, -4032 )
+shape = SubResource( 6 )
