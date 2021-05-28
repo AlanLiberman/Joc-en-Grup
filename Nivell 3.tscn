@@ -37,55 +37,55 @@ extents = Vector2( 43234.9, 1389.16 )
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 43490.2, 141.167 )
 
-[sub_resource type="AtlasTexture" id=34]
+[sub_resource type="AtlasTexture" id=3]
 flags = 4
 atlas = ExtResource( 29 )
 region = Rect2( 0, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=35]
+[sub_resource type="AtlasTexture" id=4]
 flags = 4
 atlas = ExtResource( 29 )
 region = Rect2( 64, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=36]
+[sub_resource type="AtlasTexture" id=5]
 flags = 4
 atlas = ExtResource( 29 )
 region = Rect2( 128, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=37]
+[sub_resource type="AtlasTexture" id=6]
 flags = 4
 atlas = ExtResource( 29 )
 region = Rect2( 192, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=38]
+[sub_resource type="AtlasTexture" id=7]
 flags = 4
 atlas = ExtResource( 29 )
 region = Rect2( 256, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=39]
+[sub_resource type="AtlasTexture" id=8]
 flags = 4
 atlas = ExtResource( 29 )
 region = Rect2( 320, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=40]
+[sub_resource type="AtlasTexture" id=9]
 flags = 4
 atlas = ExtResource( 29 )
 region = Rect2( 384, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=41]
+[sub_resource type="AtlasTexture" id=10]
 flags = 4
 atlas = ExtResource( 29 )
 region = Rect2( 448, 0, 64, 64 )
 
-[sub_resource type="SpriteFrames" id=42]
+[sub_resource type="SpriteFrames" id=11]
 animations = [ {
-"frames": [ SubResource( 34 ), SubResource( 35 ), SubResource( 36 ), SubResource( 37 ), SubResource( 38 ), SubResource( 39 ), SubResource( 40 ), SubResource( 41 ) ],
+"frames": [ SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ) ],
 "loop": true,
 "name": "default",
 "speed": 10.0
 } ]
 
-[sub_resource type="CapsuleShape2D" id=43]
+[sub_resource type="CapsuleShape2D" id=12]
 radius = 58.1992
 height = 225.616
 
@@ -560,14 +560,14 @@ script = ExtResource( 30 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Portal2"]
 position = Vector2( 29083.4, -550.336 )
 scale = Vector2( 8, 8 )
-frames = SubResource( 42 )
+frames = SubResource( 11 )
 frame = 4
 playing = true
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Portal2"]
 position = Vector2( 29087.3, -509.595 )
-shape = SubResource( 43 )
+shape = SubResource( 12 )
 
 [node name="Construccio" type="TileMap" parent="."]
 tile_set = SubResource( 27 )
@@ -2498,7 +2498,6 @@ one_shot = true
 
 [node name="TickDmg" type="Timer" parent="."]
 wait_time = 0.5
-
 [connection signal="body_entered" from="Aigua" to="." method="_on_Aigua2_body_entered"]
 [connection signal="body_exited" from="Aigua" to="." method="_on_Aigua2_body_exited"]
 [connection signal="body_entered" from="Corrent d'aigua/Corrent 1" to="Corrent d'aigua" method="_on_Corrent_1_body_entered"]

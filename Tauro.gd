@@ -2,6 +2,7 @@ extends KinematicBody2D
 
 var velocity : Vector2
 var vida = 1
+var morir = false
 
 func _ready():
 	velocity.x = -900
@@ -16,11 +17,9 @@ func _process(delta):
 
 func _on_Hitbox_body_entered(body):
 	if body.name == 'Jugador':
-		body.vida = 0
-	#if group.name == 'arma':
-		#vida = 0
-		#$Tauro.visible = false
-		
+		body.vida -= 25
+
+
 func _on_Zona1_body_entered(body):
 	if body.name == 'Tauro':
 		body.velocity.x *= -1
@@ -28,3 +27,9 @@ func _on_Zona1_body_entered(body):
 func _on_Zona2_body_entered(body):
 	if body.name == 'Tauro':
 		body.velocity.x *= -1
+
+
+func _on_Hitbox_area_entered(area):
+	if area.is_in_group("arma"):
+		morir = true
+		get_parent().queue_free()
