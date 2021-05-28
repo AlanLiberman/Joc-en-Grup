@@ -2,6 +2,7 @@ extends KinematicBody2D
 
 var velocity : Vector2
 var vida = 100
+var gravetat = 100
 
 func _ready():
 	visible = true
@@ -9,7 +10,8 @@ func _ready():
 
 
 func _process(delta):
-	velocity = Vector2.ZERO
+	velocity.x = 0
+	velocity.y += gravetat
 	if Input.is_action_pressed("down") :
 		velocity += Vector2.DOWN * 750
 		$AnimatedSprite.flip_h = false

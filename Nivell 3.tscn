@@ -1,4 +1,4 @@
-[gd_scene load_steps=64 format=2]
+[gd_scene load_steps=67 format=2]
 
 [ext_resource path="res://Nivell 3/Screenshot_1.jpg" type="Texture" id=1]
 [ext_resource path="res://Nivell 3/underwater1.png" type="Texture" id=2]
@@ -433,7 +433,7 @@ extents = Vector2( 591.892, 1878.81 )
 extents = Vector2( 28.1377, 62.9344 )
 
 [sub_resource type="RectangleShape2D" id=30]
-extents = Vector2( 227.474, 1233.46 )
+extents = Vector2( 227.474, 1156.74 )
 
 [sub_resource type="RectangleShape2D" id=31]
 extents = Vector2( 18.0649, 51.4707 )
@@ -441,8 +441,17 @@ extents = Vector2( 18.0649, 51.4707 )
 [sub_resource type="RectangleShape2D" id=32]
 extents = Vector2( 23.8701, 56.0944 )
 
+[sub_resource type="RectangleShape2D" id=34]
+extents = Vector2( 231.171, 41.8223 )
+
+[sub_resource type="RectangleShape2D" id=35]
+extents = Vector2( 230.248, 40.3649 )
+
+[sub_resource type="RectangleShape2D" id=36]
+extents = Vector2( 238.898, 38.5958 )
+
 [sub_resource type="RectangleShape2D" id=33]
-extents = Vector2( 635.291, 58.2739 )
+extents = Vector2( 720.41, 58.2739 )
 
 [node name="Nivell 3" type="Node2D"]
 script = ExtResource( 6 )
@@ -561,7 +570,7 @@ script = ExtResource( 30 )
 position = Vector2( 29083.4, -550.336 )
 scale = Vector2( 8, 8 )
 frames = SubResource( 11 )
-frame = 4
+frame = 2
 playing = true
 flip_h = true
 
@@ -920,6 +929,10 @@ shape = SubResource( 31 )
 position = Vector2( 8130.69, -207.13 )
 shape = SubResource( 32 )
 
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Construccio/StaticBody2D3"]
+position = Vector2( 7881.17, -224.576 )
+shape = SubResource( 34 )
+
 [node name="StaticBody2D21" type="StaticBody2D" parent="Construccio"]
 position = Vector2( 9626, -25.3984 )
 __meta__ = {
@@ -971,6 +984,10 @@ shape = SubResource( 31 )
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Construccio/StaticBody2D21"]
 position = Vector2( 8130.69, -207.13 )
 shape = SubResource( 32 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Construccio/StaticBody2D21"]
+position = Vector2( 7877.45, -224.147 )
+shape = SubResource( 35 )
 
 [node name="StaticBody2D22" type="StaticBody2D" parent="Construccio"]
 position = Vector2( 15141.3, -71.3728 )
@@ -1130,6 +1147,10 @@ shape = SubResource( 31 )
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Construccio/StaticBody2D25"]
 position = Vector2( 8130.69, -207.13 )
 shape = SubResource( 32 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Construccio/StaticBody2D25"]
+position = Vector2( 7876.43, -225.367 )
+shape = SubResource( 36 )
 
 [node name="StaticBody2D23" type="StaticBody2D" parent="Construccio"]
 position = Vector2( 22192.5, 1940.59 )
@@ -2006,16 +2027,8 @@ region_enabled = true
 region_rect = Rect2( 0, -1465, 129, 2295 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Construccio/StaticBody2D10"]
-position = Vector2( 7878.37, 970.034 )
+position = Vector2( 7872.02, 1004.96 )
 shape = SubResource( 30 )
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Construccio/StaticBody2D10"]
-position = Vector2( 7632.77, -213.694 )
-shape = SubResource( 31 )
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="Construccio/StaticBody2D10"]
-position = Vector2( 8130.69, -207.13 )
-shape = SubResource( 32 )
 
 [node name="StaticBody2D12" type="StaticBody2D" parent="Construccio"]
 position = Vector2( -797.621, -2444.29 )
@@ -2123,19 +2136,11 @@ region_enabled = true
 region_rect = Rect2( 0, -1465, 129, 2295 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Construccio/StaticBody2D14"]
-position = Vector2( 7878.37, 970.034 )
+position = Vector2( 7878.37, 1005.39 )
 shape = SubResource( 30 )
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Construccio/StaticBody2D14"]
-position = Vector2( 7632.77, -213.694 )
-shape = SubResource( 31 )
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="Construccio/StaticBody2D14"]
-position = Vector2( 8130.69, -207.13 )
-shape = SubResource( 32 )
-
 [node name="StaticBody2D19" type="StaticBody2D" parent="Construccio"]
-position = Vector2( 9609.53, -2188.65 )
+position = Vector2( 9605.54, -2198.64 )
 scale = Vector2( 0.5, 0.3 )
 __meta__ = {
 "_edit_group_": true
@@ -2162,7 +2167,7 @@ region_enabled = true
 region_rect = Rect2( 0, -1465, 129, 2295 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Construccio/StaticBody2D19"]
-position = Vector2( 7878.37, 970.034 )
+position = Vector2( 7875.85, 1007.83 )
 shape = SubResource( 30 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Construccio/StaticBody2D19"]
@@ -2202,16 +2207,8 @@ region_enabled = true
 region_rect = Rect2( 0, -1465, 129, 2295 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Construccio/StaticBody2D11"]
-position = Vector2( 7878.37, 970.034 )
+position = Vector2( 7893.49, 1020.43 )
 shape = SubResource( 30 )
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Construccio/StaticBody2D11"]
-position = Vector2( 7632.77, -213.694 )
-shape = SubResource( 31 )
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="Construccio/StaticBody2D11"]
-position = Vector2( 8130.69, -207.13 )
-shape = SubResource( 32 )
 
 [node name="StaticBody2D15" type="StaticBody2D" parent="Construccio"]
 position = Vector2( 14055.6, -4594.82 )
@@ -2242,19 +2239,11 @@ region_enabled = true
 region_rect = Rect2( 0, -1465, 129, 2295 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Construccio/StaticBody2D15"]
-position = Vector2( 7878.37, 970.034 )
+position = Vector2( 7878.37, 1014.13 )
 shape = SubResource( 30 )
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Construccio/StaticBody2D15"]
-position = Vector2( 7632.77, -213.694 )
-shape = SubResource( 31 )
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="Construccio/StaticBody2D15"]
-position = Vector2( 8130.69, -207.13 )
-shape = SubResource( 32 )
-
 [node name="StaticBody2D17" type="StaticBody2D" parent="Construccio"]
-position = Vector2( 14277.4, -5587.35 )
+position = Vector2( 14256.6, -5607.47 )
 rotation = 1.5708
 scale = Vector2( 0.5, 0.3 )
 __meta__ = {
@@ -2282,7 +2271,7 @@ region_enabled = true
 region_rect = Rect2( 0, -1465, 129, 2295 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Construccio/StaticBody2D17"]
-position = Vector2( 7878.37, 970.034 )
+position = Vector2( 7890.97, 1003.63 )
 shape = SubResource( 30 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Construccio/StaticBody2D17"]
@@ -2322,7 +2311,7 @@ region_enabled = true
 region_rect = Rect2( 0, -1465, 129, 2295 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Construccio/StaticBody2D20"]
-position = Vector2( 7878.37, 970.034 )
+position = Vector2( 7885.92, 998.349 )
 shape = SubResource( 30 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Construccio/StaticBody2D20"]
@@ -2334,9 +2323,9 @@ position = Vector2( 8130.69, -207.13 )
 shape = SubResource( 32 )
 
 [node name="StaticBody2D18" type="StaticBody2D" parent="Construccio"]
-position = Vector2( 14291.6, -5035.16 )
+position = Vector2( 14271.4, -5130.42 )
 rotation = 1.5708
-scale = Vector2( 0.5, 0.2 )
+scale = Vector2( 0.5, 0.175 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -2374,7 +2363,7 @@ position = Vector2( 8130.69, -207.13 )
 shape = SubResource( 32 )
 
 [node name="StaticBody2D16" type="StaticBody2D" parent="Construccio"]
-position = Vector2( 10268.1, -1546.98 )
+position = Vector2( 10253.8, -1591.12 )
 scale = Vector2( 0.5, 0.175 )
 __meta__ = {
 "_edit_group_": true
@@ -2401,7 +2390,7 @@ region_enabled = true
 region_rect = Rect2( 0, -1465, 129, 2295 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Construccio/StaticBody2D16"]
-position = Vector2( 7878.37, 970.034 )
+position = Vector2( 7885.92, 1013.18 )
 shape = SubResource( 30 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Construccio/StaticBody2D16"]
@@ -2413,6 +2402,9 @@ position = Vector2( 8130.69, -207.13 )
 shape = SubResource( 32 )
 
 [node name="StaticBody2D26" type="StaticBody2D" parent="Construccio"]
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Ground_02" type="Sprite" parent="Construccio/StaticBody2D26"]
 position = Vector2( 19007.5, -232.453 )
@@ -2422,7 +2414,7 @@ region_enabled = true
 region_rect = Rect2( 0, 0, 3173, 128 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Construccio/StaticBody2D26"]
-position = Vector2( 19006.4, -224.893 )
+position = Vector2( 18925.5, -229.65 )
 shape = SubResource( 33 )
 
 [node name="Enemics" type="Node2D" parent="."]
