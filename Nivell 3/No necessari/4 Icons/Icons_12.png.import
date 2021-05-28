@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TilemapNivell3.png-07157f2c231873f4515bac893f7d13cd.stex"
+path="res://.import/Icons_12.png-f7e75acb4355dbd3400cc0b313d5b9b7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Nivell 3/TilemapNivell3.png"
-dest_files=[ "res://.import/TilemapNivell3.png-07157f2c231873f4515bac893f7d13cd.stex" ]
+source_file="res://Nivell 3/No necessari/4 Icons/Icons_12.png"
+dest_files=[ "res://.import/Icons_12.png-f7e75acb4355dbd3400cc0b313d5b9b7.stex" ]
 
 [params]
 
