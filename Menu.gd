@@ -1,7 +1,5 @@
 extends StaticBody2D
 
-func _ready():
-	region_filter_clip = true
 
 func _on_Level_1_body_entered(body):
 	get_tree().change_scene("res://Nivell .tscn")
