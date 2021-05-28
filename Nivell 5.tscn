@@ -25,19 +25,19 @@ extents = Vector2( 176, 584 )
 [sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 16, 31.2727 )
 
-[sub_resource type="RectangleShape2D" id=8]
+[sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 54.3008, 10 )
 
-[sub_resource type="RectangleShape2D" id=4]
+[sub_resource type="RectangleShape2D" id=5]
 extents = Vector2( 440, 232 )
 
-[sub_resource type="RectangleShape2D" id=5]
+[sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 328, 448 )
 
-[sub_resource type="CircleShape2D" id=6]
+[sub_resource type="CircleShape2D" id=7]
 radius = 202.386
 
-[sub_resource type="RectangleShape2D" id=7]
+[sub_resource type="RectangleShape2D" id=8]
 extents = Vector2( 352, 600 )
 
 [sub_resource type="RectangleShape2D" id=9]
@@ -424,7 +424,7 @@ shape = SubResource( 3 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Cami_principal/Pera8"]
 position = Vector2( 39.2727, 21.8181 )
-shape = SubResource( 8 )
+shape = SubResource( 4 )
 
 [node name="Pera10" type="StaticBody2D" parent="Cami_principal"]
 position = Vector2( 25608, -5128 )
@@ -457,7 +457,7 @@ texture = ExtResource( 6 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Naranja 7"]
 position = Vector2( 6504, -896 )
-shape = SubResource( 4 )
+shape = SubResource( 5 )
 
 [node name="Naranja 8" type="StaticBody2D" parent="Cami_principal"]
 
@@ -468,7 +468,7 @@ texture = ExtResource( 6 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Naranja 8"]
 position = Vector2( 6504, -896 )
-shape = SubResource( 4 )
+shape = SubResource( 5 )
 
 [node name="Mazmorra 1" type="Node2D" parent="."]
 
@@ -489,11 +489,11 @@ shape = SubResource( 1 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Mazmorra 1/Naranja 9"]
 position = Vector2( 3704, -1267.36 )
-shape = SubResource( 5 )
+shape = SubResource( 6 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Mazmorra 1/Naranja 9"]
 position = Vector2( 9449.15, -1317.39 )
-shape = SubResource( 5 )
+shape = SubResource( 6 )
 
 [node name="Naranja 10" type="StaticBody2D" parent="Mazmorra 1"]
 position = Vector2( 3712, 1304 )
@@ -744,7 +744,7 @@ collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_amunt/StaticBody2D"]
 position = Vector2( 17816, -4032 )
-shape = SubResource( 6 )
+shape = SubResource( 7 )
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="Cami_amunt" groups=[
 "pared",
@@ -754,14 +754,14 @@ collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_amunt/StaticBody2D2"]
 position = Vector2( 17816, -4032 )
-shape = SubResource( 6 )
+shape = SubResource( 7 )
 
 [node name="boles_lvl_5" type="Area2D" parent="Cami_amunt"]
 position = Vector2( 21368, -4144 )
 script = ExtResource( 12 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_amunt/boles_lvl_5"]
-shape = SubResource( 7 )
+shape = SubResource( 8 )
 
 [node name="Bala" parent="Cami_amunt" instance=ExtResource( 13 )]
 position = Vector2( 23010.4, -3730.51 )
@@ -778,7 +778,6 @@ shape = SubResource( 9 )
 position = Vector2( -5.33789, -58.7329 )
 scale = Vector2( 20, 20 )
 frames = SubResource( 18 )
-frame = 2
 playing = true
 flip_h = true
 

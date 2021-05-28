@@ -27,8 +27,7 @@ zoom = Vector2( 3, 3 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = ExtResource( 2 )
-animation = "mort"
-frame = 5
+animation = "Quiet"
 playing = true
 
 [node name="arma" type="Area2D" parent="AnimatedSprite" groups=[
