@@ -48,6 +48,7 @@ shape = SubResource( 1 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Tauro"]
 scale = Vector2( 0.1, 0.1 )
 frames = SubResource( 4 )
+frame = 1
 playing = true
 
 [node name="Hitbox" type="Area2D" parent="Tauro"]
