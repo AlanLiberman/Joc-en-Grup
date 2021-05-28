@@ -90,8 +90,25 @@ extents = Vector2( 161.587, 433.829 )
 z_index = -100
 
 [node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, -7.1272 )
 scale = Vector2( 3, 3 )
 texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( -2.04016, -5.43518, 5773.91, 369.977 )
+
+[node name="Sprite3" type="Sprite" parent="."]
+position = Vector2( 53.4666, 1083.56 )
+scale = Vector2( 3, 3 )
+texture = ExtResource( 1 )
+flip_v = true
+region_enabled = true
+region_rect = Rect2( -2.04016, -5.43518, 5773.91, 369.977 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 11.9004, -1107.25 )
+scale = Vector2( 3, 3 )
+texture = ExtResource( 1 )
+flip_v = true
 region_enabled = true
 region_rect = Rect2( -2.04016, -5.43518, 5773.91, 369.977 )
 
@@ -100,7 +117,7 @@ position = Vector2( 0, 437.958 )
 shape = SubResource( 1 )
 
 [node name="Level 1" type="Area2D" parent="."]
-position = Vector2( -3910.99, -8.54031 )
+position = Vector2( -3910.99, -10.1277 )
 scale = Vector2( 10, 10 )
 script = ExtResource( 3 )
 __meta__ = {
@@ -116,11 +133,12 @@ scale = Vector2( 0.05, 0.05 )
 texture = ExtResource( 7 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Level 1"]
+modulate = Color( 0, 1, 0.133333, 1 )
 position = Vector2( -0.672729, 3.02723 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 11 )
 animation = "portal"
-frame = 1
+frame = 3
 playing = true
 flip_h = true
 
@@ -142,11 +160,12 @@ scale = Vector2( 0.05, 0.05 )
 texture = ExtResource( 10 )
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="Level 2"]
+modulate = Color( 1, 0.937255, 0, 1 )
 position = Vector2( -0.0783691, 2.82478 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 11 )
 animation = "portal"
-frame = 1
+frame = 3
 playing = true
 flip_h = true
 
@@ -168,10 +187,12 @@ scale = Vector2( 0.05, 0.05 )
 texture = ExtResource( 8 )
 
 [node name="AnimatedSprite3" type="AnimatedSprite" parent="Level 3"]
+modulate = Color( 0, 0.929412, 1, 1 )
 position = Vector2( -1.39603, 8.24359 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 11 )
 animation = "portal"
+frame = 2
 playing = true
 flip_h = true
 
@@ -197,6 +218,7 @@ position = Vector2( -0.766529, 6.80818 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 11 )
 animation = "portal"
+frame = 2
 playing = true
 flip_h = true
 
@@ -218,11 +240,12 @@ scale = Vector2( 0.05, 0.05 )
 texture = ExtResource( 11 )
 
 [node name="AnimatedSprite5" type="AnimatedSprite" parent="Level 5"]
+modulate = Color( 1, 0, 0, 1 )
 position = Vector2( -0.106995, 6.21104 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 11 )
 animation = "portal"
-frame = 7
+frame = 1
 playing = true
 flip_h = true
 
@@ -237,6 +260,11 @@ shape = SubResource( 17 )
 [node name="Jugador" parent="." instance=ExtResource( 13 )]
 position = Vector2( -4278.83, 94.2867 )
 scale = Vector2( 0.5, 0.5 )
+
+[node name="Camera2D" type="Camera2D" parent="Jugador"]
+position = Vector2( 171.439, -393.675 )
+current = true
+zoom = Vector2( 1.25, 1.25 )
 
 [connection signal="body_entered" from="Level 1" to="Level 1" method="_on_Level_1_body_entered"]
 [connection signal="body_entered" from="Level 2" to="Level 2" method="_on_Level_2_body_entered"]

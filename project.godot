@@ -15,7 +15,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Joc-en- Grup"
-run/main_scene="res://Nivell 5.tscn"
+run/main_scene="res://Menu.tscn"
 
 [display]
 

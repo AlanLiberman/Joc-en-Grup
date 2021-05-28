@@ -387,8 +387,13 @@ texture = ExtResource( 60 )
 flip_v = true
 
 [node name="Jugador" parent="." instance=ExtResource( 11 )]
-position = Vector2( 43525.3, -1569.47 )
+position = Vector2( 76.6748, 222.277 )
 scale = Vector2( 0.891558, 0.910538 )
+
+[node name="Camera2D" type="Camera2D" parent="Jugador"]
+position = Vector2( 697.695, -199.375 )
+current = true
+zoom = Vector2( 3, 3 )
 
 [node name="Escenari" type="KinematicBody2D" parent="."]
 
@@ -477,9 +482,6 @@ texture = ExtResource( 7 )
 polygon = PoolVector2Array( 590.969, -283.216, 683.146, 121.492, 62.6553, 738.013, 25.8613, 397.072, -5.37207, 350.592, -52.0635, 324.137, -121.065, 264.482, -172.325, 202.544, -196.919, 151.601, -214.979, 67.3516, -213.012, -1.43848, -210.939, -41.3848, -186.662, -76.9746, -162.386, -112.564, -124.829, -157.079, -118.189, -161.541, -124.935, -185.923, -122.757, -197.025, -133.859, -199.203, -124.935, -185.923, -133.859, -199.203, -136.143, -216.945, -140.604, -223.586, -145.066, -230.226, -133.369, -235.199, -125.596, -234.482, -111.079, -223.445, -97.2676, -203.144, -90.0938, -188.694, -83.7344, -194.827, -82.2021, -201.218, -79.6348, -208.371, -71.6934, -221.867, -73.7324, -242.128, -69.1953, -255.423, -61.8096, -266.457, -52.2412, -276.773, -39.3145, -285.459, -27.5449, -288.251, -18.9707, -305.954, -11.9404, -318.642, 4.56836, -355.229, 7.56738, -377.803, -3.35547, -413.41, -21.71, -460.506, -50.5518, -521.928, -94.501, -590.889, -121.097, -609.833, -141.811, -645.639, -137.963, -676.911, -128.872, -763.346, -130.836, -796.153, -106.366, -936.908, -92.9434, -976.051, -62.8584, -1025.91, -37.207, -1054.62, -10.2285, -1081.36, 1.90723, -1117.72, 6.2793, -1156.04, 10.54, -1164.64, 15.5957, -1167.08, 27.4023, -1158.76, 34.296, -1139.96, 35.584, -1118.84, 55.1357, -1129.58, 69.1816, -1141.41, 78.0703, -1148.82, 75.7988, -1167.85, 76.0654, -1185.25, 81.293, -1200.23, 92.0244, -1215.57, 107.284, -1226.3, 118.391, -1228.99, 124.684, -1253.77, 126.007, -1283.27, 89.4492, -1347.64, 23.1045, -1430.71, -22.3262, -1483.38, -36.5586, -1506.44, -69.8643, -1566.72, -73.4326, -1579.14, -87.252, -1655.92, -82.1865, -1715.26, -65.9824, -1768.71, -25.7773, -1882.74, 7.68945, -1941.09, 34.5947, -1987.86, 63.7363, -2034.72, 515.469, -894.096 )
 one_way_collision_margin = 128.0
 
-[node name="Escenari13" type="KinematicBody2D" parent="."]
-position = Vector2( 49944, -1352 )
-
 [node name="Escenari7" type="KinematicBody2D" parent="."]
 position = Vector2( 15568, 56 )
 
@@ -557,7 +559,7 @@ position = Vector2( 98.2773, -400.655 )
 rotation = 1.5708
 scale = Vector2( 10, 10 )
 frames = SubResource( 10 )
-frame = 5
+frame = 6
 playing = true
 
 [node name="Escenari12" type="KinematicBody2D" parent="."]
@@ -644,7 +646,7 @@ shape = SubResource( 19 )
 position = Vector2( 2203.2, 265.372 )
 scale = Vector2( 8, 8 )
 frames = SubResource( 28 )
-frame = 6
+frame = 1
 playing = true
 flip_h = true
 
@@ -660,7 +662,7 @@ shape = SubResource( 19 )
 position = Vector2( 2203.2, 265.372 )
 scale = Vector2( 8, 8 )
 frames = SubResource( 28 )
-frame = 6
+frame = 1
 playing = true
 
 [node name="Area2D6" type="Area2D" parent="."]
@@ -675,7 +677,7 @@ shape = SubResource( 19 )
 position = Vector2( 2203.2, 265.372 )
 scale = Vector2( 8, 8 )
 frames = SubResource( 28 )
-frame = 6
+frame = 1
 playing = true
 
 [node name="Mossy block" type="KinematicBody2D" parent="."]
@@ -827,7 +829,7 @@ position = Vector2( 50671.7, -2223.24 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Mossy block14"]
 position = Vector2( 639.793, 200.622 )
 frames = SubResource( 30 )
-frame = 2
+frame = 13
 playing = true
 flip_h = true
 
@@ -848,7 +850,7 @@ position = Vector2( 1467.04, 113.765 )
 rotation = 1.5708
 scale = Vector2( 10, 10 )
 frames = SubResource( 39 )
-frame = 3
+frame = 4
 playing = true
 flip_h = true
 
@@ -902,7 +904,7 @@ shape = SubResource( 43 )
 [connection signal="body_entered" from="Level 2" to="Level 2" method="_on_Level_1_body_entered"]
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_Area2D_body_entered"]
-[connection signal="body_entered" from="Area2D6" to="Area2D6" method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="Area2D6" to="Area2D6" method="_on_Area2D6_body_entered"]
 [connection signal="body_entered" from="Area2D3" to="Area2D3" method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="Pinchos" to="Pinchos" method="_on_Pinchos_body_entered"]
 [connection signal="body_exited" from="Level 3" to="Level 3" method="_on_Level_3_body_exited"]

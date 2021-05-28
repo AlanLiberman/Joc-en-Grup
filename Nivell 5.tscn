@@ -778,11 +778,17 @@ shape = SubResource( 9 )
 position = Vector2( -5.33789, -58.7329 )
 scale = Vector2( 20, 20 )
 frames = SubResource( 18 )
+frame = 2
 playing = true
 flip_h = true
 
 [node name="Jugador" parent="." instance=ExtResource( 1 )]
 position = Vector2( 663.932, -1079 )
+
+[node name="Camera2D" type="Camera2D" parent="Jugador"]
+position = Vector2( 424.465, -282.607 )
+current = true
+zoom = Vector2( 3, 3 )
 
 [connection signal="area_entered" from="Cami_amunt/boles_lvl_5" to="Cami_amunt/boles_lvl_5" method="_on_boles_lvl_5_area_entered"]
 [connection signal="body_entered" from="Cami_amunt/Bala" to="Cami_amunt/Bala" method="_on_Bala_body_entered"]

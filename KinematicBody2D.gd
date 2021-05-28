@@ -14,6 +14,7 @@ func _physics_process(delta):
 		velocitat.x = 0
 		if Input.is_action_pressed("ui_up"):
 			if is_on_floor():
+				print('toco terra')
 				velocitat.y += -1630
 		velocitat.y += gravity * delta
 		if Input.is_action_pressed("ui_left"):
@@ -21,6 +22,7 @@ func _physics_process(delta):
 		if Input.is_action_pressed("ui_right"):
 			velocitat.x = 1500
 		velocitat = move_and_slide(velocitat,Vector2.UP)
+		print(position.y)
 		
 		if velocitat.x > 0:
 			$AnimatedSprite/arma/CollisionShape2D.position.x = 125

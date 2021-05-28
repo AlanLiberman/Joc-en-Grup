@@ -20,11 +20,6 @@ script = ExtResource( 1 )
 position = Vector2( 18.4863, 14.1079 )
 shape = SubResource( 1 )
 
-[node name="Camera2D" type="Camera2D" parent="CollisionShape2D"]
-position = Vector2( 483.992, -243.893 )
-current = true
-zoom = Vector2( 3, 3 )
-
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = ExtResource( 2 )
 animation = "Quiet"

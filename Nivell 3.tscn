@@ -32,7 +32,7 @@
 [ext_resource path="res://Portal2.gd" type="Script" id=30]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 43234.9, 1389.16 )
+extents = Vector2( 43234.9, 1380.15 )
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 43490.2, 141.167 )
@@ -457,10 +457,7 @@ extents = Vector2( 720.41, 58.2739 )
 script = ExtResource( 6 )
 
 [node name="Aigua" type="Area2D" parent="."]
-position = Vector2( -4.23828, 0 )
-__meta__ = {
-"_edit_group_": true
-}
+position = Vector2( -0.23828, 0 )
 
 [node name="AiguaCel" type="Sprite" parent="Aigua"]
 position = Vector2( -0.841064, -0.840912 )
@@ -469,9 +466,19 @@ region_enabled = true
 region_rect = Rect2( -3.48401, 0, 86576.5, 1079.67 )
 
 [node name="Cel" type="Sprite" parent="Aigua"]
-position = Vector2( -187.73, -1385.48 )
+position = Vector2( -187.73, -1504.27 )
 rotation = 3.14159
+scale = Vector2( 1, 1.13725 )
 texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( -2225.77, 0, 87314.8, 1731 )
+
+[node name="Cel2" type="Sprite" parent="Aigua"]
+position = Vector2( 40.3363, -4925.32 )
+rotation = 3.14159
+scale = Vector2( 1, 2.81714 )
+texture = ExtResource( 3 )
+flip_v = true
 region_enabled = true
 region_rect = Rect2( -2225.77, 0, 87314.8, 1731 )
 
@@ -481,8 +488,14 @@ scale = Vector2( 92.7206, 15.4456 )
 texture = ExtResource( 1 )
 region_rect = Rect2( 0, 0, 3749, 136.492 )
 
+[node name="Aigua2" type="Sprite" parent="Aigua"]
+position = Vector2( 207.505, 6478.56 )
+scale = Vector2( 92.7206, 57.6759 )
+texture = ExtResource( 1 )
+region_rect = Rect2( 0, 0, 3749, 136.492 )
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Aigua"]
-position = Vector2( 0, 1132.72 )
+position = Vector2( 641.043, 1116.15 )
 shape = SubResource( 1 )
 
 [node name="Corrent d\'aigua" type="Node2D" parent="."]
@@ -556,7 +569,7 @@ position = Vector2( 205.832, 2262.93 )
 shape = SubResource( 2 )
 
 [node name="Portal" parent="." instance=ExtResource( 8 )]
-position = Vector2( -2585.96, -588.428 )
+position = Vector2( -2589.96, -588.428 )
 scale = Vector2( 8, 8 )
 
 [node name="Portal2" type="Area2D" parent="."]
@@ -566,6 +579,7 @@ script = ExtResource( 30 )
 position = Vector2( 29083.4, -550.336 )
 scale = Vector2( 8, 8 )
 frames = SubResource( 11 )
+frame = 7
 playing = true
 flip_h = true
 
@@ -2478,7 +2492,12 @@ one_shot = true
 wait_time = 0.5
 
 [node name="Jugador" parent="." instance=ExtResource( 7 )]
-position = Vector2( -2380.48, -506.03 )
+position = Vector2( -2358.43, -597.626 )
+
+[node name="Camera2D" type="Camera2D" parent="Jugador"]
+position = Vector2( 451.898, -323.464 )
+current = true
+zoom = Vector2( 3, 3 )
 
 [connection signal="body_entered" from="Aigua" to="." method="_on_Aigua2_body_entered"]
 [connection signal="body_exited" from="Aigua" to="." method="_on_Aigua2_body_exited"]
