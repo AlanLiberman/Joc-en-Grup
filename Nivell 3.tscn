@@ -561,7 +561,7 @@ script = ExtResource( 30 )
 position = Vector2( 29083.4, -550.336 )
 scale = Vector2( 8, 8 )
 frames = SubResource( 32 )
-frame = 4
+frame = 2
 playing = true
 flip_h = true
 
@@ -1327,7 +1327,7 @@ texture = ExtResource( 22 )
 polygon = PoolVector2Array( 2703.84, -214.952, 4151.21, -211.955, 4154.2, -158.016, 4109.25, -89.0942, 4103.26, 552.181, 4226.12, 684.032, 4151.21, 971.707, 4220.13, 1028.64, 4235.11, 1142.51, 4127.23, 1208.44, 4150.8, 1334.1, 4080.16, 1468.64, 3871.62, 1519.09, 3807.71, 1569.55, 3461.26, 1539.27, 3424.26, 1599.82, 2973.54, 1613.27, 2970.18, 1458.55, 2896.18, 1455.19, 2798.64, 1303.82, 2822.18, 1176.01, 2734.73, 1065.01, 2650.64, 1044.83, 2610.28, 917.011, 2707.82, 819.468, 2654, 732.014, 2754.91, 624.38, 2758.1, -92.7227, 2748.4, -133.342, 2712.54, -157.883 )
 
 [node name="StaticBody2D7" type="StaticBody2D" parent="Construccio"]
-position = Vector2( 16729.4, 3459.54 )
+position = Vector2( 16727.2, 3459.54 )
 rotation = 3.14159
 __meta__ = {
 "_edit_group_": true
@@ -1609,7 +1609,7 @@ texture = ExtResource( 22 )
 polygon = PoolVector2Array( 2703.84, -214.952, 4151.21, -211.955, 4154.2, -158.016, 4109.25, -89.0942, 4103.26, 552.181, 4226.12, 684.032, 4151.21, 971.707, 4220.13, 1028.64, 4235.11, 1142.51, 4127.23, 1208.44, 4150.8, 1334.1, 4080.16, 1468.64, 3871.62, 1519.09, 3807.71, 1569.55, 3461.26, 1539.27, 3424.26, 1599.82, 2973.54, 1613.27, 2970.18, 1458.55, 2896.18, 1455.19, 2798.64, 1303.82, 2822.18, 1176.01, 2734.73, 1065.01, 2650.64, 1044.83, 2610.28, 917.011, 2707.82, 819.468, 2654, 732.014, 2754.91, 624.38, 2758.1, -92.7227, 2748.4, -133.342, 2712.54, -157.883 )
 
 [node name="StaticBody2D5" type="StaticBody2D" parent="Construccio"]
-position = Vector2( 8483.99, -130.788 )
+position = Vector2( 8488.71, -131.732 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -1758,7 +1758,8 @@ __meta__ = {
 }
 
 [node name="Ground_06" type="Sprite" parent="Construccio/StaticBody2D6"]
-position = Vector2( 3440.11, 295.734 )
+position = Vector2( 3393.5, 295.734 )
+scale = Vector2( 1.07913, 1 )
 texture = ExtResource( 14 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 1178, 775 )
@@ -1788,13 +1789,6 @@ texture = ExtResource( 17 )
 [node name="Ground_13" type="Sprite" parent="Construccio/StaticBody2D6"]
 position = Vector2( 4083.36, 316.815 )
 texture = ExtResource( 10 )
-region_enabled = true
-region_rect = Rect2( 0, -356, 122, 804 )
-
-[node name="Ground_14" type="Sprite" parent="Construccio/StaticBody2D6"]
-position = Vector2( 2789.29, 317.937 )
-texture = ExtResource( 10 )
-flip_h = true
 region_enabled = true
 region_rect = Rect2( 0, -356, 122, 804 )
 
@@ -1901,7 +1895,8 @@ __meta__ = {
 }
 
 [node name="Ground_06" type="Sprite" parent="Construccio/StaticBody2D9"]
-position = Vector2( 3440.11, 295.734 )
+position = Vector2( 3392.54, 295.734 )
+scale = Vector2( 1.08076, 1 )
 texture = ExtResource( 14 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 1178, 775 )
@@ -1931,13 +1926,6 @@ texture = ExtResource( 17 )
 [node name="Ground_13" type="Sprite" parent="Construccio/StaticBody2D9"]
 position = Vector2( 4083.36, 316.815 )
 texture = ExtResource( 10 )
-region_enabled = true
-region_rect = Rect2( 0, -356, 122, 804 )
-
-[node name="Ground_14" type="Sprite" parent="Construccio/StaticBody2D9"]
-position = Vector2( 2789.29, 317.937 )
-texture = ExtResource( 10 )
-flip_h = true
 region_enabled = true
 region_rect = Rect2( 0, -356, 122, 804 )
 
