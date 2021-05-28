@@ -37,55 +37,55 @@ extents = Vector2( 43234.9, 1389.16 )
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 43490.2, 141.167 )
 
-[sub_resource type="AtlasTexture" id=3]
+[sub_resource type="AtlasTexture" id=34]
 flags = 4
 atlas = ExtResource( 29 )
 region = Rect2( 0, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=4]
+[sub_resource type="AtlasTexture" id=35]
 flags = 4
 atlas = ExtResource( 29 )
 region = Rect2( 64, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=5]
+[sub_resource type="AtlasTexture" id=36]
 flags = 4
 atlas = ExtResource( 29 )
 region = Rect2( 128, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=6]
+[sub_resource type="AtlasTexture" id=37]
 flags = 4
 atlas = ExtResource( 29 )
 region = Rect2( 192, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=7]
+[sub_resource type="AtlasTexture" id=38]
 flags = 4
 atlas = ExtResource( 29 )
 region = Rect2( 256, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=8]
+[sub_resource type="AtlasTexture" id=39]
 flags = 4
 atlas = ExtResource( 29 )
 region = Rect2( 320, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=9]
+[sub_resource type="AtlasTexture" id=40]
 flags = 4
 atlas = ExtResource( 29 )
 region = Rect2( 384, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=10]
+[sub_resource type="AtlasTexture" id=41]
 flags = 4
 atlas = ExtResource( 29 )
 region = Rect2( 448, 0, 64, 64 )
 
-[sub_resource type="SpriteFrames" id=11]
+[sub_resource type="SpriteFrames" id=42]
 animations = [ {
-"frames": [ SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ) ],
+"frames": [ SubResource( 34 ), SubResource( 35 ), SubResource( 36 ), SubResource( 37 ), SubResource( 38 ), SubResource( 39 ), SubResource( 40 ), SubResource( 41 ) ],
 "loop": true,
 "name": "default",
 "speed": 10.0
 } ]
 
-[sub_resource type="CapsuleShape2D" id=12]
+[sub_resource type="CapsuleShape2D" id=43]
 radius = 58.1992
 height = 225.616
 
@@ -560,13 +560,14 @@ script = ExtResource( 30 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Portal2"]
 position = Vector2( 29083.4, -550.336 )
 scale = Vector2( 8, 8 )
-frames = SubResource( 11 )
+frames = SubResource( 42 )
+frame = 4
 playing = true
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Portal2"]
 position = Vector2( 29087.3, -509.595 )
-shape = SubResource( 12 )
+shape = SubResource( 43 )
 
 [node name="Construccio" type="TileMap" parent="."]
 tile_set = SubResource( 27 )
@@ -1326,45 +1327,32 @@ texture = ExtResource( 22 )
 polygon = PoolVector2Array( 2703.84, -214.952, 4151.21, -211.955, 4154.2, -158.016, 4109.25, -89.0942, 4103.26, 552.181, 4226.12, 684.032, 4151.21, 971.707, 4220.13, 1028.64, 4235.11, 1142.51, 4127.23, 1208.44, 4150.8, 1334.1, 4080.16, 1468.64, 3871.62, 1519.09, 3807.71, 1569.55, 3461.26, 1539.27, 3424.26, 1599.82, 2973.54, 1613.27, 2970.18, 1458.55, 2896.18, 1455.19, 2798.64, 1303.82, 2822.18, 1176.01, 2734.73, 1065.01, 2650.64, 1044.83, 2610.28, 917.011, 2707.82, 819.468, 2654, 732.014, 2754.91, 624.38, 2758.1, -92.7227, 2748.4, -133.342, 2712.54, -157.883 )
 
 [node name="StaticBody2D7" type="StaticBody2D" parent="Construccio"]
-position = Vector2( 16729.4, 3459.54 )
+position = Vector2( 16700.9, 3459.54 )
 rotation = 3.14159
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Ground_06" type="Sprite" parent="Construccio/StaticBody2D7"]
-position = Vector2( 3440.11, 295.734 )
+position = Vector2( 3481.52, 295.734 )
+scale = Vector2( 1.0703, 1 )
 texture = ExtResource( 14 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 1178, 775 )
 
-[node name="Ground_08" type="Sprite" parent="Construccio/StaticBody2D7"]
-position = Vector2( 4097.57, -148.722 )
-texture = ExtResource( 9 )
-
 [node name="Ground_11" type="Sprite" parent="Construccio/StaticBody2D7"]
-position = Vector2( 3436.46, -147.495 )
+position = Vector2( 3552.92, -134.342 )
 texture = ExtResource( 13 )
 region_enabled = true
-region_rect = Rect2( 0, 0, 957, 129 )
+region_rect = Rect2( 0, 0, 1228, 129 )
 
 [node name="Ground_10" type="Sprite" parent="Construccio/StaticBody2D7"]
 position = Vector2( 2900.18, -147.723 )
 texture = ExtResource( 16 )
 
-[node name="Ground_12" type="Sprite" parent="Construccio/StaticBody2D7"]
-position = Vector2( 3975.64, -148.9 )
-texture = ExtResource( 15 )
-
 [node name="Ground_04" type="Sprite" parent="Construccio/StaticBody2D7"]
 position = Vector2( 2774.32, -147.723 )
 texture = ExtResource( 17 )
-
-[node name="Ground_13" type="Sprite" parent="Construccio/StaticBody2D7"]
-position = Vector2( 4083.36, 316.815 )
-texture = ExtResource( 10 )
-region_enabled = true
-region_rect = Rect2( 0, -356, 122, 804 )
 
 [node name="Ground_14" type="Sprite" parent="Construccio/StaticBody2D7"]
 position = Vector2( 2789.29, 317.937 )
@@ -1467,48 +1455,35 @@ texture = ExtResource( 22 )
 polygon = PoolVector2Array( 2703.84, -214.952, 4151.21, -211.955, 4154.2, -158.016, 4109.25, -89.0942, 4103.26, 552.181, 4226.12, 684.032, 4151.21, 971.707, 4220.13, 1028.64, 4235.11, 1142.51, 4127.23, 1208.44, 4150.8, 1334.1, 4080.16, 1468.64, 3871.62, 1519.09, 3807.71, 1569.55, 3461.26, 1539.27, 3424.26, 1599.82, 2973.54, 1613.27, 2970.18, 1458.55, 2896.18, 1455.19, 2798.64, 1303.82, 2822.18, 1176.01, 2734.73, 1065.01, 2650.64, 1044.83, 2610.28, 917.011, 2707.82, 819.468, 2654, 732.014, 2754.91, 624.38, 2758.1, -92.7227, 2748.4, -133.342, 2712.54, -157.883 )
 
 [node name="StaticBody2D8" type="StaticBody2D" parent="Construccio"]
-position = Vector2( 17783.5, 3446.84 )
+position = Vector2( 17783.5, 3446.17 )
 rotation = 3.14159
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Ground_06" type="Sprite" parent="Construccio/StaticBody2D8"]
-position = Vector2( 3440.11, 295.734 )
+position = Vector2( 3479.31, 295.734 )
+scale = Vector2( 1.06655, 1 )
 texture = ExtResource( 14 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 1178, 775 )
 
-[node name="Ground_08" type="Sprite" parent="Construccio/StaticBody2D8"]
-position = Vector2( 4097.57, -148.722 )
-texture = ExtResource( 9 )
-
 [node name="Ground_11" type="Sprite" parent="Construccio/StaticBody2D8"]
-position = Vector2( 3436.46, -147.495 )
+position = Vector2( 3490.68, -147.088 )
 texture = ExtResource( 13 )
 region_enabled = true
-region_rect = Rect2( 0, 0, 957, 129 )
+region_rect = Rect2( -105, 0, 1255, 129 )
 
 [node name="Ground_10" type="Sprite" parent="Construccio/StaticBody2D8"]
 position = Vector2( 2900.18, -147.723 )
 texture = ExtResource( 16 )
 
-[node name="Ground_12" type="Sprite" parent="Construccio/StaticBody2D8"]
-position = Vector2( 3975.64, -148.9 )
-texture = ExtResource( 15 )
-
 [node name="Ground_04" type="Sprite" parent="Construccio/StaticBody2D8"]
 position = Vector2( 2774.32, -147.723 )
 texture = ExtResource( 17 )
 
-[node name="Ground_13" type="Sprite" parent="Construccio/StaticBody2D8"]
-position = Vector2( 4083.36, 316.815 )
-texture = ExtResource( 10 )
-region_enabled = true
-region_rect = Rect2( 0, -356, 122, 804 )
-
 [node name="Ground_14" type="Sprite" parent="Construccio/StaticBody2D8"]
-position = Vector2( 2789.29, 317.937 )
+position = Vector2( 2790.88, 317.143 )
 texture = ExtResource( 10 )
 flip_h = true
 region_enabled = true
@@ -1608,7 +1583,7 @@ texture = ExtResource( 22 )
 polygon = PoolVector2Array( 2703.84, -214.952, 4151.21, -211.955, 4154.2, -158.016, 4109.25, -89.0942, 4103.26, 552.181, 4226.12, 684.032, 4151.21, 971.707, 4220.13, 1028.64, 4235.11, 1142.51, 4127.23, 1208.44, 4150.8, 1334.1, 4080.16, 1468.64, 3871.62, 1519.09, 3807.71, 1569.55, 3461.26, 1539.27, 3424.26, 1599.82, 2973.54, 1613.27, 2970.18, 1458.55, 2896.18, 1455.19, 2798.64, 1303.82, 2822.18, 1176.01, 2734.73, 1065.01, 2650.64, 1044.83, 2610.28, 917.011, 2707.82, 819.468, 2654, 732.014, 2754.91, 624.38, 2758.1, -92.7227, 2748.4, -133.342, 2712.54, -157.883 )
 
 [node name="StaticBody2D5" type="StaticBody2D" parent="Construccio"]
-position = Vector2( 8483.99, -130.788 )
+position = Vector2( 8483.99, -133.785 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -1757,7 +1732,8 @@ __meta__ = {
 }
 
 [node name="Ground_06" type="Sprite" parent="Construccio/StaticBody2D6"]
-position = Vector2( 3440.11, 295.734 )
+position = Vector2( 3388.6, 295.734 )
+scale = Vector2( 1.08746, 1 )
 texture = ExtResource( 14 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 1178, 775 )
@@ -1767,33 +1743,18 @@ position = Vector2( 4097.57, -148.722 )
 texture = ExtResource( 9 )
 
 [node name="Ground_11" type="Sprite" parent="Construccio/StaticBody2D6"]
-position = Vector2( 3436.46, -147.495 )
+position = Vector2( 3344.38, -152.677 )
 texture = ExtResource( 13 )
 region_enabled = true
-region_rect = Rect2( 0, 0, 957, 129 )
-
-[node name="Ground_10" type="Sprite" parent="Construccio/StaticBody2D6"]
-position = Vector2( 2900.18, -147.723 )
-texture = ExtResource( 16 )
+region_rect = Rect2( -331, 0, 1288, 129 )
 
 [node name="Ground_12" type="Sprite" parent="Construccio/StaticBody2D6"]
 position = Vector2( 3975.64, -148.9 )
 texture = ExtResource( 15 )
 
-[node name="Ground_04" type="Sprite" parent="Construccio/StaticBody2D6"]
-position = Vector2( 2774.32, -147.723 )
-texture = ExtResource( 17 )
-
 [node name="Ground_13" type="Sprite" parent="Construccio/StaticBody2D6"]
 position = Vector2( 4083.36, 316.815 )
 texture = ExtResource( 10 )
-region_enabled = true
-region_rect = Rect2( 0, -356, 122, 804 )
-
-[node name="Ground_14" type="Sprite" parent="Construccio/StaticBody2D6"]
-position = Vector2( 2789.29, 317.937 )
-texture = ExtResource( 10 )
-flip_h = true
 region_enabled = true
 region_rect = Rect2( 0, -356, 122, 804 )
 
@@ -1889,9 +1850,6 @@ texture = ExtResource( 22 )
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="Construccio/StaticBody2D6"]
 polygon = PoolVector2Array( 2703.84, -214.952, 4151.21, -211.955, 4154.2, -158.016, 4109.25, -89.0942, 4103.26, 552.181, 4226.12, 684.032, 4151.21, 971.707, 4220.13, 1028.64, 4235.11, 1142.51, 4127.23, 1208.44, 4150.8, 1334.1, 4080.16, 1468.64, 3871.62, 1519.09, 3807.71, 1569.55, 3461.26, 1539.27, 3424.26, 1599.82, 2973.54, 1613.27, 2970.18, 1458.55, 2896.18, 1455.19, 2798.64, 1303.82, 2822.18, 1176.01, 2734.73, 1065.01, 2650.64, 1044.83, 2610.28, 917.011, 2707.82, 819.468, 2654, 732.014, 2754.91, 624.38, 2758.1, -92.7227, 2748.4, -133.342, 2712.54, -157.883 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="StaticBody2D9" type="StaticBody2D" parent="Construccio"]
 position = Vector2( 10910.2, -121.216 )
@@ -1900,7 +1858,8 @@ __meta__ = {
 }
 
 [node name="Ground_06" type="Sprite" parent="Construccio/StaticBody2D9"]
-position = Vector2( 3440.11, 295.734 )
+position = Vector2( 3388.23, 295.734 )
+scale = Vector2( 1.08809, 1 )
 texture = ExtResource( 14 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 1178, 775 )
@@ -1910,33 +1869,18 @@ position = Vector2( 4097.57, -148.722 )
 texture = ExtResource( 9 )
 
 [node name="Ground_11" type="Sprite" parent="Construccio/StaticBody2D9"]
-position = Vector2( 3436.46, -147.495 )
+position = Vector2( 3304.71, -147.495 )
 texture = ExtResource( 13 )
 region_enabled = true
-region_rect = Rect2( 0, 0, 957, 129 )
-
-[node name="Ground_10" type="Sprite" parent="Construccio/StaticBody2D9"]
-position = Vector2( 2900.18, -147.723 )
-texture = ExtResource( 16 )
+region_rect = Rect2( 0, 0, 1342, 129 )
 
 [node name="Ground_12" type="Sprite" parent="Construccio/StaticBody2D9"]
 position = Vector2( 3975.64, -148.9 )
 texture = ExtResource( 15 )
 
-[node name="Ground_04" type="Sprite" parent="Construccio/StaticBody2D9"]
-position = Vector2( 2774.32, -147.723 )
-texture = ExtResource( 17 )
-
 [node name="Ground_13" type="Sprite" parent="Construccio/StaticBody2D9"]
 position = Vector2( 4083.36, 316.815 )
 texture = ExtResource( 10 )
-region_enabled = true
-region_rect = Rect2( 0, -356, 122, 804 )
-
-[node name="Ground_14" type="Sprite" parent="Construccio/StaticBody2D9"]
-position = Vector2( 2789.29, 317.937 )
-texture = ExtResource( 10 )
-flip_h = true
 region_enabled = true
 region_rect = Rect2( 0, -356, 122, 804 )
 
@@ -2032,12 +1976,9 @@ texture = ExtResource( 22 )
 
 [node name="CollisionShape2D" type="CollisionPolygon2D" parent="Construccio/StaticBody2D9"]
 polygon = PoolVector2Array( 2703.84, -214.952, 4151.21, -211.955, 4154.2, -158.016, 4109.25, -89.0942, 4103.26, 552.181, 4226.12, 684.032, 4151.21, 971.707, 4220.13, 1028.64, 4235.11, 1142.51, 4127.23, 1208.44, 4150.8, 1334.1, 4080.16, 1468.64, 3871.62, 1519.09, 3807.71, 1569.55, 3461.26, 1539.27, 3424.26, 1599.82, 2973.54, 1613.27, 2970.18, 1458.55, 2896.18, 1455.19, 2798.64, 1303.82, 2822.18, 1176.01, 2734.73, 1065.01, 2650.64, 1044.83, 2610.28, 917.011, 2707.82, 819.468, 2654, 732.014, 2754.91, 624.38, 2758.1, -92.7227, 2748.4, -133.342, 2712.54, -157.883 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="StaticBody2D10" type="StaticBody2D" parent="Construccio"]
-position = Vector2( 10225.5, -3553.69 )
+position = Vector2( 10191.1, -3554.22 )
 rotation = 1.5708
 scale = Vector2( 0.5, 1 )
 __meta__ = {
@@ -2077,7 +2018,7 @@ position = Vector2( 8130.69, -207.13 )
 shape = SubResource( 32 )
 
 [node name="StaticBody2D12" type="StaticBody2D" parent="Construccio"]
-position = Vector2( -795.939, -2433.36 )
+position = Vector2( -797.621, -2444.29 )
 scale = Vector2( 0.5, 1 )
 __meta__ = {
 "_edit_group_": true
@@ -2116,18 +2057,18 @@ position = Vector2( 8130.69, -207.13 )
 shape = SubResource( 32 )
 
 [node name="StaticBody2D13" type="StaticBody2D" parent="Construccio"]
-position = Vector2( 8051.29, -2041.75 )
+position = Vector2( 8050.5, -2068.74 )
 scale = Vector2( 0.5, 0.8 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="Ground_06" type="Sprite" parent="Construccio/StaticBody2D13"]
-position = Vector2( 7882.81, 1006.69 )
-scale = Vector2( 1, 0.96798 )
+position = Vector2( 7882.81, 1010.22 )
+scale = Vector2( 1, 0.965005 )
 texture = ExtResource( 14 )
 region_enabled = true
-region_rect = Rect2( 0, -1115, 300, 2385 )
+region_rect = Rect2( 0, -1107, 300, 2377 )
 
 [node name="Ground_09" type="Sprite" parent="Construccio/StaticBody2D13"]
 position = Vector2( 7697.45, 1010.71 )
@@ -2140,7 +2081,7 @@ position = Vector2( 8072.56, 1008.19 )
 texture = ExtResource( 28 )
 flip_h = true
 region_enabled = true
-region_rect = Rect2( 0, -1465, 129, 2295 )
+region_rect = Rect2( 0, -1461, 129, 2291 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Construccio/StaticBody2D13"]
 position = Vector2( 7878.37, 970.034 )
@@ -2155,7 +2096,7 @@ position = Vector2( 8130.69, -207.13 )
 shape = SubResource( 32 )
 
 [node name="StaticBody2D14" type="StaticBody2D" parent="Construccio"]
-position = Vector2( 9600.41, -1180.42 )
+position = Vector2( 9597.41, -1193.9 )
 scale = Vector2( 0.5, 0.4 )
 __meta__ = {
 "_edit_group_": true
@@ -2233,7 +2174,7 @@ position = Vector2( 8130.69, -207.13 )
 shape = SubResource( 32 )
 
 [node name="StaticBody2D11" type="StaticBody2D" parent="Construccio"]
-position = Vector2( 11149.4, -2901.07 )
+position = Vector2( 11166.4, -2901.07 )
 rotation = 1.5708
 scale = Vector2( 0.5, 1 )
 __meta__ = {
@@ -2273,7 +2214,7 @@ position = Vector2( 8130.69, -207.13 )
 shape = SubResource( 32 )
 
 [node name="StaticBody2D15" type="StaticBody2D" parent="Construccio"]
-position = Vector2( 14075.4, -4597.2 )
+position = Vector2( 14055.6, -4594.82 )
 rotation = 1.5708
 scale = Vector2( 0.5, 0.2 )
 __meta__ = {
@@ -2313,7 +2254,7 @@ position = Vector2( 8130.69, -207.13 )
 shape = SubResource( 32 )
 
 [node name="StaticBody2D17" type="StaticBody2D" parent="Construccio"]
-position = Vector2( 14279.9, -5591.13 )
+position = Vector2( 14277.4, -5587.35 )
 rotation = 1.5708
 scale = Vector2( 0.5, 0.3 )
 __meta__ = {
@@ -2353,9 +2294,9 @@ position = Vector2( 8130.69, -207.13 )
 shape = SubResource( 32 )
 
 [node name="StaticBody2D20" type="StaticBody2D" parent="Construccio"]
-position = Vector2( 13489.2, -6080.33 )
+position = Vector2( 13380.6, -6014.81 )
 rotation = 1.5708
-scale = Vector2( 0.5, 0.75 )
+scale = Vector2( 0.5, 0.6 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -2433,8 +2374,8 @@ position = Vector2( 8130.69, -207.13 )
 shape = SubResource( 32 )
 
 [node name="StaticBody2D16" type="StaticBody2D" parent="Construccio"]
-position = Vector2( 10280.4, -1567.92 )
-scale = Vector2( 0.5, 0.25 )
+position = Vector2( 10268.1, -1546.98 )
+scale = Vector2( 0.5, 0.175 )
 __meta__ = {
 "_edit_group_": true
 }
