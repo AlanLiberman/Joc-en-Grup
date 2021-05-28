@@ -42,9 +42,9 @@ disabled = true
 
 [node name="TextureProgress" type="TextureProgress" parent="."]
 anchor_right = 5.0
-margin_left = -1371.57
+margin_left = -1372.57
 margin_top = -1286.98
-margin_right = -771.573
+margin_right = -772.573
 margin_bottom = -767.973
 rect_scale = Vector2( 3, 3 )
 value = 100.0

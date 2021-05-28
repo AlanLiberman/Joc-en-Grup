@@ -1,13 +1,15 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Jugador.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Nivell 5/old-dark-castle-interior-background.png" type="Texture" id=2]
+[ext_resource path="res://Flor blava.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Nivell 5/tile 6.png" type="Texture" id=4]
 [ext_resource path="res://Nivell 5/tile 2.png" type="Texture" id=5]
 [ext_resource path="res://Nivell 5/tile 3.png" type="Texture" id=6]
 [ext_resource path="res://Nivell 5/llum 1.png" type="Texture" id=7]
 [ext_resource path="res://Nivell 5/negre 1.png" type="Texture" id=8]
 [ext_resource path="res://enemic_lvl_5.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Nivell 5/tile 9.png" type="Texture" id=10]
 [ext_resource path="res://Nivell 5/tile 8.png" type="Texture" id=11]
 
 [sub_resource type="RectangleShape2D" id=1]
@@ -54,8 +56,8 @@ scale = Vector2( 4.46978, 3.69658 )
 texture = ExtResource( 8 )
 
 [node name="negre 4" type="Sprite" parent="Fons lvl 5 1"]
-position = Vector2( 1336.03, 426.339 )
-scale = Vector2( 15.1304, 8.65423 )
+position = Vector2( 2020.41, 426.339 )
+scale = Vector2( 27.5736, 8.65423 )
 texture = ExtResource( 8 )
 
 [node name="negre 2" type="Sprite" parent="Fons lvl 5 1"]
@@ -64,6 +66,11 @@ scale = Vector2( 17.7661, 3.75434 )
 texture = ExtResource( 8 )
 
 [node name="negre 3" type="Sprite" parent="Fons lvl 5 1"]
+position = Vector2( 1113.7, -251.367 )
+scale = Vector2( 44.4808, 3.196 )
+texture = ExtResource( 8 )
+
+[node name="negre 5" type="Sprite" parent="Fons lvl 5 1"]
 position = Vector2( 1113.7, -251.367 )
 scale = Vector2( 44.4808, 3.196 )
 texture = ExtResource( 8 )
@@ -256,7 +263,7 @@ position = Vector2( 6504, -896 )
 shape = SubResource( 4 )
 
 [node name="Jugador" parent="." instance=ExtResource( 1 )]
-position = Vector2( 6858.43, -1393.85 )
+position = Vector2( 9883.63, -50.047 )
 
 [node name="Mazmorra 1" type="Node2D" parent="."]
 
@@ -276,7 +283,7 @@ scale = Vector2( 33, 11 )
 shape = SubResource( 1 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Mazmorra 1/Naranja 9"]
-position = Vector2( 3704, -1264 )
+position = Vector2( 3704, -1267.36 )
 shape = SubResource( 5 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Mazmorra 1/Naranja 9"]
@@ -337,5 +344,28 @@ position = Vector2( 7600, -624 )
 scale = Vector2( 33, 11 )
 shape = SubResource( 1 )
 
+[node name="Naranja 14" type="StaticBody2D" parent="Mazmorra 1" groups=[
+"pared",
+]]
+position = Vector2( 3629.24, 876.851 )
+
+[node name="Tile 1" type="Sprite" parent="Mazmorra 1/Naranja 14"]
+position = Vector2( 7577.65, -574.665 )
+scale = Vector2( 12, 12 )
+texture = ExtResource( 10 )
+
+[node name="a" type="CollisionShape2D" parent="Mazmorra 1/Naranja 14"]
+position = Vector2( 7914.59, -466.324 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
 [node name="Area2D" parent="Mazmorra 1" instance=ExtResource( 9 )]
 position = Vector2( 8521.6, 287.175 )
+
+[node name="Flor blava4" parent="Mazmorra 1" instance=ExtResource( 3 )]
+position = Vector2( 11036.3, 87.694 )
+rotation = -0.675442
+
+[node name="Flor blava5" parent="Mazmorra 1" instance=ExtResource( 3 )]
+position = Vector2( 10120.2, -700.239 )
+rotation = 1.5708

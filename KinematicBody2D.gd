@@ -6,7 +6,7 @@ export var speed = Vector2(300,1000)
 var velocitat = Vector2.ZERO
 var moviment = Vector2(0,0)
 var atacant = false
-var vida = 100
+var vida = 100 setget perd_vida
 var mort = false
 #var vida:int = 100 setget perd_vida
 func _physics_process(delta):
@@ -29,7 +29,7 @@ func _physics_process(delta):
 		if vida <= 0:
 			mort()
 		
-		if not atacant:
+		if not atacant and mort == false:
 			if velocitat.x == 0:
 				$AnimatedSprite.play("Quiet")
 			if velocitat.x < 0:
@@ -50,9 +50,11 @@ func _physics_process(delta):
 
 func mort():
 	mort = true
+	atacant = false
 	velocitat = Vector2(0,0)
 	$AnimatedSprite.play('mort')
 	$CollisionShape2D.disabled = true
+	
 	
 	
 	
@@ -62,15 +64,9 @@ func _on_AnimatedSprite_animation_finished():
 			if $AnimatedSprite.animation == "Atacar":
 				$AnimatedSprite/arma/CollisionShape2D.disabled = true
 				atacant = false
-	#func process(delta):
-	#	if Input.is_action_just_pressed("Curar"):
-	#		self.vida -= 10
-
+			if $AnimatedSprite.animation == 'mort':
+				get_tree().change_scene("res://Menu.tscn")
+				
 func perd_vida(nova_vida):
-		vida -= nova_vida
-		$textureporgress.value = vida
-		if vida <= 0:
-			get_tree().change_scene("res://Menu.tscn")
-			
-#func _on_Timer_timeout():
-#	get_tree().change_sceen("Menu.tscn")
+		vida = nova_vida
+		$TextureProgress.value = vida
