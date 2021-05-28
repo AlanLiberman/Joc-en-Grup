@@ -37,101 +37,101 @@ extents = Vector2( 43234.9, 1389.16 )
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 43490.2, 141.167 )
 
-[sub_resource type="AtlasTexture" id=24]
+[sub_resource type="AtlasTexture" id=3]
 flags = 4
 atlas = ExtResource( 29 )
 region = Rect2( 0, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=25]
+[sub_resource type="AtlasTexture" id=4]
 flags = 4
 atlas = ExtResource( 29 )
 region = Rect2( 64, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=26]
+[sub_resource type="AtlasTexture" id=5]
 flags = 4
 atlas = ExtResource( 29 )
 region = Rect2( 128, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=27]
+[sub_resource type="AtlasTexture" id=6]
 flags = 4
 atlas = ExtResource( 29 )
 region = Rect2( 192, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=28]
+[sub_resource type="AtlasTexture" id=7]
 flags = 4
 atlas = ExtResource( 29 )
 region = Rect2( 256, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=29]
+[sub_resource type="AtlasTexture" id=8]
 flags = 4
 atlas = ExtResource( 29 )
 region = Rect2( 320, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=30]
+[sub_resource type="AtlasTexture" id=9]
 flags = 4
 atlas = ExtResource( 29 )
 region = Rect2( 384, 0, 64, 64 )
 
-[sub_resource type="AtlasTexture" id=31]
+[sub_resource type="AtlasTexture" id=10]
 flags = 4
 atlas = ExtResource( 29 )
 region = Rect2( 448, 0, 64, 64 )
 
-[sub_resource type="SpriteFrames" id=32]
+[sub_resource type="SpriteFrames" id=11]
 animations = [ {
-"frames": [ SubResource( 24 ), SubResource( 25 ), SubResource( 26 ), SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ) ],
+"frames": [ SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ) ],
 "loop": true,
 "name": "default",
 "speed": 10.0
 } ]
 
-[sub_resource type="CapsuleShape2D" id=33]
+[sub_resource type="CapsuleShape2D" id=12]
 radius = 58.1992
 height = 225.616
 
-[sub_resource type="ConvexPolygonShape2D" id=3]
+[sub_resource type="ConvexPolygonShape2D" id=13]
 points = PoolVector2Array( 128, 128, 128, 0, 128, 128, 0, 128 )
 
-[sub_resource type="ConvexPolygonShape2D" id=4]
+[sub_resource type="ConvexPolygonShape2D" id=14]
 points = PoolVector2Array( 128, 0, 128, 128, 0, 128 )
 
-[sub_resource type="ConvexPolygonShape2D" id=5]
+[sub_resource type="ConvexPolygonShape2D" id=15]
 points = PoolVector2Array( 0, 0, 128, 128, 0, 128 )
 
-[sub_resource type="ConvexPolygonShape2D" id=6]
+[sub_resource type="ConvexPolygonShape2D" id=16]
 points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
 
-[sub_resource type="ConvexPolygonShape2D" id=7]
+[sub_resource type="ConvexPolygonShape2D" id=17]
 points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
 
-[sub_resource type="ConvexPolygonShape2D" id=8]
+[sub_resource type="ConvexPolygonShape2D" id=18]
 points = PoolVector2Array( -1, 1, 71, 2, 74, 17, 86, 26, 87, 52, 94, 65, 91, 97, 79, 106, 78, 127, 1, 129 )
 
-[sub_resource type="ConvexPolygonShape2D" id=9]
+[sub_resource type="ConvexPolygonShape2D" id=19]
 points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
 
-[sub_resource type="ConvexPolygonShape2D" id=10]
+[sub_resource type="ConvexPolygonShape2D" id=20]
 points = PoolVector2Array( 125, 1, 124, 129, 42, 124, 35, 93, 8, 65, 0, 0, 0, 0 )
 
-[sub_resource type="ConvexPolygonShape2D" id=11]
+[sub_resource type="ConvexPolygonShape2D" id=21]
 points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
 
-[sub_resource type="ConvexPolygonShape2D" id=12]
+[sub_resource type="ConvexPolygonShape2D" id=22]
 points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
 
-[sub_resource type="ConvexPolygonShape2D" id=13]
+[sub_resource type="ConvexPolygonShape2D" id=23]
 points = PoolVector2Array( 1.40015, 127, -0.599854, 3, 121.4, 2, 122.4, 55, 77.4001, 127 )
 
-[sub_resource type="ConvexPolygonShape2D" id=14]
+[sub_resource type="ConvexPolygonShape2D" id=24]
 points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
 
-[sub_resource type="ConvexPolygonShape2D" id=15]
+[sub_resource type="ConvexPolygonShape2D" id=25]
 points = PoolVector2Array( 0, 0, 128, 0, 128, 128, 0, 128 )
 
-[sub_resource type="ConvexPolygonShape2D" id=16]
+[sub_resource type="ConvexPolygonShape2D" id=26]
 points = PoolVector2Array( 93, 1, 93, 128, 22, 128, 20, 106, 4, 95, 1, 67, 12, 53, 11, 25, 20, 16, 20, 1 )
 
-[sub_resource type="TileSet" id=17]
+[sub_resource type="TileSet" id=27]
 0/name = "Tilemap.png 0"
 0/texture = ExtResource( 12 )
 0/tex_offset = Vector2( 0, 0 )
@@ -142,20 +142,20 @@ points = PoolVector2Array( 93, 1, 93, 128, 22, 128, 20, 106, 4, 95, 1, 67, 12, 5
 0/navigation_offset = Vector2( 0, 0 )
 0/shape_offset = Vector2( 0, 0 )
 0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-0/shape = SubResource( 3 )
+0/shape = SubResource( 13 )
 0/shape_one_way = false
 0/shape_one_way_margin = 1.0
 0/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 3 ),
+"shape": SubResource( 13 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 }, {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 4 ),
+"shape": SubResource( 14 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 0/z_index = 0
@@ -169,14 +169,14 @@ points = PoolVector2Array( 93, 1, 93, 128, 22, 128, 20, 106, 4, 95, 1, 67, 12, 5
 1/navigation_offset = Vector2( 0, 0 )
 1/shape_offset = Vector2( 0, 0 )
 1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-1/shape = SubResource( 5 )
+1/shape = SubResource( 15 )
 1/shape_one_way = false
 1/shape_one_way_margin = 1.0
 1/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 5 ),
+"shape": SubResource( 15 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 1/z_index = 0
@@ -190,14 +190,14 @@ points = PoolVector2Array( 93, 1, 93, 128, 22, 128, 20, 106, 4, 95, 1, 67, 12, 5
 2/navigation_offset = Vector2( 0, 0 )
 2/shape_offset = Vector2( 0, 0 )
 2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-2/shape = SubResource( 9 )
+2/shape = SubResource( 19 )
 2/shape_one_way = false
 2/shape_one_way_margin = 1.0
 2/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 9 ),
+"shape": SubResource( 19 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 2/z_index = 0
@@ -211,14 +211,14 @@ points = PoolVector2Array( 93, 1, 93, 128, 22, 128, 20, 106, 4, 95, 1, 67, 12, 5
 3/navigation_offset = Vector2( 0, 0 )
 3/shape_offset = Vector2( 0, 0 )
 3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-3/shape = SubResource( 10 )
+3/shape = SubResource( 20 )
 3/shape_one_way = false
 3/shape_one_way_margin = 1.0
 3/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 10 ),
+"shape": SubResource( 20 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 3/z_index = 0
@@ -232,14 +232,14 @@ points = PoolVector2Array( 93, 1, 93, 128, 22, 128, 20, 106, 4, 95, 1, 67, 12, 5
 4/navigation_offset = Vector2( 0, 0 )
 4/shape_offset = Vector2( 0, 0 )
 4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-4/shape = SubResource( 11 )
+4/shape = SubResource( 21 )
 4/shape_one_way = false
 4/shape_one_way_margin = 1.0
 4/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 11 ),
+"shape": SubResource( 21 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 4/z_index = 0
@@ -253,14 +253,14 @@ points = PoolVector2Array( 93, 1, 93, 128, 22, 128, 20, 106, 4, 95, 1, 67, 12, 5
 5/navigation_offset = Vector2( 0, 0 )
 5/shape_offset = Vector2( 0, 0 )
 5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-5/shape = SubResource( 12 )
+5/shape = SubResource( 22 )
 5/shape_one_way = false
 5/shape_one_way_margin = 1.0
 5/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 12 ),
+"shape": SubResource( 22 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 5/z_index = 0
@@ -274,14 +274,14 @@ points = PoolVector2Array( 93, 1, 93, 128, 22, 128, 20, 106, 4, 95, 1, 67, 12, 5
 6/navigation_offset = Vector2( 0, 0 )
 6/shape_offset = Vector2( 0, 0 )
 6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-6/shape = SubResource( 13 )
+6/shape = SubResource( 23 )
 6/shape_one_way = false
 6/shape_one_way_margin = 1.0
 6/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 13 ),
+"shape": SubResource( 23 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 6/z_index = 0
@@ -295,14 +295,14 @@ points = PoolVector2Array( 93, 1, 93, 128, 22, 128, 20, 106, 4, 95, 1, 67, 12, 5
 7/navigation_offset = Vector2( 0, 0 )
 7/shape_offset = Vector2( 0, 0 )
 7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-7/shape = SubResource( 14 )
+7/shape = SubResource( 24 )
 7/shape_one_way = false
 7/shape_one_way_margin = 1.0
 7/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 14 ),
+"shape": SubResource( 24 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 7/z_index = 0
@@ -316,14 +316,14 @@ points = PoolVector2Array( 93, 1, 93, 128, 22, 128, 20, 106, 4, 95, 1, 67, 12, 5
 8/navigation_offset = Vector2( 0, 0 )
 8/shape_offset = Vector2( 0, 0 )
 8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-8/shape = SubResource( 15 )
+8/shape = SubResource( 25 )
 8/shape_one_way = false
 8/shape_one_way_margin = 1.0
 8/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 15 ),
+"shape": SubResource( 25 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 8/z_index = 0
@@ -337,14 +337,14 @@ points = PoolVector2Array( 93, 1, 93, 128, 22, 128, 20, 106, 4, 95, 1, 67, 12, 5
 9/navigation_offset = Vector2( 0, 0 )
 9/shape_offset = Vector2( 0, 0 )
 9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-9/shape = SubResource( 16 )
+9/shape = SubResource( 26 )
 9/shape_one_way = false
 9/shape_one_way_margin = 1.0
 9/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 16 ),
+"shape": SubResource( 26 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 9/z_index = 0
@@ -358,14 +358,14 @@ points = PoolVector2Array( 93, 1, 93, 128, 22, 128, 20, 106, 4, 95, 1, 67, 12, 5
 10/navigation_offset = Vector2( 0, 0 )
 10/shape_offset = Vector2( 0, 0 )
 10/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-10/shape = SubResource( 6 )
+10/shape = SubResource( 16 )
 10/shape_one_way = false
 10/shape_one_way_margin = 1.0
 10/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 6 ),
+"shape": SubResource( 16 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 10/z_index = 0
@@ -379,14 +379,14 @@ points = PoolVector2Array( 93, 1, 93, 128, 22, 128, 20, 106, 4, 95, 1, 67, 12, 5
 11/navigation_offset = Vector2( 0, 0 )
 11/shape_offset = Vector2( 0, 0 )
 11/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-11/shape = SubResource( 7 )
+11/shape = SubResource( 17 )
 11/shape_one_way = false
 11/shape_one_way_margin = 1.0
 11/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 7 ),
+"shape": SubResource( 17 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 11/z_index = 0
@@ -400,14 +400,14 @@ points = PoolVector2Array( 93, 1, 93, 128, 22, 128, 20, 106, 4, 95, 1, 67, 12, 5
 12/navigation_offset = Vector2( 0, 0 )
 12/shape_offset = Vector2( 0, 0 )
 12/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-12/shape = SubResource( 8 )
+12/shape = SubResource( 18 )
 12/shape_one_way = false
 12/shape_one_way_margin = 1.0
 12/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 8 ),
+"shape": SubResource( 18 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
 } ]
 12/z_index = 0
@@ -426,22 +426,22 @@ points = PoolVector2Array( 93, 1, 93, 128, 22, 128, 20, 106, 4, 95, 1, 67, 12, 5
 13/shapes = [  ]
 13/z_index = 0
 
-[sub_resource type="RectangleShape2D" id=18]
+[sub_resource type="RectangleShape2D" id=28]
 extents = Vector2( 591.892, 1878.81 )
 
-[sub_resource type="RectangleShape2D" id=19]
+[sub_resource type="RectangleShape2D" id=29]
 extents = Vector2( 28.1377, 62.9344 )
 
-[sub_resource type="RectangleShape2D" id=20]
+[sub_resource type="RectangleShape2D" id=30]
 extents = Vector2( 227.474, 1233.46 )
 
-[sub_resource type="RectangleShape2D" id=21]
+[sub_resource type="RectangleShape2D" id=31]
 extents = Vector2( 18.0649, 51.4707 )
 
-[sub_resource type="RectangleShape2D" id=22]
+[sub_resource type="RectangleShape2D" id=32]
 extents = Vector2( 23.8701, 56.0944 )
 
-[sub_resource type="RectangleShape2D" id=23]
+[sub_resource type="RectangleShape2D" id=33]
 extents = Vector2( 635.291, 58.2739 )
 
 [node name="Nivell 3" type="Node2D"]
@@ -560,17 +560,18 @@ script = ExtResource( 30 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Portal2"]
 position = Vector2( 29083.4, -550.336 )
 scale = Vector2( 8, 8 )
-frames = SubResource( 32 )
-frame = 2
+
+frames = SubResource( 11 )
+
 playing = true
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Portal2"]
 position = Vector2( 29087.3, -509.595 )
-shape = SubResource( 33 )
+shape = SubResource( 12 )
 
 [node name="Construccio" type="TileMap" parent="."]
-tile_set = SubResource( 17 )
+tile_set = SubResource( 27 )
 cell_size = Vector2( 128, 128 )
 format = 1
 tile_data = PoolIntArray( -393262, 13, 0, -393261, 13, 0, -393260, 13, 0, -393259, 13, 0, -393258, 13, 0, -393257, 13, 0, -393256, 13, 0, -327726, 13, 0, -327725, 13, 0, -327724, 13, 0, -327723, 13, 0, -327722, 13, 0, -327721, 13, 0, -327720, 13, 0, -327719, 13, 0, -327718, 13, 0, -327717, 13, 0, -262184, 13, 0, -196650, 13, 0, -196649, 13, 0, -196648, 13, 0, -196647, 13, 0, -196646, 13, 0, -131114, 13, 0, -131113, 13, 0, -131112, 13, 0, -131111, 13, 0, -131095, 13, 0, -131094, 13, 0, -131093, 13, 0, -131092, 13, 0, -65574, 13, 0, -38, 13, 0, -37, 13, 0, -36, 13, 0, 65498, 13, 0, 65499, 13, 0, 65500, 13, 0, 131034, 13, 0, 131035, 13, 0, 196570, 13, 0, 262106, 13, 0, 327642, 13, 0, 393178, 13, 0, 458714, 13, 0, 524250, 13, 0, 589786, 13, 0, 655322, 13, 0, 720858, 13, 0, 786393, 13, 0, 786394, 13, 0, 851929, 13, 0, 851930, 13, 0, 917465, 13, 0, 917466, 13, 0, 983001, 13, 0, 983002, 13, 0, 983003, 13, 0, 1048537, 13, 0, 1048538, 13, 0, 1048539, 13, 0, 1114072, 13, 0, 1114073, 13, 0, 1114074, 13, 0, 1114075, 13, 0, 1179608, 13, 0, 1179610, 13, 0, 1179611, 13, 0, 1245144, 13, 0, 1245146, 13, 0, 1245147, 13, 0, 1310680, 13, 0, 1310681, 13, 0, 1310682, 13, 0, 1310683, 13, 0, 1376215, 13, 0, 1376216, 13, 0, 1376217, 13, 0, 1376218, 13, 0, 1376219, 13, 0, 1441751, 13, 0, 1441753, 13, 0, 1441754, 13, 0, 1441755, 13, 0, 1507289, 13, 0, 1507290, 13, 0, 1507291, 13, 0, 1572825, 13, 0, 1572826, 13, 0, 1572827, 13, 0, 1638361, 13, 0, 1638362, 13, 0, 1638363, 13, 0, 1703897, 13, 0, 1703898, 13, 0, 1703899, 13, 0, 1769433, 13, 0, 1769434, 13, 0, 1769435, 13, 0, 1834969, 13, 0, 1834970, 13, 0, 1900505, 13, 0, 1900506, 13, 0, 1966040, 13, 0, 1966041, 13, 0, 1966042, 13, 0, 2031576, 13, 0, 2031577, 13, 0, 2031578, 13, 0, 2097112, 13, 0, 2097113, 13, 0, 2097114, 13, 0, 2162648, 13, 0, 2162649, 13, 0, 2162650, 13, 0, 2228185, 13, 0, 2228186, 13, 0, 2293721, 13, 0, 2293722, 13, 0, 2293723, 13, 0, 2359258, 13, 0, 2359259, 13, 0, 2424794, 13, 0, 2424795, 13, 0, 2490330, 13, 0, 2490331, 13, 0, 2555866, 13, 0, 2555867, 13, 0, 2621402, 13, 0, 2621403, 13, 0, 2686939, 13, 0, 2752475, 13, 0 )
@@ -641,15 +642,15 @@ texture = ExtResource( 11 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Construccio/StaticBody2D2"]
 position = Vector2( -2816.52, 1495.1 )
-shape = SubResource( 18 )
+shape = SubResource( 28 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Construccio/StaticBody2D2"]
 position = Vector2( -2200.15, -322.116 )
-shape = SubResource( 19 )
+shape = SubResource( 29 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Construccio/StaticBody2D2"]
 position = Vector2( -3434.76, -316.123 )
-shape = SubResource( 19 )
+shape = SubResource( 29 )
 
 [node name="StaticBody2D27" type="StaticBody2D" parent="Construccio"]
 position = Vector2( 31427.2, 45.0322 )
@@ -718,15 +719,15 @@ texture = ExtResource( 11 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Construccio/StaticBody2D27"]
 position = Vector2( -2816.52, 1495.1 )
-shape = SubResource( 18 )
+shape = SubResource( 28 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Construccio/StaticBody2D27"]
 position = Vector2( -2200.15, -322.116 )
-shape = SubResource( 19 )
+shape = SubResource( 29 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Construccio/StaticBody2D27"]
 position = Vector2( -3434.76, -316.123 )
-shape = SubResource( 19 )
+shape = SubResource( 29 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Construccio"]
 position = Vector2( 19.0488, -76.1953 )
@@ -910,15 +911,15 @@ region_rect = Rect2( 0, -1465, 129, 2295 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Construccio/StaticBody2D3"]
 position = Vector2( 7878.37, 970.034 )
-shape = SubResource( 20 )
+shape = SubResource( 30 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Construccio/StaticBody2D3"]
 position = Vector2( 7632.77, -213.694 )
-shape = SubResource( 21 )
+shape = SubResource( 31 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Construccio/StaticBody2D3"]
 position = Vector2( 8130.69, -207.13 )
-shape = SubResource( 22 )
+shape = SubResource( 32 )
 
 [node name="StaticBody2D21" type="StaticBody2D" parent="Construccio"]
 position = Vector2( 9626, -25.3984 )
@@ -962,15 +963,15 @@ region_rect = Rect2( 0, -1465, 129, 2295 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Construccio/StaticBody2D21"]
 position = Vector2( 7878.37, 970.034 )
-shape = SubResource( 20 )
+shape = SubResource( 30 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Construccio/StaticBody2D21"]
 position = Vector2( 7632.77, -213.694 )
-shape = SubResource( 21 )
+shape = SubResource( 31 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Construccio/StaticBody2D21"]
 position = Vector2( 8130.69, -207.13 )
-shape = SubResource( 22 )
+shape = SubResource( 32 )
 
 [node name="StaticBody2D22" type="StaticBody2D" parent="Construccio"]
 position = Vector2( 15141.3, -71.3728 )
@@ -1015,15 +1016,15 @@ region_rect = Rect2( 0, -1465, 129, 2295 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Construccio/StaticBody2D22"]
 position = Vector2( 7878.37, 970.034 )
-shape = SubResource( 20 )
+shape = SubResource( 30 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Construccio/StaticBody2D22"]
 position = Vector2( 7632.77, -213.694 )
-shape = SubResource( 21 )
+shape = SubResource( 31 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Construccio/StaticBody2D22"]
 position = Vector2( 8130.69, -207.13 )
-shape = SubResource( 22 )
+shape = SubResource( 32 )
 
 [node name="StaticBody2D24" type="StaticBody2D" parent="Construccio"]
 position = Vector2( 16560.7, -1416.63 )
@@ -1068,15 +1069,15 @@ region_rect = Rect2( 0, -1465, 129, 2295 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Construccio/StaticBody2D24"]
 position = Vector2( 7878.37, 970.034 )
-shape = SubResource( 20 )
+shape = SubResource( 30 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Construccio/StaticBody2D24"]
 position = Vector2( 7632.77, -213.694 )
-shape = SubResource( 21 )
+shape = SubResource( 31 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Construccio/StaticBody2D24"]
 position = Vector2( 8130.69, -207.13 )
-shape = SubResource( 22 )
+shape = SubResource( 32 )
 
 [node name="StaticBody2D25" type="StaticBody2D" parent="Construccio"]
 position = Vector2( 17213.6, -16.2807 )
@@ -1121,15 +1122,15 @@ region_rect = Rect2( 0, -1465, 129, 2295 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Construccio/StaticBody2D25"]
 position = Vector2( 7878.37, 970.034 )
-shape = SubResource( 20 )
+shape = SubResource( 30 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Construccio/StaticBody2D25"]
 position = Vector2( 7632.77, -213.694 )
-shape = SubResource( 21 )
+shape = SubResource( 31 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Construccio/StaticBody2D25"]
 position = Vector2( 8130.69, -207.13 )
-shape = SubResource( 22 )
+shape = SubResource( 32 )
 
 [node name="StaticBody2D23" type="StaticBody2D" parent="Construccio"]
 position = Vector2( 22192.5, 1940.59 )
@@ -1175,15 +1176,15 @@ region_rect = Rect2( 0, -1465, 129, 2295 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Construccio/StaticBody2D23"]
 position = Vector2( 7878.37, 970.034 )
-shape = SubResource( 20 )
+shape = SubResource( 30 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Construccio/StaticBody2D23"]
 position = Vector2( 7632.77, -213.694 )
-shape = SubResource( 21 )
+shape = SubResource( 31 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Construccio/StaticBody2D23"]
 position = Vector2( 8130.69, -207.13 )
-shape = SubResource( 22 )
+shape = SubResource( 32 )
 
 [node name="StaticBody2D4" type="StaticBody2D" parent="Construccio"]
 position = Vector2( 15432.9, 3439.55 )
@@ -2055,15 +2056,15 @@ region_rect = Rect2( 0, -1465, 129, 2295 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Construccio/StaticBody2D10"]
 position = Vector2( 7878.37, 970.034 )
-shape = SubResource( 20 )
+shape = SubResource( 30 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Construccio/StaticBody2D10"]
 position = Vector2( 7632.77, -213.694 )
-shape = SubResource( 21 )
+shape = SubResource( 31 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Construccio/StaticBody2D10"]
 position = Vector2( 8130.69, -207.13 )
-shape = SubResource( 22 )
+shape = SubResource( 32 )
 
 [node name="StaticBody2D12" type="StaticBody2D" parent="Construccio"]
 position = Vector2( -795.939, -2433.36 )
@@ -2094,15 +2095,15 @@ region_rect = Rect2( 0, -1465, 129, 2295 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Construccio/StaticBody2D12"]
 position = Vector2( 7878.37, 970.034 )
-shape = SubResource( 20 )
+shape = SubResource( 30 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Construccio/StaticBody2D12"]
 position = Vector2( 7632.77, -213.694 )
-shape = SubResource( 21 )
+shape = SubResource( 31 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Construccio/StaticBody2D12"]
 position = Vector2( 8130.69, -207.13 )
-shape = SubResource( 22 )
+shape = SubResource( 32 )
 
 [node name="StaticBody2D13" type="StaticBody2D" parent="Construccio"]
 position = Vector2( 8051.29, -2041.75 )
@@ -2133,15 +2134,15 @@ region_rect = Rect2( 0, -1465, 129, 2295 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Construccio/StaticBody2D13"]
 position = Vector2( 7878.37, 970.034 )
-shape = SubResource( 20 )
+shape = SubResource( 30 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Construccio/StaticBody2D13"]
 position = Vector2( 7632.77, -213.694 )
-shape = SubResource( 21 )
+shape = SubResource( 31 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Construccio/StaticBody2D13"]
 position = Vector2( 8130.69, -207.13 )
-shape = SubResource( 22 )
+shape = SubResource( 32 )
 
 [node name="StaticBody2D14" type="StaticBody2D" parent="Construccio"]
 position = Vector2( 9600.41, -1180.42 )
@@ -2172,15 +2173,15 @@ region_rect = Rect2( 0, -1465, 129, 2295 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Construccio/StaticBody2D14"]
 position = Vector2( 7878.37, 970.034 )
-shape = SubResource( 20 )
+shape = SubResource( 30 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Construccio/StaticBody2D14"]
 position = Vector2( 7632.77, -213.694 )
-shape = SubResource( 21 )
+shape = SubResource( 31 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Construccio/StaticBody2D14"]
 position = Vector2( 8130.69, -207.13 )
-shape = SubResource( 22 )
+shape = SubResource( 32 )
 
 [node name="StaticBody2D19" type="StaticBody2D" parent="Construccio"]
 position = Vector2( 9609.53, -2188.65 )
@@ -2211,15 +2212,15 @@ region_rect = Rect2( 0, -1465, 129, 2295 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Construccio/StaticBody2D19"]
 position = Vector2( 7878.37, 970.034 )
-shape = SubResource( 20 )
+shape = SubResource( 30 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Construccio/StaticBody2D19"]
 position = Vector2( 7632.77, -213.694 )
-shape = SubResource( 21 )
+shape = SubResource( 31 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Construccio/StaticBody2D19"]
 position = Vector2( 8130.69, -207.13 )
-shape = SubResource( 22 )
+shape = SubResource( 32 )
 
 [node name="StaticBody2D11" type="StaticBody2D" parent="Construccio"]
 position = Vector2( 11149.4, -2901.07 )
@@ -2251,15 +2252,15 @@ region_rect = Rect2( 0, -1465, 129, 2295 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Construccio/StaticBody2D11"]
 position = Vector2( 7878.37, 970.034 )
-shape = SubResource( 20 )
+shape = SubResource( 30 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Construccio/StaticBody2D11"]
 position = Vector2( 7632.77, -213.694 )
-shape = SubResource( 21 )
+shape = SubResource( 31 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Construccio/StaticBody2D11"]
 position = Vector2( 8130.69, -207.13 )
-shape = SubResource( 22 )
+shape = SubResource( 32 )
 
 [node name="StaticBody2D15" type="StaticBody2D" parent="Construccio"]
 position = Vector2( 14075.4, -4597.2 )
@@ -2291,15 +2292,15 @@ region_rect = Rect2( 0, -1465, 129, 2295 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Construccio/StaticBody2D15"]
 position = Vector2( 7878.37, 970.034 )
-shape = SubResource( 20 )
+shape = SubResource( 30 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Construccio/StaticBody2D15"]
 position = Vector2( 7632.77, -213.694 )
-shape = SubResource( 21 )
+shape = SubResource( 31 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Construccio/StaticBody2D15"]
 position = Vector2( 8130.69, -207.13 )
-shape = SubResource( 22 )
+shape = SubResource( 32 )
 
 [node name="StaticBody2D17" type="StaticBody2D" parent="Construccio"]
 position = Vector2( 14279.9, -5591.13 )
@@ -2331,15 +2332,15 @@ region_rect = Rect2( 0, -1465, 129, 2295 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Construccio/StaticBody2D17"]
 position = Vector2( 7878.37, 970.034 )
-shape = SubResource( 20 )
+shape = SubResource( 30 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Construccio/StaticBody2D17"]
 position = Vector2( 7632.77, -213.694 )
-shape = SubResource( 21 )
+shape = SubResource( 31 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Construccio/StaticBody2D17"]
 position = Vector2( 8130.69, -207.13 )
-shape = SubResource( 22 )
+shape = SubResource( 32 )
 
 [node name="StaticBody2D20" type="StaticBody2D" parent="Construccio"]
 position = Vector2( 13489.2, -6080.33 )
@@ -2371,15 +2372,15 @@ region_rect = Rect2( 0, -1465, 129, 2295 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Construccio/StaticBody2D20"]
 position = Vector2( 7878.37, 970.034 )
-shape = SubResource( 20 )
+shape = SubResource( 30 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Construccio/StaticBody2D20"]
 position = Vector2( 7632.77, -213.694 )
-shape = SubResource( 21 )
+shape = SubResource( 31 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Construccio/StaticBody2D20"]
 position = Vector2( 8130.69, -207.13 )
-shape = SubResource( 22 )
+shape = SubResource( 32 )
 
 [node name="StaticBody2D18" type="StaticBody2D" parent="Construccio"]
 position = Vector2( 14291.6, -5035.16 )
@@ -2411,15 +2412,15 @@ region_rect = Rect2( 0, -1465, 129, 2295 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Construccio/StaticBody2D18"]
 position = Vector2( 7878.37, 970.034 )
-shape = SubResource( 20 )
+shape = SubResource( 30 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Construccio/StaticBody2D18"]
 position = Vector2( 7632.77, -213.694 )
-shape = SubResource( 21 )
+shape = SubResource( 31 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Construccio/StaticBody2D18"]
 position = Vector2( 8130.69, -207.13 )
-shape = SubResource( 22 )
+shape = SubResource( 32 )
 
 [node name="StaticBody2D16" type="StaticBody2D" parent="Construccio"]
 position = Vector2( 10280.4, -1567.92 )
@@ -2450,15 +2451,15 @@ region_rect = Rect2( 0, -1465, 129, 2295 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Construccio/StaticBody2D16"]
 position = Vector2( 7878.37, 970.034 )
-shape = SubResource( 20 )
+shape = SubResource( 30 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Construccio/StaticBody2D16"]
 position = Vector2( 7632.77, -213.694 )
-shape = SubResource( 21 )
+shape = SubResource( 31 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Construccio/StaticBody2D16"]
 position = Vector2( 8130.69, -207.13 )
-shape = SubResource( 22 )
+shape = SubResource( 32 )
 
 [node name="StaticBody2D26" type="StaticBody2D" parent="Construccio"]
 
@@ -2471,7 +2472,7 @@ region_rect = Rect2( 0, 0, 3173, 128 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Construccio/StaticBody2D26"]
 position = Vector2( 19006.4, -224.893 )
-shape = SubResource( 23 )
+shape = SubResource( 33 )
 
 [node name="Enemics" type="Node2D" parent="."]
 
@@ -2546,6 +2547,7 @@ one_shot = true
 
 [node name="TickDmg" type="Timer" parent="."]
 wait_time = 0.5
+
 [connection signal="body_entered" from="Aigua" to="." method="_on_Aigua2_body_entered"]
 [connection signal="body_exited" from="Aigua" to="." method="_on_Aigua2_body_exited"]
 [connection signal="body_entered" from="Corrent d'aigua/Corrent 1" to="Corrent d'aigua" method="_on_Corrent_1_body_entered"]
