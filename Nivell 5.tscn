@@ -1,0 +1,790 @@
+[gd_scene load_steps=34 format=2]
+
+[ext_resource path="res://Jugador.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Nivell 5/old-dark-castle-interior-background.png" type="Texture" id=2]
+[ext_resource path="res://Flor blava.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Nivell 5/tile 6.png" type="Texture" id=4]
+[ext_resource path="res://Nivell 5/tile 2.png" type="Texture" id=5]
+[ext_resource path="res://Nivell 5/tile 3.png" type="Texture" id=6]
+[ext_resource path="res://Nivell 5/llum 1.png" type="Texture" id=7]
+[ext_resource path="res://Nivell 5/negre 1.png" type="Texture" id=8]
+[ext_resource path="res://enemic_lvl_5.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Nivell 5/tile 9.png" type="Texture" id=10]
+[ext_resource path="res://Nivell 5/tile 8.png" type="Texture" id=11]
+[ext_resource path="res://boles_lvl_5.gd" type="Script" id=12]
+[ext_resource path="res://Bala.tscn" type="PackedScene" id=13]
+[ext_resource path="res://portal final.gd" type="Script" id=14]
+[ext_resource path="res://PNG/Green Portal Sprite Sheet.png" type="Texture" id=15]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 16.0623, 15.6362 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 176, 584 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 16, 31.2727 )
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 54.3008, 10 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 440, 232 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 328, 448 )
+
+[sub_resource type="CircleShape2D" id=6]
+radius = 202.386
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 352, 600 )
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 253.387, 434.289 )
+
+[sub_resource type="AtlasTexture" id=10]
+flags = 4
+atlas = ExtResource( 15 )
+region = Rect2( 0, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=11]
+flags = 4
+atlas = ExtResource( 15 )
+region = Rect2( 64, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=12]
+flags = 4
+atlas = ExtResource( 15 )
+region = Rect2( 128, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=13]
+flags = 4
+atlas = ExtResource( 15 )
+region = Rect2( 192, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=14]
+flags = 4
+atlas = ExtResource( 15 )
+region = Rect2( 256, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=15]
+flags = 4
+atlas = ExtResource( 15 )
+region = Rect2( 320, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=16]
+flags = 4
+atlas = ExtResource( 15 )
+region = Rect2( 384, 0, 64, 64 )
+
+[sub_resource type="AtlasTexture" id=17]
+flags = 4
+atlas = ExtResource( 15 )
+region = Rect2( 448, 0, 64, 64 )
+
+[sub_resource type="SpriteFrames" id=18]
+animations = [ {
+"frames": [ SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ) ],
+"loop": true,
+"name": "default",
+"speed": 8.0
+} ]
+
+[node name="Nivell 5" type="Node2D"]
+
+[node name="negre 5" type="Sprite" parent="."]
+position = Vector2( 13375.8, -152.237 )
+scale = Vector2( 326.404, 104.007 )
+texture = ExtResource( 8 )
+
+[node name="Fons lvl 5 1" type="Sprite" parent="."]
+position = Vector2( 2216, -1816 )
+scale = Vector2( 5.0966, 6.49249 )
+texture = ExtResource( 2 )
+
+[node name="Fons lvl 5 2" type="Sprite" parent="Fons lvl 5 1"]
+position = Vector2( 959.071, 3.05176e-05 )
+texture = ExtResource( 2 )
+
+[node name="Fons lvl 5 4" type="Sprite" parent="Fons lvl 5 1"]
+position = Vector2( 1918.14, -2.15381 )
+texture = ExtResource( 2 )
+
+[node name="Fons lvl 5 5" type="Sprite" parent="Fons lvl 5 1"]
+position = Vector2( 2877.7, -0.353546 )
+texture = ExtResource( 2 )
+
+[node name="Fons lvl 5 6" type="Sprite" parent="Fons lvl 5 1"]
+position = Vector2( 3492.49, -406.196 )
+texture = ExtResource( 2 )
+
+[node name="Fons lvl 5 8" type="Sprite" parent="Fons lvl 5 1"]
+position = Vector2( 4450.77, -403.451 )
+texture = ExtResource( 2 )
+
+[node name="Fons lvl 5 7" type="Sprite" parent="Fons lvl 5 1"]
+position = Vector2( 2534.7, -405.804 )
+texture = ExtResource( 2 )
+
+[node name="Fons lvl 5 3" type="Sprite" parent="Fons lvl 5 1"]
+position = Vector2( -959.071, -1.52588e-05 )
+texture = ExtResource( 2 )
+
+[node name="negre 1" type="Sprite" parent="Fons lvl 5 1"]
+position = Vector2( 1260.45, 267.386 )
+scale = Vector2( 4.46978, 3.69658 )
+texture = ExtResource( 8 )
+
+[node name="negre 4" type="Sprite" parent="Fons lvl 5 1"]
+position = Vector2( 2020.41, 426.339 )
+scale = Vector2( 27.5736, 8.65423 )
+texture = ExtResource( 8 )
+
+[node name="negre 2" type="Sprite" parent="Fons lvl 5 1"]
+position = Vector2( -74.548, 270.466 )
+scale = Vector2( 17.7661, 3.75434 )
+texture = ExtResource( 8 )
+
+[node name="negre 6" type="Sprite" parent="Fons lvl 5 1"]
+position = Vector2( 2421.63, -607.231 )
+scale = Vector2( 63.2215, 1.65576 )
+texture = ExtResource( 8 )
+
+[node name="llum 1" type="Sprite" parent="Fons lvl 5 1"]
+position = Vector2( 992.034, 255.064 )
+texture = ExtResource( 7 )
+
+[node name="llum 2" type="Sprite" parent="Fons lvl 5 1"]
+position = Vector2( 1591.65, 267.386 )
+texture = ExtResource( 7 )
+
+[node name="llum 3" type="Sprite" parent="Fons lvl 5 1"]
+position = Vector2( 4413.67, -39.3134 )
+texture = ExtResource( 7 )
+
+[node name="llum 4" type="Sprite" parent="Fons lvl 5 1"]
+position = Vector2( 4851.86, 184.829 )
+texture = ExtResource( 7 )
+
+[node name="Cami_principal" type="Node2D" parent="."]
+
+[node name="Naranja 2" type="StaticBody2D" parent="Cami_principal"]
+
+[node name="Tile 1" type="Sprite" parent="Cami_principal/Naranja 2"]
+position = Vector2( 1368, -656 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Naranja 2"]
+position = Vector2( 1376, -672 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="Naranja 1" type="StaticBody2D" parent="Cami_principal" groups=[
+"pared",
+]]
+
+[node name="Tile 1" type="Sprite" parent="Cami_principal/Naranja 1"]
+position = Vector2( 329.736, -655.161 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Naranja 1"]
+position = Vector2( 320, -672 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Cami_principal/Naranja 1" groups=[
+"pared",
+]]
+position = Vector2( -320, -1360 )
+shape = SubResource( 2 )
+
+[node name="Naranja 3" type="StaticBody2D" parent="Cami_principal"]
+
+[node name="Tile 1" type="Sprite" parent="Cami_principal/Naranja 3"]
+position = Vector2( 2408, -656 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Naranja 3"]
+position = Vector2( 2416, -672 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="Naranja 4" type="StaticBody2D" parent="Cami_principal"]
+
+[node name="Tile 1" type="Sprite" parent="Cami_principal/Naranja 4"]
+position = Vector2( 3448, -656 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Naranja 4"]
+position = Vector2( 3456, -672 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="Naranja 5" type="StaticBody2D" parent="Cami_principal"]
+
+[node name="Tile 1" type="Sprite" parent="Cami_principal/Naranja 5"]
+position = Vector2( 4488, -656 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Naranja 5"]
+position = Vector2( 4504, -672 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="Naranja 9" type="StaticBody2D" parent="Cami_principal"]
+position = Vector2( 8927.54, -495.269 )
+
+[node name="Tile 1" type="Sprite" parent="Cami_principal/Naranja 9"]
+position = Vector2( 4488, -656 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Naranja 9"]
+position = Vector2( 4504.46, -672.731 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="Naranja 10" type="StaticBody2D" parent="Cami_principal"]
+position = Vector2( 9984, -496 )
+
+[node name="Tile 1" type="Sprite" parent="Cami_principal/Naranja 10"]
+position = Vector2( 4488, -656 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Naranja 10"]
+position = Vector2( 4504, -672 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="Naranja 11" type="StaticBody2D" parent="Cami_principal"]
+position = Vector2( 11032, -496 )
+
+[node name="Tile 1" type="Sprite" parent="Cami_principal/Naranja 11"]
+position = Vector2( 4488, -656 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Naranja 11"]
+position = Vector2( 4504, -672 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="Naranja 6" type="StaticBody2D" parent="Cami_principal"]
+
+[node name="tile 2" type="Sprite" parent="Cami_principal/Naranja 6"]
+position = Vector2( 5568, -808 )
+scale = Vector2( 33, 17 )
+texture = ExtResource( 5 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Cami_principal/Naranja 6"]
+polygon = PoolVector2Array( 5008.27, -844.039, 5264, -840, 5440, -920, 5784, -960, 5936, -1056, 6064, -1128, 6072, -1112, 6072, -432, 5000, -448 )
+
+[node name="Pera" type="StaticBody2D" parent="Cami_principal"]
+position = Vector2( 7944, -886.625 )
+scale = Vector2( 33, 11 )
+
+[node name="tile 8" type="Sprite" parent="Cami_principal/Pera"]
+texture = ExtResource( 11 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Pera"]
+position = Vector2( -0.72728, -0.125 )
+shape = SubResource( 3 )
+
+[node name="Pera2" type="StaticBody2D" parent="Cami_principal"]
+position = Vector2( 7944, -886.625 )
+scale = Vector2( 33, 11 )
+
+[node name="tile 8" type="Sprite" parent="Cami_principal/Pera2"]
+position = Vector2( 47.515, 0 )
+texture = ExtResource( 11 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Pera2"]
+position = Vector2( 46.788, -0.125 )
+shape = SubResource( 3 )
+
+[node name="Pera3" type="StaticBody2D" parent="Cami_principal"]
+position = Vector2( 7944, -886.625 )
+scale = Vector2( 33, 11 )
+
+[node name="tile 8" type="Sprite" parent="Cami_principal/Pera3"]
+position = Vector2( 110.804, 0 )
+texture = ExtResource( 11 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Pera3"]
+position = Vector2( 109.623, -0.125 )
+shape = SubResource( 3 )
+
+[node name="Pera4" type="StaticBody2D" parent="Cami_principal"]
+position = Vector2( 14222.7, 10.6543 )
+rotation = -0.380482
+scale = Vector2( 33, 11 )
+
+[node name="tile 8" type="Sprite" parent="Cami_principal/Pera4"]
+position = Vector2( 110.804, 0 )
+texture = ExtResource( 11 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Pera4"]
+position = Vector2( 109.58, 0.193665 )
+shape = SubResource( 3 )
+
+[node name="Flor blava7" parent="Cami_principal" instance=ExtResource( 3 )]
+position = Vector2( 17015.7, -1627.49 )
+rotation = -0.541052
+
+[node name="Pera5" type="StaticBody2D" parent="Cami_principal"]
+position = Vector2( 16698, -6272.84 )
+rotation = 1.90415
+scale = Vector2( 33, 11 )
+
+[node name="tile 8" type="Sprite" parent="Cami_principal/Pera5"]
+position = Vector2( 110.804, 0 )
+texture = ExtResource( 11 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Pera5"]
+position = Vector2( 109.58, 0.193665 )
+shape = SubResource( 3 )
+
+[node name="Pera6" type="StaticBody2D" parent="Cami_principal"]
+position = Vector2( 19098.7, -6325.33 )
+rotation = 1.90415
+scale = Vector2( 33, 11 )
+
+[node name="tile 8" type="Sprite" parent="Cami_principal/Pera6"]
+position = Vector2( 110.804, 0 )
+texture = ExtResource( 11 )
+flip_v = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Pera6"]
+position = Vector2( 109.58, 0.193665 )
+shape = SubResource( 3 )
+
+[node name="Pera7" type="StaticBody2D" parent="Cami_principal"]
+position = Vector2( 23760, -6240 )
+rotation = 1.5708
+scale = Vector2( 33, 11 )
+
+[node name="tile 8" type="Sprite" parent="Cami_principal/Pera7"]
+position = Vector2( 110.804, 0 )
+texture = ExtResource( 11 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Pera7"]
+position = Vector2( 109.58, 0.193665 )
+shape = SubResource( 3 )
+
+[node name="Pera9" type="StaticBody2D" parent="Cami_principal"]
+position = Vector2( 23760, -5184 )
+rotation = 1.5708
+scale = Vector2( 33, 11 )
+
+[node name="tile 8" type="Sprite" parent="Cami_principal/Pera9"]
+position = Vector2( 110.804, 0 )
+texture = ExtResource( 11 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Pera9"]
+position = Vector2( 109.58, 0.193665 )
+shape = SubResource( 3 )
+
+[node name="Pera11" type="StaticBody2D" parent="Cami_principal"]
+position = Vector2( 23760, -4136 )
+rotation = 1.5708
+scale = Vector2( 33, 11 )
+
+[node name="tile 8" type="Sprite" parent="Cami_principal/Pera11"]
+position = Vector2( 108.606, 0 )
+texture = ExtResource( 11 )
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Pera11"]
+position = Vector2( 109.58, 0.193665 )
+shape = SubResource( 3 )
+
+[node name="Pera8" type="StaticBody2D" parent="Cami_principal"]
+position = Vector2( 25608, -6176 )
+rotation = 1.5708
+scale = Vector2( 33, 11 )
+
+[node name="tile 8" type="Sprite" parent="Cami_principal/Pera8"]
+position = Vector2( 110.804, 0 )
+texture = ExtResource( 11 )
+flip_v = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Pera8"]
+position = Vector2( 109.58, 0.193665 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Cami_principal/Pera8"]
+position = Vector2( 39.2727, 21.8181 )
+shape = SubResource( 8 )
+
+[node name="Pera10" type="StaticBody2D" parent="Cami_principal"]
+position = Vector2( 25608, -5128 )
+rotation = 1.5708
+scale = Vector2( 33, 11 )
+
+[node name="tile 8" type="Sprite" parent="Cami_principal/Pera10"]
+position = Vector2( 110.804, 0 )
+texture = ExtResource( 11 )
+flip_v = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Pera10"]
+position = Vector2( 109.58, 0.193665 )
+shape = SubResource( 3 )
+
+[node name="Flor blava6" parent="Cami_principal" instance=ExtResource( 3 )]
+position = Vector2( 15834.9, -2367.51 )
+rotation = 1.89194
+
+[node name="Flor blava8" parent="Cami_principal" instance=ExtResource( 3 )]
+position = Vector2( 17364.9, -2704.65 )
+rotation = -1.21475
+
+[node name="Naranja 7" type="StaticBody2D" parent="Cami_principal"]
+
+[node name="tile 3" type="Sprite" parent="Cami_principal/Naranja 7"]
+position = Vector2( 6544, -872 )
+scale = Vector2( 25.8617, 9.47297 )
+texture = ExtResource( 6 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Naranja 7"]
+position = Vector2( 6504, -896 )
+shape = SubResource( 4 )
+
+[node name="Naranja 8" type="StaticBody2D" parent="Cami_principal"]
+
+[node name="tile 3" type="Sprite" parent="Cami_principal/Naranja 8"]
+position = Vector2( 6544, -872 )
+scale = Vector2( 25.8617, 9.47297 )
+texture = ExtResource( 6 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_principal/Naranja 8"]
+position = Vector2( 6504, -896 )
+shape = SubResource( 4 )
+
+[node name="Mazmorra 1" type="Node2D" parent="."]
+
+[node name="Naranja 9" type="StaticBody2D" parent="Mazmorra 1" groups=[
+"pared",
+]]
+position = Vector2( 2656, 1352 )
+
+[node name="Tile 1" type="Sprite" parent="Mazmorra 1/Naranja 9"]
+position = Vector2( 4488, -656 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mazmorra 1/Naranja 9"]
+position = Vector2( 4504, -672 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Mazmorra 1/Naranja 9"]
+position = Vector2( 3704, -1267.36 )
+shape = SubResource( 5 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Mazmorra 1/Naranja 9"]
+position = Vector2( 9449.15, -1317.39 )
+shape = SubResource( 5 )
+
+[node name="Naranja 10" type="StaticBody2D" parent="Mazmorra 1"]
+position = Vector2( 3712, 1304 )
+
+[node name="Tile 1" type="Sprite" parent="Mazmorra 1/Naranja 10"]
+position = Vector2( 4472, -608 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mazmorra 1/Naranja 10"]
+position = Vector2( 4488, -624 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="Naranja 11" type="StaticBody2D" parent="Mazmorra 1"]
+position = Vector2( 3712, 1304 )
+
+[node name="Tile 1" type="Sprite" parent="Mazmorra 1/Naranja 11"]
+position = Vector2( 5512, -608 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mazmorra 1/Naranja 11"]
+position = Vector2( 5512, -624 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="Naranja 12" type="StaticBody2D" parent="Mazmorra 1"]
+position = Vector2( 3712, 1304 )
+
+[node name="Tile 1" type="Sprite" parent="Mazmorra 1/Naranja 12"]
+position = Vector2( 6552, -608 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mazmorra 1/Naranja 12"]
+position = Vector2( 6544, -624 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="Naranja 13" type="StaticBody2D" parent="Mazmorra 1"]
+position = Vector2( 3712, 1304 )
+
+[node name="Tile 1" type="Sprite" parent="Mazmorra 1/Naranja 13"]
+position = Vector2( 7584, -608 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mazmorra 1/Naranja 13"]
+position = Vector2( 7600, -624 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="Naranja 14" type="StaticBody2D" parent="Mazmorra 1" groups=[
+"pared",
+]]
+position = Vector2( 3629.24, 876.851 )
+
+[node name="Tile 1" type="Sprite" parent="Mazmorra 1/Naranja 14"]
+position = Vector2( 7577.65, -574.665 )
+scale = Vector2( 12, 12 )
+texture = ExtResource( 10 )
+
+[node name="a" type="CollisionShape2D" parent="Mazmorra 1/Naranja 14"]
+position = Vector2( 7914.59, -466.324 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="Area2D" parent="Mazmorra 1" instance=ExtResource( 9 )]
+position = Vector2( 8521.6, 287.175 )
+
+[node name="Flor blava4" parent="Mazmorra 1" instance=ExtResource( 3 )]
+position = Vector2( 11036.3, 87.694 )
+rotation = -0.675442
+
+[node name="Flor blava5" parent="Mazmorra 1" instance=ExtResource( 3 )]
+position = Vector2( 10120.2, -700.239 )
+rotation = 1.5708
+
+[node name="Cami_amunt" type="Node2D" parent="."]
+
+[node name="Naranja 12" type="StaticBody2D" parent="Cami_amunt"]
+position = Vector2( 13848, -2712 )
+
+[node name="Tile 1" type="Sprite" parent="Cami_amunt/Naranja 12"]
+position = Vector2( 4488, -656 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_amunt/Naranja 12"]
+position = Vector2( 4504, -672 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="Naranja 13" type="StaticBody2D" parent="Cami_amunt"]
+position = Vector2( 14904, -2712 )
+
+[node name="Tile 1" type="Sprite" parent="Cami_amunt/Naranja 13"]
+position = Vector2( 4488, -656 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_amunt/Naranja 13"]
+position = Vector2( 4504, -672 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="Naranja 14" type="StaticBody2D" parent="Cami_amunt"]
+position = Vector2( 15960, -2712 )
+
+[node name="Tile 1" type="Sprite" parent="Cami_amunt/Naranja 14"]
+position = Vector2( 5496, -752 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+offset = Vector2( -30.5454, 8.72726 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_amunt/Naranja 14"]
+position = Vector2( 4504, -672 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="Naranja 15" type="StaticBody2D" parent="Cami_amunt"]
+position = Vector2( 17016, -2712 )
+
+[node name="Tile 1" type="Sprite" parent="Cami_amunt/Naranja 15"]
+position = Vector2( 5496, -752 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+offset = Vector2( -30.5454, 8.72726 )
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_amunt/Naranja 15"]
+position = Vector2( 4504, -672 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="Naranja 16" type="StaticBody2D" parent="Cami_amunt"]
+position = Vector2( 18064, -2712 )
+
+[node name="Tile 1" type="Sprite" parent="Cami_amunt/Naranja 16"]
+position = Vector2( 5496, -752 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+offset = Vector2( -30.5454, 8.72726 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_amunt/Naranja 16"]
+position = Vector2( 4504, -672 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="Naranja 18" type="StaticBody2D" parent="Cami_amunt"]
+position = Vector2( 19472, 848 )
+
+[node name="Tile 1" type="Sprite" parent="Cami_amunt/Naranja 18"]
+position = Vector2( 5496, -752 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+offset = Vector2( -30.5454, 8.72726 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_amunt/Naranja 18"]
+position = Vector2( 4504, -672 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="Naranja 19" type="StaticBody2D" parent="Cami_amunt"]
+position = Vector2( 20528, 848 )
+
+[node name="Tile 1" type="Sprite" parent="Cami_amunt/Naranja 19"]
+position = Vector2( 5496, -752 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+offset = Vector2( -30.5454, 8.72726 )
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_amunt/Naranja 19"]
+position = Vector2( 4504, -672 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="Naranja 20" type="StaticBody2D" parent="Cami_amunt"]
+position = Vector2( 21584, 848 )
+
+[node name="Tile 1" type="Sprite" parent="Cami_amunt/Naranja 20"]
+position = Vector2( 5496, -752 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+offset = Vector2( -30.5454, 8.72726 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_amunt/Naranja 20"]
+position = Vector2( 4504, -672 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="Naranja 21" type="StaticBody2D" parent="Cami_amunt"]
+position = Vector2( 22640, 848 )
+
+[node name="Tile 1" type="Sprite" parent="Cami_amunt/Naranja 21"]
+position = Vector2( 5496, -752 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+offset = Vector2( -30.5454, 8.72726 )
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_amunt/Naranja 21"]
+position = Vector2( 4504, -672 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="Naranja 22" type="StaticBody2D" parent="Cami_amunt"]
+position = Vector2( 23688, 848 )
+
+[node name="Tile 1" type="Sprite" parent="Cami_amunt/Naranja 22"]
+position = Vector2( 5496, -752 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+offset = Vector2( -30.5454, 8.72726 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_amunt/Naranja 22"]
+position = Vector2( 4504, -672 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="Naranja 17" type="StaticBody2D" parent="Cami_amunt"]
+position = Vector2( 19104, -2712 )
+
+[node name="Tile 1" type="Sprite" parent="Cami_amunt/Naranja 17"]
+position = Vector2( 5496, -752 )
+scale = Vector2( 33, 11 )
+texture = ExtResource( 4 )
+offset = Vector2( -30.5454, 8.72726 )
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_amunt/Naranja 17"]
+position = Vector2( 4504, -672 )
+scale = Vector2( 33, 11 )
+shape = SubResource( 1 )
+
+[node name="Area2D2" parent="Cami_amunt" instance=ExtResource( 9 )]
+position = Vector2( 18916.3, -3966.36 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Cami_amunt" groups=[
+"pared",
+]]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_amunt/StaticBody2D"]
+position = Vector2( 17816, -4032 )
+shape = SubResource( 6 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Cami_amunt" groups=[
+"pared",
+]]
+position = Vector2( 2864, 0 )
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_amunt/StaticBody2D2"]
+position = Vector2( 17816, -4032 )
+shape = SubResource( 6 )
+
+[node name="boles_lvl_5" type="Area2D" parent="Cami_amunt"]
+position = Vector2( 21368, -4144 )
+script = ExtResource( 12 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_amunt/boles_lvl_5"]
+shape = SubResource( 7 )
+
+[node name="Bala" parent="Cami_amunt" instance=ExtResource( 13 )]
+position = Vector2( 23010.4, -3730.51 )
+scale = Vector2( 0.25, 0.25 )
+
+[node name="portal final" type="Area2D" parent="Cami_amunt"]
+position = Vector2( 28512.3, -458.643 )
+script = ExtResource( 14 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cami_amunt/portal final"]
+shape = SubResource( 9 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Cami_amunt/portal final"]
+position = Vector2( -5.33789, -58.7329 )
+scale = Vector2( 20, 20 )
+frames = SubResource( 18 )
+frame = 2
+playing = true
+flip_h = true
+
+[node name="Jugador" parent="." instance=ExtResource( 1 )]
+position = Vector2( 663.932, -1079 )
+
+[connection signal="area_entered" from="Cami_amunt/boles_lvl_5" to="Cami_amunt/boles_lvl_5" method="_on_boles_lvl_5_area_entered"]
+[connection signal="body_entered" from="Cami_amunt/Bala" to="Cami_amunt/Bala" method="_on_Bala_body_entered"]
+[connection signal="body_entered" from="Cami_amunt/portal final" to="Cami_amunt/portal final" method="_on_portal_final_body_entered"]
